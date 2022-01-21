@@ -1,0 +1,39 @@
+[OPTIONS]
+Auto Index=No
+Binary Index=Yes
+Compatibility=1.1 or later
+Compiled file=C:\Users\cookie987\OneDrive - cookie987\Code\E_code\CloudClassUtility_app\help_file_output\HTML Help\help.chm
+Contents file=help.hhc
+Default Font=
+Default Window=main
+Default topic=1.开始.htm
+Display compile progress=No
+Error log file=help.log
+Full-text search=Yes
+Index file=help.hhk
+Language=0x0804
+Title=CloudClassUtility - 帮助
+
+[WINDOWS]
+main="CloudClassUtility - 帮助","help.hhc","help.hhk","1.开始.htm","1.开始.htm","1.开始.htm","",,,0x23520,270,0x387E,[50,50,950,700],0xB0000,0x0,,0,0,,0,
+
+[FILES]
+1.1.1.png
+1.1.png
+1.2_结束“极域”.htm
+1.开始.htm
+template\hgrad.gif
+template\logo.gif
+template2\btn_next_n.gif
+template2\btn_prev_n.gif
+结束“云课堂”.htm
+
+[ALIAS]
+IDH_ID1000=1.开始.htm
+IDH_ID1002=结束“云课堂”.htm
+IDH_ID1003=1.2_结束“极域”.htm
+
+
+[MAP]
+#include help.h
+

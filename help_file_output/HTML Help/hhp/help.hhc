@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+   <OBJECT type="text/site properties"> 
+     <param name="FrameName" value="right">
+     <param name="Font" value=",8,134">
+     <param name="ImageType" value="Book">
+     <param name="Window Styles" value="0x27">
+     <param name="ExWindow Styles" value="0x0">
+   </OBJECT>
+<UL><LI><OBJECT type="text/sitemap">
+<param name="Name" value="0.开始">
+<param name="Local" value="1.开始.htm">
+<param name="ImageNumber" value="11">
+</OBJECT>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="1.基本操作">
+<param name="Local" value="">
+<param name="ImageNumber" value="2">
+</OBJECT>
+<UL><LI><OBJECT type="text/sitemap">
+<param name="Name" value="1.1 结束“云课堂”">
+<param name="Local" value="结束“云课堂”.htm">
+<param name="ImageNumber" value="11">
+</OBJECT>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="1.2 结束“极域”">
+<param name="Local" value="1.2_结束“极域”.htm">
+<param name="ImageNumber" value="11">
+</OBJECT>
+</UL></UL>
+</BODY>
+</HTML>
