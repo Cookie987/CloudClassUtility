@@ -10,7 +10,7 @@
     <Description>CloudClassUtility</Description>
     <Copyright>[C] 2022 RedCookieStudios</Copyright>
     <PackageProjectUrl>ccu.cookie987.tk</PackageProjectUrl>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>Cert_1647487800.pfx</AssemblyOriginatorKeyFile>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
     <PackageIcon>favicon.png</PackageIcon>
