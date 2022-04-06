@@ -26,9 +26,11 @@ Partial Class Form1
         Me.窗口WToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.主窗口MToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.设置SToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.高级AToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.帮助HToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.检测更新UToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.关于CloudClassUtilityToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.日志LToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,7 +46,7 @@ Partial Class Form1
         '
         '窗口WToolStripMenuItem
         '
-        Me.窗口WToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.主窗口MToolStripMenuItem, Me.设置SToolStripMenuItem})
+        Me.窗口WToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.主窗口MToolStripMenuItem, Me.设置SToolStripMenuItem, Me.高级AToolStripMenuItem, Me.日志LToolStripMenuItem})
         Me.窗口WToolStripMenuItem.Name = "窗口WToolStripMenuItem"
         Me.窗口WToolStripMenuItem.ShortcutKeyDisplayString = ""
         Me.窗口WToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
@@ -53,14 +55,20 @@ Partial Class Form1
         '主窗口MToolStripMenuItem
         '
         Me.主窗口MToolStripMenuItem.Name = "主窗口MToolStripMenuItem"
-        Me.主窗口MToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
+        Me.主窗口MToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.主窗口MToolStripMenuItem.Text = "主窗口(&M)"
         '
         '设置SToolStripMenuItem
         '
         Me.设置SToolStripMenuItem.Name = "设置SToolStripMenuItem"
-        Me.设置SToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
+        Me.设置SToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.设置SToolStripMenuItem.Text = "设置(&S)"
+        '
+        '高级AToolStripMenuItem
+        '
+        Me.高级AToolStripMenuItem.Name = "高级AToolStripMenuItem"
+        Me.高级AToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.高级AToolStripMenuItem.Text = "高级(&A)"
         '
         '帮助HToolStripMenuItem
         '
@@ -80,6 +88,12 @@ Partial Class Form1
         Me.关于CloudClassUtilityToolStripMenuItem.Name = "关于CloudClassUtilityToolStripMenuItem"
         Me.关于CloudClassUtilityToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
         Me.关于CloudClassUtilityToolStripMenuItem.Text = "关于 CloudClassUtility"
+        '
+        '日志LToolStripMenuItem
+        '
+        Me.日志LToolStripMenuItem.Name = "日志LToolStripMenuItem"
+        Me.日志LToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.日志LToolStripMenuItem.Text = "日志(&L)"
         '
         'Form1
         '
@@ -108,4 +122,6 @@ Partial Class Form1
     Friend WithEvents 关于CloudClassUtilityToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents 主窗口MToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents 设置SToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents 高级AToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents 日志LToolStripMenuItem As ToolStripMenuItem
 End Class

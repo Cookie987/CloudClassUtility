@@ -1,5 +1,6 @@
 ﻿Module [Public]
-    Public delay As Integer
-    Public notice
-    Public localVersion
+    Public Delay As Integer
+    Public Notice
+    Public LocalVersion
+    Public Log
 End Module

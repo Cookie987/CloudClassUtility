@@ -1,18 +1,21 @@
 ﻿Public Class FrmMaster
-    Private Sub frmMaster_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub FrmMaster_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Log = Log + System.DateTime.Now + " FrmMaster.Load" + vbCrLf
         btnStart.Enabled = True
         btnStop.Enabled = False
     End Sub
 
-    Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
-        Timer1.Interval = delay
+    Private Sub BtnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
+        Log = Log + System.DateTime.Now + " btnStart.Click" + vbCrLf
+        Timer1.Interval = Delay
         Timer2.Enabled = True
         Timer1.Enabled = True
         btnStop.Enabled = True
         btnStart.Enabled = False
     End Sub
 
-    Private Sub btnStop_Click(sender As Object, e As EventArgs) Handles btnStop.Click
+    Private Sub BtnStop_Click(sender As Object, e As EventArgs) Handles btnStop.Click
+        Log = Log + System.DateTime.Now + " btnStop.Click" + vbCrLf
         Timer2.Enabled = False
         Timer1.Enabled = False
         ProgressBar1.Value = 0

@@ -1,6 +1,7 @@
 ﻿Public NotInheritable Class FrmAbout
 
     Private Sub FrmAbout_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Log = Log + System.DateTime.Now + " FrmAbout.Load" + vbCrLf
         ' 设置此窗体的标题。
         Dim ApplicationTitle As String
         If My.Application.Info.Title <> "" Then

@@ -164,7 +164,7 @@ Partial Class FrmSetting
         Me.TrackBar1.TabIndex = 0
         Me.TrackBar1.Value = 200
         '
-        'frmSetting
+        'FrmSetting
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -172,7 +172,7 @@ Partial Class FrmSetting
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
-        Me.Name = "frmSetting"
+        Me.Name = "FrmSetting"
         Me.Text = "设置"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)

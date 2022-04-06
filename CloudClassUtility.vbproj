@@ -46,6 +46,7 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include=".github\workflows\securitycodescan.yml" />
     <None Include="favicon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>

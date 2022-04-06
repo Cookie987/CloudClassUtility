@@ -21,3 +21,5 @@ C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Debug\net6
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Debug\net6.0-windows\CloudClassUtility.Form1.resources
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Debug\net6.0-windows\CloudClassUtility.FrmAbout.resources
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Debug\net6.0-windows\CloudClassUtility.Resources.resources
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Debug\net6.0-windows\CloudClassUtility.FrmAdvance.resources
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Debug\net6.0-windows\CloudClassUtility.FrmLog.resources
