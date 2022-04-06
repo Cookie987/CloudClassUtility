@@ -46,7 +46,6 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-    <None Include=".github\workflows\dotnet-desktop.yml" />
     <None Include="favicon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
