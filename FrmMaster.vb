@@ -15,6 +15,7 @@
     Private Sub btnStop_Click(sender As Object, e As EventArgs) Handles btnStop.Click
         Timer2.Enabled = False
         Timer1.Enabled = False
+        ProgressBar1.Value = 0
         btnStart.Enabled = True
         btnStop.Enabled = False
     End Sub
