@@ -30,13 +30,19 @@ Partial Class Form1
         Me.帮助HToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.检测更新UToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.关于CloudClassUtilityToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.日志LToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.日志LToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.查看日志VToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.导出日志SToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.清除日志CToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.测试TToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.测试日志ZToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.窗口WToolStripMenuItem, Me.帮助HToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.窗口WToolStripMenuItem, Me.帮助HToolStripMenuItem, Me.日志LToolStripMenuItem1, Me.测试TToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.MdiWindowListItem = Me.窗口WToolStripMenuItem
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -46,7 +52,7 @@ Partial Class Form1
         '
         '窗口WToolStripMenuItem
         '
-        Me.窗口WToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.主窗口MToolStripMenuItem, Me.设置SToolStripMenuItem, Me.高级AToolStripMenuItem, Me.日志LToolStripMenuItem})
+        Me.窗口WToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.主窗口MToolStripMenuItem, Me.设置SToolStripMenuItem, Me.高级AToolStripMenuItem})
         Me.窗口WToolStripMenuItem.Name = "窗口WToolStripMenuItem"
         Me.窗口WToolStripMenuItem.ShortcutKeyDisplayString = ""
         Me.窗口WToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
@@ -55,19 +61,19 @@ Partial Class Form1
         '主窗口MToolStripMenuItem
         '
         Me.主窗口MToolStripMenuItem.Name = "主窗口MToolStripMenuItem"
-        Me.主窗口MToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.主窗口MToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
         Me.主窗口MToolStripMenuItem.Text = "主窗口(&M)"
         '
         '设置SToolStripMenuItem
         '
         Me.设置SToolStripMenuItem.Name = "设置SToolStripMenuItem"
-        Me.设置SToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.设置SToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
         Me.设置SToolStripMenuItem.Text = "设置(&S)"
         '
         '高级AToolStripMenuItem
         '
         Me.高级AToolStripMenuItem.Name = "高级AToolStripMenuItem"
-        Me.高级AToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.高级AToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
         Me.高级AToolStripMenuItem.Text = "高级(&A)"
         '
         '帮助HToolStripMenuItem
@@ -89,11 +95,43 @@ Partial Class Form1
         Me.关于CloudClassUtilityToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
         Me.关于CloudClassUtilityToolStripMenuItem.Text = "关于 CloudClassUtility"
         '
-        '日志LToolStripMenuItem
+        '日志LToolStripMenuItem1
         '
-        Me.日志LToolStripMenuItem.Name = "日志LToolStripMenuItem"
-        Me.日志LToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.日志LToolStripMenuItem.Text = "日志(&L)"
+        Me.日志LToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.查看日志VToolStripMenuItem, Me.导出日志SToolStripMenuItem, Me.清除日志CToolStripMenuItem})
+        Me.日志LToolStripMenuItem1.Name = "日志LToolStripMenuItem1"
+        Me.日志LToolStripMenuItem1.Size = New System.Drawing.Size(58, 20)
+        Me.日志LToolStripMenuItem1.Text = "日志(&L)"
+        '
+        '查看日志VToolStripMenuItem
+        '
+        Me.查看日志VToolStripMenuItem.Name = "查看日志VToolStripMenuItem"
+        Me.查看日志VToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.查看日志VToolStripMenuItem.Text = "查看日志(&V)"
+        '
+        '导出日志SToolStripMenuItem
+        '
+        Me.导出日志SToolStripMenuItem.Name = "导出日志SToolStripMenuItem"
+        Me.导出日志SToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.导出日志SToolStripMenuItem.Text = "导出日志(&S)"
+        '
+        '清除日志CToolStripMenuItem
+        '
+        Me.清除日志CToolStripMenuItem.Name = "清除日志CToolStripMenuItem"
+        Me.清除日志CToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.清除日志CToolStripMenuItem.Text = "清除日志(&C)"
+        '
+        '测试TToolStripMenuItem
+        '
+        Me.测试TToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.测试日志ZToolStripMenuItem})
+        Me.测试TToolStripMenuItem.Name = "测试TToolStripMenuItem"
+        Me.测试TToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+        Me.测试TToolStripMenuItem.Text = "测试(&T)"
+        '
+        '测试日志ZToolStripMenuItem
+        '
+        Me.测试日志ZToolStripMenuItem.Name = "测试日志ZToolStripMenuItem"
+        Me.测试日志ZToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.测试日志ZToolStripMenuItem.Text = "测试日志(Z)"
         '
         'Form1
         '
@@ -123,5 +161,11 @@ Partial Class Form1
     Friend WithEvents 主窗口MToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents 设置SToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents 高级AToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents 日志LToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents 日志LToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents 查看日志VToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents 导出日志SToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents 清除日志CToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
+    Friend WithEvents 测试TToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents 测试日志ZToolStripMenuItem As ToolStripMenuItem
 End Class

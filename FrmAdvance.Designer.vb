@@ -25,16 +25,18 @@ Partial Class FrmAdvance
         Me.components = New System.ComponentModel.Container()
         Me.GroupBoxJiyu = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.GetJiyuPasswd = New System.Windows.Forms.Button()
         Me.GroupBoxJiyuOutput = New System.Windows.Forms.GroupBox()
         Me.TextBoxOutput = New System.Windows.Forms.TextBox()
-        Me.GetJiyuPasswd = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.BtnUniJiyuUsbDriver = New System.Windows.Forms.Button()
         Me.GroupBoxJiyu.SuspendLayout()
         Me.GroupBoxJiyuOutput.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBoxJiyu
         '
+        Me.GroupBoxJiyu.Controls.Add(Me.BtnUniJiyuUsbDriver)
         Me.GroupBoxJiyu.Controls.Add(Me.Label1)
         Me.GroupBoxJiyu.Controls.Add(Me.GetJiyuPasswd)
         Me.GroupBoxJiyu.Location = New System.Drawing.Point(12, 12)
@@ -53,6 +55,15 @@ Partial Class FrmAdvance
         Me.Label1.Size = New System.Drawing.Size(298, 15)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "警告: 本页面所有功能均未经实机测试, 不保证全部有效!"
+        '
+        'GetJiyuPasswd
+        '
+        Me.GetJiyuPasswd.Location = New System.Drawing.Point(6, 21)
+        Me.GetJiyuPasswd.Name = "GetJiyuPasswd"
+        Me.GetJiyuPasswd.Size = New System.Drawing.Size(95, 23)
+        Me.GetJiyuPasswd.TabIndex = 0
+        Me.GetJiyuPasswd.Text = "获取极域密码"
+        Me.GetJiyuPasswd.UseVisualStyleBackColor = True
         '
         'GroupBoxJiyuOutput
         '
@@ -75,18 +86,18 @@ Partial Class FrmAdvance
         Me.TextBoxOutput.Size = New System.Drawing.Size(564, 283)
         Me.TextBoxOutput.TabIndex = 1
         '
-        'GetJiyuPasswd
-        '
-        Me.GetJiyuPasswd.Location = New System.Drawing.Point(6, 21)
-        Me.GetJiyuPasswd.Name = "GetJiyuPasswd"
-        Me.GetJiyuPasswd.Size = New System.Drawing.Size(95, 23)
-        Me.GetJiyuPasswd.TabIndex = 0
-        Me.GetJiyuPasswd.Text = "获取极域密码"
-        Me.GetJiyuPasswd.UseVisualStyleBackColor = True
-        '
         'Timer1
         '
         Me.Timer1.Interval = 1
+        '
+        'BtnUniJiyuUsbDriver
+        '
+        Me.BtnUniJiyuUsbDriver.Location = New System.Drawing.Point(107, 21)
+        Me.BtnUniJiyuUsbDriver.Name = "BtnUniJiyuUsbDriver"
+        Me.BtnUniJiyuUsbDriver.Size = New System.Drawing.Size(120, 23)
+        Me.BtnUniJiyuUsbDriver.TabIndex = 2
+        Me.BtnUniJiyuUsbDriver.Text = "卸载极域USB驱动"
+        Me.BtnUniJiyuUsbDriver.UseVisualStyleBackColor = True
         '
         'FrmAdvance
         '
@@ -111,4 +122,5 @@ Partial Class FrmAdvance
     Friend WithEvents TextBoxOutput As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents BtnUniJiyuUsbDriver As Button
 End Class

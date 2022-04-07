@@ -26,7 +26,6 @@ Partial Class FrmLog
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -46,21 +45,11 @@ Partial Class FrmLog
         '
         Me.Timer1.Enabled = True
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(301, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(89, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "保存日志(&S)"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'FrmLog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(413, 255)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "FrmLog"
         Me.Text = "日志"
@@ -72,5 +61,4 @@ Partial Class FrmLog
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
-    Friend WithEvents Button1 As Button
 End Class
