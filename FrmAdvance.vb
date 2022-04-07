@@ -2,7 +2,7 @@
 
     Private Sub GetJiyuPasswd_Click(sender As Object, e As EventArgs) Handles GetJiyuPasswd.Click
         Log += Date.Now + " GetJiyuPasswd.Click" + vbCrLf
-        Dim beforDT = Date.Now
+        Dim beforDT = Date.Now '计时
         Dim JiyuPasswd
         ''' 测试计时用
         'Using getUrl As New Net.WebClient()
@@ -18,7 +18,7 @@
         Else
             TextBoxOutput.Text = TextBoxOutput.Text + Date.Now + " " + "1>读取到的密码 ([ ]内即密码): " + JiyuPasswd + vbCrLf + Date.Now + "=== 任务: 成功 1 个, 失败 0 个 ===" + vbCrLf
         End If
-        Dim afterDT = Date.Now
+        Dim afterDT = Date.Now '计时
         Dim UseageTime = CStr(DateDiff(DateInterval.Second, beforDT, afterDT))
         TextBoxOutput.Text = TextBoxOutput.Text + Date.Now + " " + "用时: " + UseageTime + "s" + vbCrLf
         Log += Date.Now + vbCrLf + TextBoxOutput.Text + vbCrLf
@@ -39,5 +39,18 @@
         Shell("sc delete TDFileFilter", vbHide)
         TextBoxOutput.Text = TextBoxOutput.Text + Date.Now + " " + "1>完成" + vbCrLf + Date.Now + " " + "=== 任务: 成功 1 个, 失败 0 个 ===" + vbCrLf
         Log += TextBoxOutput.Text
+    End Sub
+
+    Private Sub BtnUdpAttack_Click(sender As Object, e As EventArgs) Handles BtnUdpAttack.Click
+        FrmWait.MdiParent = Form1
+        FrmWait.Show()
+        Log += Date.Now + " BtnUdpAttack.Click" + vbCrLf
+        Log += Date.Now + " Start unzip UdpAttack" + vbCrLf
+        My.Computer.FileSystem.CreateDirectory("\ProgramData\CloudClassUtility\")
+        My.Computer.FileSystem.DeleteFile("\ProgramData\CloudClassUtility\UdpAttack.exe")
+        My.Computer.FileSystem.WriteAllBytes("\ProgramData\CloudClassUtility\UdpAttack.exe", My.Resources.UdpAttack, True)
+        FrmWait.Hide()
+        FrmUdpAttack.MdiParent = Form1
+        FrmUdpAttack.Show()
     End Sub
 End Class

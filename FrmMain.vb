@@ -62,7 +62,7 @@
         Log = Nothing
     End Sub
 
-    Private Sub 测试日志ZToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 测试日志ZToolStripMenuItem.Click
+    Private Sub 测试日志ZToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Log += Date.Now + " 测试日志ZToolStripMenuItem.Click" + vbCrLf
         'Do
         '    Log += Date.Now + vbCrLf

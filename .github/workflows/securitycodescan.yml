@@ -3,6 +3,8 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
+#*.exe filter=lfs diff=lfs merge=lfs -text
+
 # This workflow integrates SecurityCodeScan with GitHub's Code Scanning feature
 # SecurityCodeScan is a vulnerability patterns detector for C# and VB.NET
 

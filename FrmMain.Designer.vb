@@ -35,14 +35,12 @@ Partial Class Form1
         Me.导出日志SToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.清除日志CToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.测试TToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.测试日志ZToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.窗口WToolStripMenuItem, Me.帮助HToolStripMenuItem, Me.日志LToolStripMenuItem1, Me.测试TToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.窗口WToolStripMenuItem, Me.帮助HToolStripMenuItem, Me.日志LToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.MdiWindowListItem = Me.窗口WToolStripMenuItem
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -61,19 +59,19 @@ Partial Class Form1
         '主窗口MToolStripMenuItem
         '
         Me.主窗口MToolStripMenuItem.Name = "主窗口MToolStripMenuItem"
-        Me.主窗口MToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
+        Me.主窗口MToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.主窗口MToolStripMenuItem.Text = "主窗口(&M)"
         '
         '设置SToolStripMenuItem
         '
         Me.设置SToolStripMenuItem.Name = "设置SToolStripMenuItem"
-        Me.设置SToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
+        Me.设置SToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.设置SToolStripMenuItem.Text = "设置(&S)"
         '
         '高级AToolStripMenuItem
         '
         Me.高级AToolStripMenuItem.Name = "高级AToolStripMenuItem"
-        Me.高级AToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
+        Me.高级AToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.高级AToolStripMenuItem.Text = "高级(&A)"
         '
         '帮助HToolStripMenuItem
@@ -120,19 +118,6 @@ Partial Class Form1
         Me.清除日志CToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.清除日志CToolStripMenuItem.Text = "清除日志(&C)"
         '
-        '测试TToolStripMenuItem
-        '
-        Me.测试TToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.测试日志ZToolStripMenuItem})
-        Me.测试TToolStripMenuItem.Name = "测试TToolStripMenuItem"
-        Me.测试TToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
-        Me.测试TToolStripMenuItem.Text = "测试(&T)"
-        '
-        '测试日志ZToolStripMenuItem
-        '
-        Me.测试日志ZToolStripMenuItem.Name = "测试日志ZToolStripMenuItem"
-        Me.测试日志ZToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.测试日志ZToolStripMenuItem.Text = "测试日志(Z)"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -166,6 +151,4 @@ Partial Class Form1
     Friend WithEvents 导出日志SToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents 清除日志CToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
-    Friend WithEvents 测试TToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents 测试日志ZToolStripMenuItem As ToolStripMenuItem
 End Class
