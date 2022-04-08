@@ -1,0 +1,5 @@
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\bin\Debug\net6.0-windows\publish\CloudClassUtility.exe
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\bin\Debug\net6.0-windows\publish\CloudClassUtility.dll
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\bin\Debug\net6.0-windows\publish\CloudClassUtility.deps.json
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\bin\Debug\net6.0-windows\publish\CloudClassUtility.runtimeconfig.json
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\bin\Debug\net6.0-windows\publish\CloudClassUtility.pdb

@@ -2,10 +2,8 @@ version: 3.39{build}
 image: Visual Studio 2022
 configuration: Release
 platform: Any CPU
-build:
-  project: CloudClassUtility.sln
-  publish_core_console: true
-  verbosity: minimal
+build_script:
+- cmd: dotnet publish -p:PublishProfile=FolderProfile
 artifacts:
-- path: bin\Release\net6.0-windows
+- path: bin\Release\net6.0-windows\publish\win-x86\CloudClassUtility.exe
   name: CloudClassUtility
