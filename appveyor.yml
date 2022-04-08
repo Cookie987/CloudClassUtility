@@ -1,4 +1,4 @@
-version: 3.39{build}
+version: 3.400 - Preview{build}
 image: Visual Studio 2022
 configuration: Release
 platform: Any CPU

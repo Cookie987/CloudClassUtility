@@ -32,10 +32,11 @@ Partial Class FrmMaster
         '
         Me.btnStart.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnStart.AutoSize = True
         Me.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.btnStart.Location = New System.Drawing.Point(12, 12)
         Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(75, 23)
+        Me.btnStart.Size = New System.Drawing.Size(75, 24)
         Me.btnStart.TabIndex = 0
         Me.btnStart.Text = "开始(&S)"
         Me.btnStart.UseVisualStyleBackColor = True
@@ -44,10 +45,11 @@ Partial Class FrmMaster
         '
         Me.btnStop.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnStop.AutoSize = True
         Me.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.btnStop.Location = New System.Drawing.Point(100, 12)
         Me.btnStop.Name = "btnStop"
-        Me.btnStop.Size = New System.Drawing.Size(75, 23)
+        Me.btnStop.Size = New System.Drawing.Size(75, 24)
         Me.btnStop.TabIndex = 1
         Me.btnStop.Text = "停止(&P)"
         Me.btnStop.UseVisualStyleBackColor = True
@@ -64,10 +66,12 @@ Partial Class FrmMaster
         Me.ClientSize = New System.Drawing.Size(187, 49)
         Me.Controls.Add(Me.btnStop)
         Me.Controls.Add(Me.btnStart)
+        Me.MaximumSize = New System.Drawing.Size(203, 88)
         Me.MinimumSize = New System.Drawing.Size(203, 88)
         Me.Name = "FrmMaster"
         Me.Text = "主窗口"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 

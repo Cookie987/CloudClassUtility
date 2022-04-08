@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ziLUXkiF1r9o9fTIbCLdl3idmD44h/A5gQMzuu4LiFNbPxTyfQNcAigG9EcC3hjMthbdKLDiZ7CTlf5touf+MA==",
+  "dgSpecHash": "CpViNhhseCT+iyfIAr6muAunaPOG0qaBDvo6m14cJtIe2cZDg0kCfOG6voA2uRX65I7sZM2L2ltvl27ITmEGqQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\bilic\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\bilic\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.3\\microsoft.netcore.app.runtime.win-x86.6.0.3.nupkg.sha512",
-    "C:\\Users\\bilic\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.3\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.3.nupkg.sha512",
-    "C:\\Users\\bilic\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.3\\microsoft.aspnetcore.app.runtime.win-x86.6.0.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
