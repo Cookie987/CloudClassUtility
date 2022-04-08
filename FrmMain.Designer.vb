@@ -40,7 +40,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.窗口WToolStripMenuItem, Me.帮助HToolStripMenuItem, Me.日志LToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.窗口WToolStripMenuItem, Me.日志LToolStripMenuItem1, Me.帮助HToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.MdiWindowListItem = Me.窗口WToolStripMenuItem
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -103,19 +103,19 @@ Partial Class Form1
         '查看日志VToolStripMenuItem
         '
         Me.查看日志VToolStripMenuItem.Name = "查看日志VToolStripMenuItem"
-        Me.查看日志VToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.查看日志VToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.查看日志VToolStripMenuItem.Text = "查看日志(&V)"
         '
         '导出日志SToolStripMenuItem
         '
         Me.导出日志SToolStripMenuItem.Name = "导出日志SToolStripMenuItem"
-        Me.导出日志SToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.导出日志SToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.导出日志SToolStripMenuItem.Text = "导出日志(&S)"
         '
         '清除日志CToolStripMenuItem
         '
         Me.清除日志CToolStripMenuItem.Name = "清除日志CToolStripMenuItem"
-        Me.清除日志CToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.清除日志CToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.清除日志CToolStripMenuItem.Text = "清除日志(&C)"
         '
         'Form1

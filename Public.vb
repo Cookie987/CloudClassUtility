@@ -2,7 +2,7 @@
     Public Delay As Integer
     Public Notice
     Public LocalVersion
-    Public Log
+    Public Log As String
 
     Public Function RunCmd(ByVal strCMD As String) As String
         Dim p As New Process

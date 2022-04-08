@@ -45,10 +45,11 @@
         FrmWait.MdiParent = Form1
         FrmWait.Show()
         Log += Date.Now + " BtnUdpAttack.Click" + vbCrLf
-        Log += Date.Now + " Start unzip UdpAttack" + vbCrLf
+        Log += Date.Now + " Start unzip UdpAttack.exe" + vbCrLf
         My.Computer.FileSystem.CreateDirectory("\ProgramData\CloudClassUtility\")
         My.Computer.FileSystem.DeleteFile("\ProgramData\CloudClassUtility\UdpAttack.exe")
         My.Computer.FileSystem.WriteAllBytes("\ProgramData\CloudClassUtility\UdpAttack.exe", My.Resources.UdpAttack, True)
+        Log += Date.Now + " Done" + vbCrLf
         FrmWait.Hide()
         FrmUdpAttack.MdiParent = Form1
         FrmUdpAttack.Show()

@@ -19,6 +19,9 @@
     <Compile Update="FrmMaster.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmMonitor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmSetting.vb">
       <SubType>Form</SubType>
     </Compile>

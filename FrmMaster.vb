@@ -8,7 +8,6 @@
     Private Sub BtnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
         Log += Date.Now + " btnStart.Click" + vbCrLf
         Timer1.Interval = Delay
-        Timer2.Enabled = True
         Timer1.Enabled = True
         btnStop.Enabled = True
         btnStart.Enabled = False
@@ -16,9 +15,7 @@
 
     Private Sub BtnStop_Click(sender As Object, e As EventArgs) Handles btnStop.Click
         Log += Date.Now + " btnStop.Click" + vbCrLf
-        Timer2.Enabled = False
         Timer1.Enabled = False
-        ProgressBar1.Value = 0
         btnStart.Enabled = True
         btnStop.Enabled = False
     End Sub
@@ -37,15 +34,5 @@
         ElseIf frmSetting.cbxCustom.Checked = True Then
             Shell("taskkill /F /T /IM" + " " + frmSetting.tbxCustom.Text, vbHide)
         End If
-    End Sub
-
-    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        If ProgressBar1.Value = 100 Then
-            ProgressBar1.Value = 0
-        End If
-        If delay / 100 <= 100 Then
-            ProgressBar1.Value = ProgressBar1.Value + delay / 100
-        End If
-
     End Sub
 End Class

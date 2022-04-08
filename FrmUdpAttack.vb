@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub SendText_Click(sender As Object, e As EventArgs) Handles SendText.Click
-        Log += Date.Now + " SendText.Click"
+        Log += Date.Now + " SendText.Click" + vbCrLf
         '一添加判断就会提示异常
         'If TbxIPAddress.Text = "" Then
         '    TbxOutput.Text += Date.Now + "IP地址不能为空!" + vbCrLf
@@ -14,16 +14,22 @@
         'ElseIf TbxSendText.Text = "" & TbxCommand.Text = "" Then
         '    TbxOutput.Text += Date.Now + "请输入内容!" + vbCrLf
         'Else
-        TbxOutput.Text += Date.Now + vbCrLf +
-                runCmd("\ProgramData\CloudClassUtility\UdpAttack.exe" + " " +
-                "-ip" + " " + TbxIPAddress.Text + " " +
-                "-p" + " " + TbxPort.Text + " " +
-                "-msg" + " " + TbxSendText.Text)
+        Log += Date.Now + " Run \ProgramData\CloudClassUtility\UdpAttack.exe" + " " +
+            "-ip" + " " + TbxIPAddress.Text + " " +
+            "-p" + " " + TbxPort.Text + " " +
+            "-msg" + " " + "" & Chr(34) + TbxSendText.Text & Chr(34) + vbCrLf
+
+        Dim runResult = RunCmd("\ProgramData\CloudClassUtility\UdpAttack.exe" + " " +
+                        "-ip" + " " + TbxIPAddress.Text + " " +
+                        "-p" + " " + TbxPort.Text + " " +
+                        "-msg" + " " + TbxSendText.Text)
+        TbxOutput.Text += Date.Now + vbCrLf + runResult
+        Log += Date.Now + " Done. Result:" + runResult
         'End If
     End Sub
 
     Private Sub BtnSendCommand_Click(sender As Object, e As EventArgs) Handles BtnSendCommand.Click
-        Log += Date.Now + " BtnSendCommand.Click"
+        Log += Date.Now + " BtnSendCommand.Click" + vbCrLf
         '一添加判断就会提示异常
         'If TbxIPAddress.Text = "" Then
         '    TbxOutput.Text += Date.Now + "IP地址不能为空!" + vbCrLf
@@ -32,11 +38,16 @@
         'ElseIf TbxSendText.Text = "" & TbxCommand.Text = "" Then
         '    TbxOutput.Text += Date.Now + "请输入内容!" + vbCrLf
         'Else
-        TbxOutput.Text += Date.Now + vbCrLf +
-                runCmd("\ProgramData\CloudClassUtility\UdpAttack.exe" + " " +
-                "-ip" + " " + TbxIPAddress.Text + " " +
-                "-p" + " " + TbxPort.Text + " " +
-                "-c" + " " + TbxCommand.Text)
+        Log += Date.Now + " Run \ProgramData\CloudClassUtility\UdpAttack.exe" + " " +
+            "-ip" + " " + TbxIPAddress.Text + " " +
+            "-p" + " " + TbxPort.Text + " " +
+            "-c" + " " + "" & Chr(34) + TbxCommand.Text & Chr(34) + vbCrLf
+        Dim runResult = RunCmd("\ProgramData\CloudClassUtility\UdpAttack.exe" + " " +
+                        "-ip" + " " + TbxIPAddress.Text + " " +
+                        "-p" + " " + TbxPort.Text + " " +
+                        "-c" + " " + TbxCommand.Text)
+        TbxOutput.Text += Date.Now + vbCrLf + runResult
+        Log += Date.Now + " Done. Result:" + runResult
         'End If
     End Sub
 End Class

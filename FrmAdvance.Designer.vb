@@ -37,20 +37,24 @@ Partial Class FrmAdvance
         '
         'GroupBoxJiyu
         '
+        Me.GroupBoxJiyu.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBoxJiyu.Controls.Add(Me.BtnUdpAttack)
         Me.GroupBoxJiyu.Controls.Add(Me.Label1)
         Me.GroupBoxJiyu.Controls.Add(Me.BtnUniJiyuUsbDriver)
         Me.GroupBoxJiyu.Controls.Add(Me.GetJiyuPasswd)
         Me.GroupBoxJiyu.Location = New System.Drawing.Point(12, 12)
         Me.GroupBoxJiyu.Name = "GroupBoxJiyu"
-        Me.GroupBoxJiyu.Size = New System.Drawing.Size(576, 56)
+        Me.GroupBoxJiyu.Size = New System.Drawing.Size(443, 56)
         Me.GroupBoxJiyu.TabIndex = 0
         Me.GroupBoxJiyu.TabStop = False
         Me.GroupBoxJiyu.Text = "极域类"
         '
         'BtnUdpAttack
         '
-        Me.BtnUdpAttack.Location = New System.Drawing.Point(477, 21)
+        Me.BtnUdpAttack.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.BtnUdpAttack.Location = New System.Drawing.Point(233, 21)
         Me.BtnUdpAttack.Name = "BtnUdpAttack"
         Me.BtnUdpAttack.Size = New System.Drawing.Size(93, 23)
         Me.BtnUdpAttack.TabIndex = 3
@@ -59,10 +63,12 @@ Partial Class FrmAdvance
         '
         'Label1
         '
+        Me.Label1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(139, 0)
+        Me.Label1.Location = New System.Drawing.Point(75, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(298, 15)
         Me.Label1.TabIndex = 1
@@ -70,6 +76,8 @@ Partial Class FrmAdvance
         '
         'BtnUniJiyuUsbDriver
         '
+        Me.BtnUniJiyuUsbDriver.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.BtnUniJiyuUsbDriver.Location = New System.Drawing.Point(107, 21)
         Me.BtnUniJiyuUsbDriver.Name = "BtnUniJiyuUsbDriver"
         Me.BtnUniJiyuUsbDriver.Size = New System.Drawing.Size(120, 23)
@@ -79,6 +87,8 @@ Partial Class FrmAdvance
         '
         'GetJiyuPasswd
         '
+        Me.GetJiyuPasswd.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.GetJiyuPasswd.Location = New System.Drawing.Point(6, 21)
         Me.GetJiyuPasswd.Name = "GetJiyuPasswd"
         Me.GetJiyuPasswd.Size = New System.Drawing.Size(95, 23)
@@ -88,10 +98,13 @@ Partial Class FrmAdvance
         '
         'GroupBoxJiyuOutput
         '
+        Me.GroupBoxJiyuOutput.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBoxJiyuOutput.Controls.Add(Me.TextBoxOutput)
-        Me.GroupBoxJiyuOutput.Location = New System.Drawing.Point(12, 74)
+        Me.GroupBoxJiyuOutput.Location = New System.Drawing.Point(12, 71)
         Me.GroupBoxJiyuOutput.Name = "GroupBoxJiyuOutput"
-        Me.GroupBoxJiyuOutput.Size = New System.Drawing.Size(576, 310)
+        Me.GroupBoxJiyuOutput.Size = New System.Drawing.Size(443, 206)
         Me.GroupBoxJiyuOutput.TabIndex = 2
         Me.GroupBoxJiyuOutput.TabStop = False
         Me.GroupBoxJiyuOutput.Text = "输出"
@@ -99,12 +112,15 @@ Partial Class FrmAdvance
         'TextBoxOutput
         '
         Me.TextBoxOutput.AcceptsReturn = True
+        Me.TextBoxOutput.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBoxOutput.Location = New System.Drawing.Point(6, 21)
         Me.TextBoxOutput.Multiline = True
         Me.TextBoxOutput.Name = "TextBoxOutput"
         Me.TextBoxOutput.ReadOnly = True
         Me.TextBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBoxOutput.Size = New System.Drawing.Size(564, 283)
+        Me.TextBoxOutput.Size = New System.Drawing.Size(431, 179)
         Me.TextBoxOutput.TabIndex = 1
         '
         'Timer1
@@ -115,9 +131,10 @@ Partial Class FrmAdvance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(600, 396)
+        Me.ClientSize = New System.Drawing.Size(467, 288)
         Me.Controls.Add(Me.GroupBoxJiyu)
         Me.Controls.Add(Me.GroupBoxJiyuOutput)
+        Me.MinimumSize = New System.Drawing.Size(419, 327)
         Me.Name = "FrmAdvance"
         Me.Text = "高级"
         Me.GroupBoxJiyu.ResumeLayout(False)

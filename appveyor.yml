@@ -1,0 +1,11 @@
+version: 3.39{build}
+image: Visual Studio 2022
+configuration: Release
+platform: Any CPU
+build:
+  project: CloudClassUtility.sln
+  publish_core_console: true
+  verbosity: minimal
+artifacts:
+- path: bin\Release\net6.0-windows
+  name: CloudClassUtility

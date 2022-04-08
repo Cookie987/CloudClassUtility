@@ -16,6 +16,7 @@
     <PackageIcon>favicon.png</PackageIcon>
     <PackageIconUrl />
     <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>

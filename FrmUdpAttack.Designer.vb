@@ -39,6 +39,7 @@ Partial Class FrmUdpAttack
         Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TbxOutput = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -62,8 +63,8 @@ Partial Class FrmUdpAttack
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(256, 105)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Tips: 如果对方也在使用本软件,那么本页的功能" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "可能不会生效" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "指定目标IP时，可以有以下几种指定方式：" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "指定单个IP，如 192.168.80.12" &
-    "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "指定IP范围，如 192.168.80.10-56" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "指定IP所在C段，如 192.168.80.1/24"
+        Me.Label2.Text = "Tips: 如果对方也在使用本软件,那么本页的功能" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "可能不会生效" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "指定目标IP时, 可以有以下几种指定方式:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "指定单个IP, 如 192.168.80." &
+    "12" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "指定IP范围, 如 192.168.80.10-56" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "指定IP所在C段, 如 192.168.80.1/24"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label3
@@ -101,6 +102,7 @@ Partial Class FrmUdpAttack
         '
         'Label5
         '
+        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -179,8 +181,12 @@ Partial Class FrmUdpAttack
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.TbxOutput)
         Me.GroupBox1.Location = New System.Drawing.Point(292, 9)
+        Me.GroupBox1.MinimumSize = New System.Drawing.Size(233, 324)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(233, 324)
         Me.GroupBox1.TabIndex = 16
@@ -190,6 +196,9 @@ Partial Class FrmUdpAttack
         'TbxOutput
         '
         Me.TbxOutput.AcceptsReturn = True
+        Me.TbxOutput.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TbxOutput.Location = New System.Drawing.Point(6, 18)
         Me.TbxOutput.MaxLength = 0
         Me.TbxOutput.Multiline = True
@@ -199,11 +208,21 @@ Partial Class FrmUdpAttack
         Me.TbxOutput.Size = New System.Drawing.Size(221, 300)
         Me.TbxOutput.TabIndex = 0
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(72, 274)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(124, 45)
+        Me.Label10.TabIndex = 17
+        Me.Label10.Text = "* 如果输入的命令有空" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "格, 可能不会显示执行" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "结果"
+        '
         'FrmUdpAttack
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(537, 345)
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.BtnSendCommand)
@@ -246,4 +265,5 @@ Partial Class FrmUdpAttack
     Friend WithEvents Label9 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents TbxOutput As TextBox
+    Friend WithEvents Label10 As Label
 End Class

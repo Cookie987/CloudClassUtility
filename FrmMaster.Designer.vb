@@ -25,13 +25,13 @@ Partial Class FrmMaster
         Me.components = New System.ComponentModel.Container()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.btnStop = New System.Windows.Forms.Button()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'btnStart
         '
+        Me.btnStart.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.btnStart.Location = New System.Drawing.Point(12, 12)
         Me.btnStart.Name = "btnStart"
@@ -42,6 +42,8 @@ Partial Class FrmMaster
         '
         'btnStop
         '
+        Me.btnStop.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.btnStop.Location = New System.Drawing.Point(100, 12)
         Me.btnStop.Name = "btnStop"
@@ -50,32 +52,19 @@ Partial Class FrmMaster
         Me.btnStop.Text = "停止(&P)"
         Me.btnStop.UseVisualStyleBackColor = True
         '
-        'ProgressBar1
-        '
-        Me.ProgressBar1.Location = New System.Drawing.Point(12, 41)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(163, 23)
-        Me.ProgressBar1.TabIndex = 2
-        '
         'Timer1
         '
         Me.Timer1.Interval = 200
-        '
-        'Timer2
-        '
-        Me.Timer2.Interval = 1
         '
         'FrmMaster
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(187, 78)
-        Me.Controls.Add(Me.ProgressBar1)
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(187, 49)
         Me.Controls.Add(Me.btnStop)
         Me.Controls.Add(Me.btnStart)
-        Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(203, 117)
-        Me.MinimumSize = New System.Drawing.Size(203, 117)
+        Me.MinimumSize = New System.Drawing.Size(203, 88)
         Me.Name = "FrmMaster"
         Me.Text = "主窗口"
         Me.ResumeLayout(False)
@@ -84,7 +73,5 @@ Partial Class FrmMaster
 
     Friend WithEvents btnStart As Button
     Friend WithEvents btnStop As Button
-    Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents Timer2 As Timer
 End Class
