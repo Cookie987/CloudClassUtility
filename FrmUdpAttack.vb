@@ -7,6 +7,7 @@
     Private Sub BtnSendText_Click(sender As Object, e As EventArgs) Handles BtnSendText.Click
         Log += Date.Now + " SendText.Click" + vbCrLf
         Dim beforDT = Date.Now '计时
+
         '一添加判断就会提示异常
         'If TbxIPAddress.Text = "" Then
         '    TbxOutput.Text += Date.Now + "IP地址不能为空!" + vbCrLf
@@ -15,6 +16,7 @@
         'ElseIf TbxSendText.Text = "" & TbxCommand.Text = "" Then
         '    TbxOutput.Text += Date.Now + "请输入内容!" + vbCrLf
         'Else
+
         Log += Date.Now + " Run \ProgramData\CloudClassUtility\UdpAttack.exe" + " " +
             "-ip" + " " + TbxIPAddress.Text + " " +
             "-p" + " " + TbxPort.Text + " " +
@@ -35,6 +37,7 @@
     Private Sub BtnSendCommand_Click(sender As Object, e As EventArgs) Handles BtnSendCommand.Click
         Log += Date.Now + " BtnSendCommand.Click" + vbCrLf
         Dim beforDT = Date.Now '计时
+
         '一添加判断就会提示异常
         'If TbxIPAddress.Text = "" Then
         '    TbxOutput.Text += Date.Now + "IP地址不能为空!" + vbCrLf
@@ -43,6 +46,7 @@
         'ElseIf TbxSendText.Text = "" & TbxCommand.Text = "" Then
         '    TbxOutput.Text += Date.Now + "请输入内容!" + vbCrLf
         'Else
+
         Log += Date.Now + " Run \ProgramData\CloudClassUtility\UdpAttack.exe" + " " +
             "-ip" + " " + TbxIPAddress.Text + " " +
             "-p" + " " + TbxPort.Text + " " +
