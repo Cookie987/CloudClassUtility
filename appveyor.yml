@@ -14,7 +14,7 @@ artifacts:
 deploy:
 - provider: GitHub
   tag: 22w$(APPVEYOR_BUILD_NUMBER)a
-  release: v$(appveyor_build_version)
+  release: $(appveyor_build_version)
   auth_token:
     secure: w0Rgb7Q7p2t6sAWtWcf5y76IXQoFP0HaKLNKU3ABOuFBS0bHh+tKE12NFT4IxOi9
   repository: Cookie987/CloudClassUtility
