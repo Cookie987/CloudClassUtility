@@ -4,8 +4,9 @@
         TbxOutput.Text += Date.Now + " 本功能原理由 ht0Ruial 大佬提供" + vbCrLf
     End Sub
 
-    Private Sub SendText_Click(sender As Object, e As EventArgs) Handles SendText.Click
+    Private Sub BtnSendText_Click(sender As Object, e As EventArgs) Handles BtnSendText.Click
         Log += Date.Now + " SendText.Click" + vbCrLf
+        Dim beforDT = Date.Now '计时
         '一添加判断就会提示异常
         'If TbxIPAddress.Text = "" Then
         '    TbxOutput.Text += Date.Now + "IP地址不能为空!" + vbCrLf
@@ -24,12 +25,16 @@
                         "-p" + " " + TbxPort.Text + " " +
                         "-msg" + " " + TbxSendText.Text)
         TbxOutput.Text += Date.Now + vbCrLf + runResult
+        Dim afterDT = Date.Now '计时
+        Dim UseageTime = CStr(DateDiff(DateInterval.Second, beforDT, afterDT))
+        TbxOutput.Text = TbxOutput.Text + Date.Now + " " + "用时: " + UseageTime + "s" + vbCrLf
         Log += Date.Now + " Done. Result:" + runResult
         'End If
     End Sub
 
     Private Sub BtnSendCommand_Click(sender As Object, e As EventArgs) Handles BtnSendCommand.Click
         Log += Date.Now + " BtnSendCommand.Click" + vbCrLf
+        Dim beforDT = Date.Now '计时
         '一添加判断就会提示异常
         'If TbxIPAddress.Text = "" Then
         '    TbxOutput.Text += Date.Now + "IP地址不能为空!" + vbCrLf
@@ -47,6 +52,9 @@
                         "-p" + " " + TbxPort.Text + " " +
                         "-c" + " " + TbxCommand.Text)
         TbxOutput.Text += Date.Now + vbCrLf + runResult
+        Dim afterDT = Date.Now '计时
+        Dim UseageTime = CStr(DateDiff(DateInterval.Second, beforDT, afterDT))
+        TbxOutput.Text = TbxOutput.Text + Date.Now + " " + "用时: " + UseageTime + "s" + vbCrLf
         Log += Date.Now + " Done. Result:" + runResult
         'End If
     End Sub

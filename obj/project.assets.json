@@ -1,11 +1,50 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "ReaLTaiizor/3.7.8.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/ReaLTaiizor.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/ReaLTaiizor.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ReaLTaiizor/3.7.8.6": {
+      "sha512": "b7vfciDcXqoIWjYrr760TyyEZSadlAgkaglLFPrRbzHNla7WqaojmC8VzLt/soaD2yGd/56LN0spedW7JcxMFw==",
+      "type": "package",
+      "path": "realtaiizor/3.7.8.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Taiizor.png",
+        "lib/net48/ReaLTaiizor.dll",
+        "lib/net48/ReaLTaiizor.xml",
+        "lib/net5.0-windows7.0/ReaLTaiizor.dll",
+        "lib/net5.0-windows7.0/ReaLTaiizor.xml",
+        "lib/net6.0-windows7.0/ReaLTaiizor.dll",
+        "lib/net6.0-windows7.0/ReaLTaiizor.xml",
+        "lib/net7.0-windows7.0/ReaLTaiizor.dll",
+        "lib/net7.0-windows7.0/ReaLTaiizor.xml",
+        "lib/netcoreapp3.1/ReaLTaiizor.dll",
+        "lib/netcoreapp3.1/ReaLTaiizor.xml",
+        "realtaiizor.3.7.8.6.nupkg.sha512",
+        "realtaiizor.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "ReaLTaiizor >= 3.7.8.6"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\bilic\\.nuget\\packages\\": {}
@@ -45,6 +84,12 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "ReaLTaiizor": {
+            "target": "Package",
+            "version": "[3.7.8.6, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

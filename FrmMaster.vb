@@ -23,7 +23,7 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         If frmSetting.cbxJiyu.Checked = True Then
             Shell("taskkill /F /T /IM StudentMain.exe", vbHide)
-        ElseIf frmSetting.cbxRcc.Checked = True Then
+        ElseIf frmSetting.CbxRcc.Checked = True Then
             Shell("taskkill /F /T /IM ClassManagerApp.exe", vbHide)
             Shell("taskkill /F /T /IM RJRemoteserver.exe", vbHide)
             Shell("taskkill /F /T /IM RjUsbController.exe", vbHide)

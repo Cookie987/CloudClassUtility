@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CpViNhhseCT+iyfIAr6muAunaPOG0qaBDvo6m14cJtIe2cZDg0kCfOG6voA2uRX65I7sZM2L2ltvl27ITmEGqQ==",
+  "dgSpecHash": "8YgMoMeTkpKU7MqqJ1xjEMYo4XhRv55S9bSxwEf76ljyS/Q9m82eaFY9TSnvrEOBb1vLkLp/l2PDLQrN+ZdiCw==",
   "success": true,
   "projectFilePath": "C:\\Users\\bilic\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\bilic\\.nuget\\packages\\realtaiizor\\3.7.8.6\\realtaiizor.3.7.8.6.nupkg.sha512"
+  ],
   "logs": []
 }

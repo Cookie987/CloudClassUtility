@@ -56,6 +56,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ReaLTaiizor" Version="3.7.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -23,43 +23,45 @@ Partial Class FrmAdvance
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.GroupBoxJiyu = New System.Windows.Forms.GroupBox()
-        Me.BtnUdpAttack = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.BtnUniJiyuUsbDriver = New System.Windows.Forms.Button()
-        Me.GetJiyuPasswd = New System.Windows.Forms.Button()
         Me.GroupBoxJiyuOutput = New System.Windows.Forms.GroupBox()
         Me.TextBoxOutput = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.GroupBoxJiyu.SuspendLayout()
+        Me.GroupBoxRedSpider = New System.Windows.Forms.GroupBox()
+        Me.GetJiyuPasswd = New ReaLTaiizor.Controls.MaterialButton()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.BtnUdpAttack = New ReaLTaiizor.Controls.MaterialButton()
+        Me.BtnUniJiyuUsbDriver = New ReaLTaiizor.Controls.MaterialButton()
         Me.GroupBoxJiyuOutput.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'GroupBoxJiyu
+        'GroupBoxJiyuOutput
         '
-        Me.GroupBoxJiyu.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.GroupBoxJiyuOutput.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBoxJiyu.Controls.Add(Me.BtnUdpAttack)
-        Me.GroupBoxJiyu.Controls.Add(Me.Label1)
-        Me.GroupBoxJiyu.Controls.Add(Me.BtnUniJiyuUsbDriver)
-        Me.GroupBoxJiyu.Controls.Add(Me.GetJiyuPasswd)
-        Me.GroupBoxJiyu.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBoxJiyu.Name = "GroupBoxJiyu"
-        Me.GroupBoxJiyu.Size = New System.Drawing.Size(443, 56)
-        Me.GroupBoxJiyu.TabIndex = 0
-        Me.GroupBoxJiyu.TabStop = False
-        Me.GroupBoxJiyu.Text = "极域类"
+        Me.GroupBoxJiyuOutput.Controls.Add(Me.TextBoxOutput)
+        Me.GroupBoxJiyuOutput.Location = New System.Drawing.Point(12, 155)
+        Me.GroupBoxJiyuOutput.Name = "GroupBoxJiyuOutput"
+        Me.GroupBoxJiyuOutput.Size = New System.Drawing.Size(490, 207)
+        Me.GroupBoxJiyuOutput.TabIndex = 2
+        Me.GroupBoxJiyuOutput.TabStop = False
+        Me.GroupBoxJiyuOutput.Text = "输出"
         '
-        'BtnUdpAttack
+        'TextBoxOutput
         '
-        Me.BtnUdpAttack.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.BtnUdpAttack.Location = New System.Drawing.Point(233, 21)
-        Me.BtnUdpAttack.Name = "BtnUdpAttack"
-        Me.BtnUdpAttack.Size = New System.Drawing.Size(93, 23)
-        Me.BtnUdpAttack.TabIndex = 3
-        Me.BtnUdpAttack.Text = "UDP重放攻击"
-        Me.BtnUdpAttack.UseVisualStyleBackColor = True
+        Me.TextBoxOutput.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBoxOutput.Location = New System.Drawing.Point(6, 21)
+        Me.TextBoxOutput.MaxLength = 0
+        Me.TextBoxOutput.Multiline = True
+        Me.TextBoxOutput.Name = "TextBoxOutput"
+        Me.TextBoxOutput.ReadOnly = True
+        Me.TextBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBoxOutput.Size = New System.Drawing.Size(478, 180)
+        Me.TextBoxOutput.TabIndex = 0
         '
         'Label1
         '
@@ -68,89 +70,127 @@ Partial Class FrmAdvance
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(75, 0)
+        Me.Label1.Location = New System.Drawing.Point(96, 3)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(298, 15)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "警告: 本页面所有功能均未经实机测试, 不保证全部有效!"
         '
-        'BtnUniJiyuUsbDriver
-        '
-        Me.BtnUniJiyuUsbDriver.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.BtnUniJiyuUsbDriver.Location = New System.Drawing.Point(107, 21)
-        Me.BtnUniJiyuUsbDriver.Name = "BtnUniJiyuUsbDriver"
-        Me.BtnUniJiyuUsbDriver.Size = New System.Drawing.Size(120, 23)
-        Me.BtnUniJiyuUsbDriver.TabIndex = 2
-        Me.BtnUniJiyuUsbDriver.Text = "卸载极域USB驱动"
-        Me.BtnUniJiyuUsbDriver.UseVisualStyleBackColor = True
-        '
-        'GetJiyuPasswd
-        '
-        Me.GetJiyuPasswd.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.GetJiyuPasswd.Location = New System.Drawing.Point(6, 21)
-        Me.GetJiyuPasswd.Name = "GetJiyuPasswd"
-        Me.GetJiyuPasswd.Size = New System.Drawing.Size(95, 23)
-        Me.GetJiyuPasswd.TabIndex = 0
-        Me.GetJiyuPasswd.Text = "获取极域密码"
-        Me.GetJiyuPasswd.UseVisualStyleBackColor = True
-        '
-        'GroupBoxJiyuOutput
-        '
-        Me.GroupBoxJiyuOutput.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBoxJiyuOutput.Controls.Add(Me.TextBoxOutput)
-        Me.GroupBoxJiyuOutput.Location = New System.Drawing.Point(12, 71)
-        Me.GroupBoxJiyuOutput.Name = "GroupBoxJiyuOutput"
-        Me.GroupBoxJiyuOutput.Size = New System.Drawing.Size(443, 206)
-        Me.GroupBoxJiyuOutput.TabIndex = 2
-        Me.GroupBoxJiyuOutput.TabStop = False
-        Me.GroupBoxJiyuOutput.Text = "输出"
-        '
-        'TextBoxOutput
-        '
-        Me.TextBoxOutput.AcceptsReturn = True
-        Me.TextBoxOutput.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBoxOutput.Location = New System.Drawing.Point(6, 21)
-        Me.TextBoxOutput.Multiline = True
-        Me.TextBoxOutput.Name = "TextBoxOutput"
-        Me.TextBoxOutput.ReadOnly = True
-        Me.TextBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBoxOutput.Size = New System.Drawing.Size(431, 179)
-        Me.TextBoxOutput.TabIndex = 1
-        '
         'Timer1
         '
         Me.Timer1.Interval = 1
+        '
+        'GroupBoxRedSpider
+        '
+        Me.GroupBoxRedSpider.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBoxRedSpider.Location = New System.Drawing.Point(12, 93)
+        Me.GroupBoxRedSpider.Name = "GroupBoxRedSpider"
+        Me.GroupBoxRedSpider.Size = New System.Drawing.Size(490, 56)
+        Me.GroupBoxRedSpider.TabIndex = 4
+        Me.GroupBoxRedSpider.TabStop = False
+        Me.GroupBoxRedSpider.Text = "红蜘蛛类"
+        '
+        'GetJiyuPasswd
+        '
+        Me.GetJiyuPasswd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GetJiyuPasswd.Depth = 0
+        Me.GetJiyuPasswd.DrawShadows = True
+        Me.GetJiyuPasswd.Font = New System.Drawing.Font("更纱黑体 UI SC", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.GetJiyuPasswd.HighEmphasis = True
+        Me.GetJiyuPasswd.Icon = Nothing
+        Me.GetJiyuPasswd.Location = New System.Drawing.Point(7, 24)
+        Me.GetJiyuPasswd.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.GetJiyuPasswd.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.GetJiyuPasswd.Name = "GetJiyuPasswd"
+        Me.GetJiyuPasswd.Size = New System.Drawing.Size(117, 36)
+        Me.GetJiyuPasswd.TabIndex = 1
+        Me.GetJiyuPasswd.Text = "获取极域密码"
+        Me.GetJiyuPasswd.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.GetJiyuPasswd.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.GetJiyuPasswd.UseAccentColor = False
+        Me.GetJiyuPasswd.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.BtnUdpAttack)
+        Me.GroupBox1.Controls.Add(Me.BtnUniJiyuUsbDriver)
+        Me.GroupBox1.Controls.Add(Me.GetJiyuPasswd)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(490, 75)
+        Me.GroupBox1.TabIndex = 5
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "极域类"
+        '
+        'BtnUdpAttack
+        '
+        Me.BtnUdpAttack.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnUdpAttack.Depth = 0
+        Me.BtnUdpAttack.DrawShadows = True
+        Me.BtnUdpAttack.HighEmphasis = True
+        Me.BtnUdpAttack.Icon = Nothing
+        Me.BtnUdpAttack.Location = New System.Drawing.Point(291, 24)
+        Me.BtnUdpAttack.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnUdpAttack.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnUdpAttack.Name = "BtnUdpAttack"
+        Me.BtnUdpAttack.Size = New System.Drawing.Size(117, 36)
+        Me.BtnUdpAttack.TabIndex = 3
+        Me.BtnUdpAttack.Text = "UDP 重放攻击"
+        Me.BtnUdpAttack.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnUdpAttack.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnUdpAttack.UseAccentColor = False
+        Me.BtnUdpAttack.UseVisualStyleBackColor = True
+        '
+        'BtnUniJiyuUsbDriver
+        '
+        Me.BtnUniJiyuUsbDriver.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnUniJiyuUsbDriver.Depth = 0
+        Me.BtnUniJiyuUsbDriver.DrawShadows = True
+        Me.BtnUniJiyuUsbDriver.HighEmphasis = True
+        Me.BtnUniJiyuUsbDriver.Icon = Nothing
+        Me.BtnUniJiyuUsbDriver.Location = New System.Drawing.Point(132, 24)
+        Me.BtnUniJiyuUsbDriver.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnUniJiyuUsbDriver.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnUniJiyuUsbDriver.Name = "BtnUniJiyuUsbDriver"
+        Me.BtnUniJiyuUsbDriver.Size = New System.Drawing.Size(151, 36)
+        Me.BtnUniJiyuUsbDriver.TabIndex = 2
+        Me.BtnUniJiyuUsbDriver.Text = "卸载极域 USB 驱动"
+        Me.BtnUniJiyuUsbDriver.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnUniJiyuUsbDriver.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnUniJiyuUsbDriver.UseAccentColor = False
+        Me.BtnUniJiyuUsbDriver.UseVisualStyleBackColor = True
         '
         'FrmAdvance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(467, 288)
-        Me.Controls.Add(Me.GroupBoxJiyu)
+        Me.ClientSize = New System.Drawing.Size(514, 374)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.GroupBoxRedSpider)
         Me.Controls.Add(Me.GroupBoxJiyuOutput)
         Me.MinimumSize = New System.Drawing.Size(419, 327)
         Me.Name = "FrmAdvance"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "高级"
-        Me.GroupBoxJiyu.ResumeLayout(False)
-        Me.GroupBoxJiyu.PerformLayout()
+        Me.TransparencyKey = System.Drawing.Color.Fuchsia
         Me.GroupBoxJiyuOutput.ResumeLayout(False)
         Me.GroupBoxJiyuOutput.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents GroupBoxJiyu As GroupBox
-    Friend WithEvents GetJiyuPasswd As Button
     Friend WithEvents GroupBoxJiyuOutput As GroupBox
-    Friend WithEvents TextBoxOutput As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents BtnUniJiyuUsbDriver As Button
-    Friend WithEvents BtnUdpAttack As Button
+    Friend WithEvents GroupBoxRedSpider As GroupBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents GetJiyuPasswd As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents BtnUdpAttack As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents BtnUniJiyuUsbDriver As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents TextBoxOutput As TextBox
 End Class

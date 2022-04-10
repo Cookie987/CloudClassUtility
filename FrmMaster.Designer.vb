@@ -23,40 +23,52 @@ Partial Class FrmMaster
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.btnStart = New System.Windows.Forms.Button()
-        Me.btnStop = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.btnStart = New ReaLTaiizor.Controls.MaterialButton()
+        Me.btnStop = New ReaLTaiizor.Controls.MaterialButton()
         Me.SuspendLayout()
-        '
-        'btnStart
-        '
-        Me.btnStart.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnStart.AutoSize = True
-        Me.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnStart.Location = New System.Drawing.Point(12, 12)
-        Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(75, 24)
-        Me.btnStart.TabIndex = 0
-        Me.btnStart.Text = "开始(&S)"
-        Me.btnStart.UseVisualStyleBackColor = True
-        '
-        'btnStop
-        '
-        Me.btnStop.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnStop.AutoSize = True
-        Me.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnStop.Location = New System.Drawing.Point(100, 12)
-        Me.btnStop.Name = "btnStop"
-        Me.btnStop.Size = New System.Drawing.Size(75, 24)
-        Me.btnStop.TabIndex = 1
-        Me.btnStop.Text = "停止(&P)"
-        Me.btnStop.UseVisualStyleBackColor = True
         '
         'Timer1
         '
         Me.Timer1.Interval = 200
+        '
+        'btnStart
+        '
+        Me.btnStart.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnStart.Depth = 0
+        Me.btnStart.DrawShadows = True
+        Me.btnStart.HighEmphasis = True
+        Me.btnStart.Icon = Nothing
+        Me.btnStart.Location = New System.Drawing.Point(13, 6)
+        Me.btnStart.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnStart.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(53, 36)
+        Me.btnStart.TabIndex = 2
+        Me.btnStart.Text = "开始"
+        Me.btnStart.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.btnStart.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btnStart.UseAccentColor = False
+        Me.btnStart.UseVisualStyleBackColor = True
+        '
+        'btnStop
+        '
+        Me.btnStop.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnStop.Depth = 0
+        Me.btnStop.DrawShadows = True
+        Me.btnStop.HighEmphasis = True
+        Me.btnStop.Icon = Nothing
+        Me.btnStop.Location = New System.Drawing.Point(121, 6)
+        Me.btnStop.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnStop.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.btnStop.Name = "btnStop"
+        Me.btnStop.Size = New System.Drawing.Size(53, 36)
+        Me.btnStop.TabIndex = 3
+        Me.btnStop.Text = "停止"
+        Me.btnStop.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.btnStop.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btnStop.UseAccentColor = False
+        Me.btnStop.UseVisualStyleBackColor = True
         '
         'FrmMaster
         '
@@ -74,8 +86,7 @@ Partial Class FrmMaster
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnStart As Button
-    Friend WithEvents btnStop As Button
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents btnStart As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents btnStop As ReaLTaiizor.Controls.MaterialButton
 End Class

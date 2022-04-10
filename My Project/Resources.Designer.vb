@@ -63,6 +63,26 @@ Namespace My.Resources
         '''<summary>
         '''  查找 System.Byte[] 类型的本地化资源。
         '''</summary>
+        Friend ReadOnly Property REDAgent() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("REDAgent", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Byte[] 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property redhooks() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("redhooks", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Byte[] 类型的本地化资源。
+        '''</summary>
         Friend ReadOnly Property UdpAttack() As Byte()
             Get
                 Dim obj As Object = ResourceManager.GetObject("UdpAttack", resourceCulture)

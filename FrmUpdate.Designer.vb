@@ -26,7 +26,7 @@ Partial Class FrmUpdate
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button1 = New ReaLTaiizor.Controls.MaterialButton()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -74,31 +74,42 @@ Partial Class FrmUpdate
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 309)
+        Me.Button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.Button1.Depth = 0
+        Me.Button1.DrawShadows = True
+        Me.Button1.HighEmphasis = True
+        Me.Button1.Icon = Nothing
+        Me.Button1.Location = New System.Drawing.Point(138, 312)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.Button1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(337, 23)
+        Me.Button1.Size = New System.Drawing.Size(85, 36)
         Me.Button1.TabIndex = 2
-        Me.Button1.Text = "重新检测(&R)"
+        Me.Button1.Text = "重新检查"
+        Me.Button1.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.Button1.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.Button1.UseAccentColor = False
         Me.Button1.UseVisualStyleBackColor = True
         '
         'FrmUpdate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(361, 342)
+        Me.ClientSize = New System.Drawing.Size(361, 359)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(377, 381)
-        Me.MinimumSize = New System.Drawing.Size(377, 381)
+        Me.MaximumSize = New System.Drawing.Size(377, 398)
+        Me.MinimumSize = New System.Drawing.Size(377, 398)
         Me.Name = "FrmUpdate"
         Me.Text = "更新"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -106,5 +117,5 @@ Partial Class FrmUpdate
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Button1 As ReaLTaiizor.Controls.MaterialButton
 End Class
