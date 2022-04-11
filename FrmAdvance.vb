@@ -60,7 +60,15 @@
         FrmUdpAttack.Show()
     End Sub
 
-    Private Sub TextBoxOutput_TextChanged(sender As Object, e As EventArgs)
-
+    Private Sub BtnCrackRedSpider_Click(sender As Object, e As EventArgs) Handles BtnCrackRedSpider.Click
+        Log += DateTime.Now + " BtnCrackRedSpider.Click" + vbCrLf
+        Form1.MaterialLabel1.Text = "警告" + vbCrLf +
+            "本功能还在测试" + vbCrLf +
+            "并且仅适用于 红蜘蛛 v6.2.1160 版本" + vbCrLf +
+            "如果使用不当" + vbCrLf +
+            "可能会对您和造成损伤 (bushi)" + vbCrLf +
+            "请谨慎使用" + vbCrLf + vbCrLf +
+            "* 本功能由 leishui 提供破解文件"
+        Form1.MaterialCard1.Visible = True
     End Sub
 End Class

@@ -69,4 +69,21 @@
         'Loop
         'Log += Date.Now + vbCrLf
     End Sub
+
+    Private Sub BtnOK_Click(sender As Object, e As EventArgs) Handles BtnOK.Click
+        Log += DateTime.Now + " BtnOK.Click" + vbCrLf
+        MaterialCard1.Visible = False
+        ReturnValue = 1
+    End Sub
+
+    Private Sub BtnChance_Click(sender As Object, e As EventArgs) Handles BtnChance.Click
+        Log += DateTime.Now + " BtnChance.Click" + vbCrLf
+        MaterialCard1.Visible = False
+        ReturnValue = 0
+    End Sub
+
+    Private Sub 监视器VToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 监视器VToolStripMenuItem.Click
+        FrmMonitor.MdiParent = Me
+        FrmMonitor.Show()
+    End Sub
 End Class

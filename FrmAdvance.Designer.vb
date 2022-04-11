@@ -28,11 +28,13 @@ Partial Class FrmAdvance
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBoxRedSpider = New System.Windows.Forms.GroupBox()
+        Me.BtnCrackRedSpider = New ReaLTaiizor.Controls.MaterialButton()
         Me.GetJiyuPasswd = New ReaLTaiizor.Controls.MaterialButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BtnUdpAttack = New ReaLTaiizor.Controls.MaterialButton()
         Me.BtnUniJiyuUsbDriver = New ReaLTaiizor.Controls.MaterialButton()
         Me.GroupBoxJiyuOutput.SuspendLayout()
+        Me.GroupBoxRedSpider.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -42,9 +44,9 @@ Partial Class FrmAdvance
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBoxJiyuOutput.Controls.Add(Me.TextBoxOutput)
-        Me.GroupBoxJiyuOutput.Location = New System.Drawing.Point(12, 155)
+        Me.GroupBoxJiyuOutput.Location = New System.Drawing.Point(12, 176)
         Me.GroupBoxJiyuOutput.Name = "GroupBoxJiyuOutput"
-        Me.GroupBoxJiyuOutput.Size = New System.Drawing.Size(490, 207)
+        Me.GroupBoxJiyuOutput.Size = New System.Drawing.Size(490, 217)
         Me.GroupBoxJiyuOutput.TabIndex = 2
         Me.GroupBoxJiyuOutput.TabStop = False
         Me.GroupBoxJiyuOutput.Text = "输出"
@@ -60,7 +62,7 @@ Partial Class FrmAdvance
         Me.TextBoxOutput.Name = "TextBoxOutput"
         Me.TextBoxOutput.ReadOnly = True
         Me.TextBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TextBoxOutput.Size = New System.Drawing.Size(478, 180)
+        Me.TextBoxOutput.Size = New System.Drawing.Size(478, 190)
         Me.TextBoxOutput.TabIndex = 0
         '
         'Label1
@@ -84,12 +86,32 @@ Partial Class FrmAdvance
         '
         Me.GroupBoxRedSpider.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBoxRedSpider.Controls.Add(Me.BtnCrackRedSpider)
         Me.GroupBoxRedSpider.Location = New System.Drawing.Point(12, 93)
         Me.GroupBoxRedSpider.Name = "GroupBoxRedSpider"
-        Me.GroupBoxRedSpider.Size = New System.Drawing.Size(490, 56)
+        Me.GroupBoxRedSpider.Size = New System.Drawing.Size(490, 77)
         Me.GroupBoxRedSpider.TabIndex = 4
         Me.GroupBoxRedSpider.TabStop = False
         Me.GroupBoxRedSpider.Text = "红蜘蛛类"
+        '
+        'BtnCrackRedSpider
+        '
+        Me.BtnCrackRedSpider.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnCrackRedSpider.Depth = 0
+        Me.BtnCrackRedSpider.DrawShadows = True
+        Me.BtnCrackRedSpider.HighEmphasis = True
+        Me.BtnCrackRedSpider.Icon = Nothing
+        Me.BtnCrackRedSpider.Location = New System.Drawing.Point(7, 24)
+        Me.BtnCrackRedSpider.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnCrackRedSpider.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnCrackRedSpider.Name = "BtnCrackRedSpider"
+        Me.BtnCrackRedSpider.Size = New System.Drawing.Size(101, 36)
+        Me.BtnCrackRedSpider.TabIndex = 4
+        Me.BtnCrackRedSpider.Text = "破解红蜘蛛"
+        Me.BtnCrackRedSpider.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnCrackRedSpider.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnCrackRedSpider.UseAccentColor = False
+        Me.BtnCrackRedSpider.UseVisualStyleBackColor = True
         '
         'GetJiyuPasswd
         '
@@ -168,7 +190,7 @@ Partial Class FrmAdvance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(514, 374)
+        Me.ClientSize = New System.Drawing.Size(514, 405)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBoxRedSpider)
         Me.Controls.Add(Me.GroupBoxJiyuOutput)
@@ -179,6 +201,8 @@ Partial Class FrmAdvance
         Me.TransparencyKey = System.Drawing.Color.Fuchsia
         Me.GroupBoxJiyuOutput.ResumeLayout(False)
         Me.GroupBoxJiyuOutput.PerformLayout()
+        Me.GroupBoxRedSpider.ResumeLayout(False)
+        Me.GroupBoxRedSpider.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -193,4 +217,5 @@ Partial Class FrmAdvance
     Friend WithEvents BtnUdpAttack As ReaLTaiizor.Controls.MaterialButton
     Friend WithEvents BtnUniJiyuUsbDriver As ReaLTaiizor.Controls.MaterialButton
     Friend WithEvents TextBoxOutput As TextBox
+    Friend WithEvents BtnCrackRedSpider As ReaLTaiizor.Controls.MaterialButton
 End Class
