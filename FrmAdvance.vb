@@ -52,7 +52,10 @@
         Log += Date.Now + " BtnUdpAttack.Click" + vbCrLf
         Log += Date.Now + " Start unzip UdpAttack.exe" + vbCrLf
         My.Computer.FileSystem.CreateDirectory("\ProgramData\CloudClassUtility\")
-        My.Computer.FileSystem.DeleteFile("\ProgramData\CloudClassUtility\UdpAttack.exe")
+        Try
+            My.Computer.FileSystem.DeleteFile("\ProgramData\CloudClassUtility\UdpAttack.exe")
+        Catch
+        End Try
         My.Computer.FileSystem.WriteAllBytes("\ProgramData\CloudClassUtility\UdpAttack.exe", My.Resources.UdpAttack, True)
         Log += Date.Now + " Done" + vbCrLf
         FrmWait.Hide()
@@ -66,9 +69,10 @@
             "本功能还在测试" + vbCrLf +
             "并且仅适用于 红蜘蛛 v6.2.1160 版本" + vbCrLf +
             "如果使用不当" + vbCrLf +
-            "可能会对您和造成损伤 (bushi)" + vbCrLf +
+            "可能会对您造成损伤 (bushi)" + vbCrLf +
             "请谨慎使用" + vbCrLf + vbCrLf +
             "* 本功能由 leishui 提供破解文件"
+        Form1.MetroTabControl1.SelectedTab = Form1.TabPage1
         Form1.MaterialCard1.Visible = True
     End Sub
 End Class

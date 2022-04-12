@@ -25,3 +25,5 @@ C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\ne
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\CloudClassUtility.FrmLog.resources
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\CloudClassUtility.FrmMonitor.resources
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\CloudClassUtility.FrmUdpAttack.resources
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\bin\Release\net6.0-windows\ReaLTaiizor.dll
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\CloudClassUtility.vbproj.CopyComplete

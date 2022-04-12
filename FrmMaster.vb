@@ -31,6 +31,7 @@
             Shell("taskkill /F /T /IM REDAGENT.exe", vbHide)
             Shell("taskkill /F /T /IM checkrs.exe", vbHide)
             Shell("taskkill /F /T /IM rscheck.exe", vbHide)
+            Shell("taskkill /F /T /IM epointer.exe ", vbHide)
         ElseIf frmSetting.cbxCustom.Checked = True Then
             Shell("taskkill /F /T /IM" + " " + frmSetting.tbxCustom.Text, vbHide)
         End If

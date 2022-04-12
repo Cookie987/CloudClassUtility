@@ -4,10 +4,13 @@
     <id>CloudClassUtility</id>
     <version>3.400.0</version>
     <authors>CloudClassUtility</authors>
+    <icon>favicon.png</icon>
     <description>CloudClassUtility</description>
     <copyright>[C] 2022 RedCookieStudios</copyright>
     <dependencies>
-      <group targetFramework="net6.0-windows7.0" />
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="ReaLTaiizor" version="3.7.8.6" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
     <frameworkReferences>
       <group targetFramework="net6.0-windows7.0">
@@ -18,5 +21,6 @@
   <files>
     <file src="C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\bin\Debug\net6.0-windows\CloudClassUtility.runtimeconfig.json" target="lib\net6.0-windows7.0\CloudClassUtility.runtimeconfig.json" />
     <file src="C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\bin\Debug\net6.0-windows\CloudClassUtility.dll" target="lib\net6.0-windows7.0\CloudClassUtility.dll" />
+    <file src="C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\favicon.png" target="favicon.png" />
   </files>
 </package>

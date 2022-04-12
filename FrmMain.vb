@@ -70,13 +70,7 @@
         'Log += Date.Now + vbCrLf
     End Sub
 
-    Private Sub BtnOK_Click(sender As Object, e As EventArgs) Handles BtnOK.Click
-        Log += DateTime.Now + " BtnOK.Click" + vbCrLf
-        MaterialCard1.Visible = False
-        ReturnValue = 1
-    End Sub
-
-    Private Sub BtnChance_Click(sender As Object, e As EventArgs) Handles BtnChance.Click
+    Private Sub BtnChance_Click(sender As Object, e As EventArgs)
         Log += DateTime.Now + " BtnChance.Click" + vbCrLf
         MaterialCard1.Visible = False
         ReturnValue = 0
@@ -85,5 +79,28 @@
     Private Sub 监视器VToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 监视器VToolStripMenuItem.Click
         FrmMonitor.MdiParent = Me
         FrmMonitor.Show()
+    End Sub
+
+    Private Sub BtnNextStep_Click(sender As Object, e As EventArgs) Handles BtnNextStep.Click
+        Log += DateTime.Now + " BtnNextStep.Click" + vbCrLf
+        MaterialLabel2.Text = "请再次确认"
+        MetroTabControl1.SelectedTab = TabPage2
+    End Sub
+
+    Private Sub BtnLastStep_Click(sender As Object, e As EventArgs) Handles BtnLastStep.Click
+        Log += DateTime.Now + " BtnLastStep.Click" + vbCrLf
+        MetroTabControl1.SelectedTab = TabPage1
+    End Sub
+
+    Private Sub BtnOK_Click(sender As Object, e As EventArgs) Handles BtnOK.Click
+        Log += DateTime.Now + " BtnOK.Click" + vbCrLf
+        FrmCrackRedSpider.MdiParent = Me
+        FrmCrackRedSpider.Show()
+        MaterialCard1.Visible = False
+    End Sub
+
+    Private Sub BtnChance_Click_1(sender As Object, e As EventArgs) Handles BtnChance.Click
+        Log += DateTime.Now + " BtnChance.Click" + vbCrLf
+        MaterialCard1.Visible = False
     End Sub
 End Class

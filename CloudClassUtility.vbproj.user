@@ -10,6 +10,9 @@
     <Compile Update="FrmAdvance.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmCrackRedSpider.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmLog.vb">
       <SubType>Form</SubType>
     </Compile>

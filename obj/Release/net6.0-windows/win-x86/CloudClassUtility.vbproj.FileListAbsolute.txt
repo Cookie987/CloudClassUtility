@@ -521,3 +521,8 @@ C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\ne
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\win-x86\CloudClassUtility.FrmWait.resources
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\win-x86\CloudClassUtility.FrmAbout.resources
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\win-x86\CloudClassUtility.Resources.resources
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\bin\Release\net6.0-windows\win-x86\ReaLTaiizor.dll
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\win-x86\CloudClassUtility.FrmAdvance.resources
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\win-x86\CloudClassUtility.FrmLog.resources
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\win-x86\CloudClassUtility.FrmMonitor.resources
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\win-x86\CloudClassUtility.FrmUdpAttack.resources

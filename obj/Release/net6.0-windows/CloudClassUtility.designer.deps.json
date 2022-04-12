@@ -5,7 +5,24 @@
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v6.0": {}
+    ".NETCoreApp,Version=v6.0": {
+      "ReaLTaiizor/3.7.8.6": {
+        "runtime": {
+          "lib/net6.0-windows7.0/ReaLTaiizor.dll": {
+            "assemblyVersion": "3.7.8.6",
+            "fileVersion": "3.7.8.6"
+          }
+        }
+      }
+    }
   },
-  "libraries": {}
+  "libraries": {
+    "ReaLTaiizor/3.7.8.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b7vfciDcXqoIWjYrr760TyyEZSadlAgkaglLFPrRbzHNla7WqaojmC8VzLt/soaD2yGd/56LN0spedW7JcxMFw==",
+      "path": "realtaiizor/3.7.8.6",
+      "hashPath": "realtaiizor.3.7.8.6.nupkg.sha512"
+    }
+  }
 }
