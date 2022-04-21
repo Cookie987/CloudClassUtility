@@ -25,7 +25,7 @@
         Dim runResult = RunCmd("\ProgramData\CloudClassUtility\UdpAttack.exe" + " " +
                         "-ip" + " " + TbxIPAddress.Text + " " +
                         "-p" + " " + TbxPort.Text + " " +
-                        "-msg" + " " + TbxSendText.Text)
+                        "-msg" + " " + "" & Chr(34) + TbxSendText.Text & Chr(34))
         TbxOutput.Text += Date.Now + vbCrLf + runResult
         Dim afterDT = Date.Now '计时
         Dim UseageTime = CStr(DateDiff(DateInterval.Second, beforDT, afterDT))
@@ -50,11 +50,11 @@
         Log += Date.Now + " Run \ProgramData\CloudClassUtility\UdpAttack.exe" + " " +
             "-ip" + " " + TbxIPAddress.Text + " " +
             "-p" + " " + TbxPort.Text + " " +
-            "-c" + " " + "" & Chr(34) + TbxCommand.Text & Chr(34) + vbCrLf
+            "-c" + " " & Chr(34) + TbxCommand.Text & Chr(34) + vbCrLf
         Dim runResult = RunCmd("\ProgramData\CloudClassUtility\UdpAttack.exe" + " " +
                         "-ip" + " " + TbxIPAddress.Text + " " +
                         "-p" + " " + TbxPort.Text + " " +
-                        "-c" + " " + TbxCommand.Text)
+                        "-c" + " " & Chr(34) + TbxCommand.Text & Chr(34))
         TbxOutput.Text += Date.Now + vbCrLf + runResult
         Dim afterDT = Date.Now '计时
         Dim UseageTime = CStr(DateDiff(DateInterval.Second, beforDT, afterDT))

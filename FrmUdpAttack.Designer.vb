@@ -128,9 +128,9 @@ Partial Class FrmUdpAttack
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(73, 231)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(100, 15)
+        Me.Label9.Size = New System.Drawing.Size(106, 15)
         Me.Label9.TabIndex = 15
-        Me.Label9.Text = "* 最多100个字符"
+        Me.Label9.Text = "* 最多 100 个字符"
         '
         'GroupBox1
         '
@@ -166,9 +166,9 @@ Partial Class FrmUdpAttack
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(74, 310)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(142, 30)
+        Me.Label10.Size = New System.Drawing.Size(106, 15)
         Me.Label10.TabIndex = 17
-        Me.Label10.Text = "* 如果输入的命令有空格, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "可能不会显示执行结果"
+        Me.Label10.Text = "* 最多 100 个字符"
         '
         'BtnSendText
         '
@@ -221,6 +221,7 @@ Partial Class FrmUdpAttack
         Me.TbxIPAddress.SelectionStart = 0
         Me.TbxIPAddress.Size = New System.Drawing.Size(203, 25)
         Me.TbxIPAddress.TabIndex = 1
+        Me.TbxIPAddress.TabStop = False
         Me.TbxIPAddress.UseAccentColor = False
         Me.TbxIPAddress.UseSystemPasswordChar = False
         '
@@ -237,6 +238,7 @@ Partial Class FrmUdpAttack
         Me.TbxPort.SelectionStart = 0
         Me.TbxPort.Size = New System.Drawing.Size(204, 25)
         Me.TbxPort.TabIndex = 2
+        Me.TbxPort.TabStop = False
         Me.TbxPort.Text = "4705"
         Me.TbxPort.UseAccentColor = False
         Me.TbxPort.UseSystemPasswordChar = False
@@ -254,6 +256,7 @@ Partial Class FrmUdpAttack
         Me.TbxSendText.SelectionStart = 0
         Me.TbxSendText.Size = New System.Drawing.Size(204, 25)
         Me.TbxSendText.TabIndex = 3
+        Me.TbxSendText.TabStop = False
         Me.TbxSendText.UseAccentColor = False
         Me.TbxSendText.UseSystemPasswordChar = False
         '
@@ -270,6 +273,7 @@ Partial Class FrmUdpAttack
         Me.TbxCommand.SelectionStart = 0
         Me.TbxCommand.Size = New System.Drawing.Size(203, 25)
         Me.TbxCommand.TabIndex = 5
+        Me.TbxCommand.TabStop = False
         Me.TbxCommand.UseAccentColor = False
         Me.TbxCommand.UseSystemPasswordChar = False
         '
