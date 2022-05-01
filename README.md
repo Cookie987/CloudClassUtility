@@ -5,7 +5,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/5utm8n3uw2ej8nbt?svg=true)](https://ci.appveyor.com/project/Cookie987/cloudclassutility)
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Cookie987/CloudClassUtility?logo=github)](https://github.com/Cookie987/CloudClassUtility/releases)
-![GitHub Release Date](https://img.shields.io/github/release-date/Cookie987/CloudClassUtility)
+[![GitHub Release Date](https://img.shields.io/github/release-date/Cookie987/CloudClassUtility)](https://github.com/Cookie987/CloudClassUtility/releases/latest)
 [![Github stable release downloads](https://img.shields.io/github/downloads/Cookie987/CloudClassUtility/latest/total.svg?label=downloads&logo=github&cacheSeconds=600)](https://github.com/Cookie987/CloudClassUtility/releases/latest)
 
 [![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/Cookie987/CloudClassUtility?color=orange&include_prereleases&label=preview&sort=date&logo=github)](https://github.com/Cookie987/CloudClassUtility/tags)
