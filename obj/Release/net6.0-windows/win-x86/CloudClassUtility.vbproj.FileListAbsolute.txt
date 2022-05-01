@@ -526,3 +526,4 @@ C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\ne
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\win-x86\CloudClassUtility.FrmLog.resources
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\win-x86\CloudClassUtility.FrmMonitor.resources
 C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\win-x86\CloudClassUtility.FrmUdpAttack.resources
+C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\obj\Release\net6.0-windows\win-x86\CloudClassUtility.FrmCrackRedSpider.resources

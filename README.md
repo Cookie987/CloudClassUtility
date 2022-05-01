@@ -17,3 +17,4 @@
 [![Alt](https://repobeats.axiom.co/api/embed/bd418cb285929486c83bfa7e797eff5ac913da33.svg "Repobeats analytics image")](https://github.com/Cookie987/CloudClassUtility)
 </div>
 
+CloudClassUtility 是一个多功能的微机课辅助程序, 可以让您解除老师的控制.

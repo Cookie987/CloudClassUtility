@@ -99,6 +99,7 @@ Partial Class FrmAdvance
         Me.BtnCrackRedSpider.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BtnCrackRedSpider.Depth = 0
         Me.BtnCrackRedSpider.DrawShadows = True
+        Me.BtnCrackRedSpider.Enabled = False
         Me.BtnCrackRedSpider.HighEmphasis = True
         Me.BtnCrackRedSpider.Icon = Nothing
         Me.BtnCrackRedSpider.Location = New System.Drawing.Point(7, 24)
