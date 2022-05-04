@@ -158,7 +158,7 @@ Partial Class FrmUdpAttack
         Me.TbxOutput.Name = "TbxOutput"
         Me.TbxOutput.ReadOnly = True
         Me.TbxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TbxOutput.Size = New System.Drawing.Size(300, 345)
+        Me.TbxOutput.Size = New System.Drawing.Size(300, 281)
         Me.TbxOutput.TabIndex = 7
         '
         'Label10

@@ -11,7 +11,7 @@
         '''
         JiyuPasswd = My.Computer.Registry.GetValue("HKEY_LOCAL_MACHINE\SOFTWARE\TopDomain\e-learning Class Standard\1.00\", "UninstallPasswd", Nothing)
         If JiyuPasswd = Nothing Then
-            TextBoxOutput.Text = TextBoxOutput.Text + Date.Now + " " + "读取失败, 请检查是否有管理员权限或极域是否安装." + vbCrLf + Date.Now + "=== 任务: 成功 0 个, 失败 1 个 ===" + vbCrLf
+            TextBoxOutput.Text = TextBoxOutput.Text + Date.Now + " " + "读取失败, 请检查是否有管理员权限或极域是否安装." + vbCrLf
         ElseIf JiyuPasswd = "passwd[123456]" Then
             TextBoxOutput.Text = TextBoxOutput.Text + Date.Now + " " + "警告: 读取到的密码为 123456 ,可能为假密码. 如果解锁失败, 可尝试使用超级密码: mythware_super_password" + vbCrLf + DateTime.Now + " 读取到的密码 ([ ]内即密码): " + JiyuPasswd + vbCrLf + "Done." + vbCrLf
         Else
