@@ -4,25 +4,10 @@
     <_LastSelectedProfileId>C:\Users\bilic\OneDrive - cookie987\Code\VB.net\CloudClassUtility\My Project\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="FrmAbout.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FrmCrackRedSpider.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmLog.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FrmMain.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FrmMaster.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FrmWait.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FrmTest.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

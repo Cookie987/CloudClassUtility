@@ -9,7 +9,7 @@ Public Class Form1
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LocalVersion = "22w29a"
-        Delay = 200
+        Delay = 500
         Log = Date.Now + " Program Started" + vbCrLf + Date.Now + " Version: " + LocalVersion + vbCrLf + Date.Now + " Start init" + vbCrLf
         Log += Date.Now + " Start unzip UdpAttack.exe" + vbCrLf
         My.Computer.FileSystem.CreateDirectory("\ProgramData\CloudClassUtility\")
@@ -319,5 +319,9 @@ Public Class Form1
 
     Private Sub TimLog_Tick(sender As Object, e As EventArgs) Handles TimLog.Tick
         TbxLog.Text = Log
+    End Sub
+
+    Private Sub SwitchLog_CheckedChanged(sender As Object, e As EventArgs) Handles SwitchLog.CheckedChanged
+        SwitchLog.Checked = TimLog.Enabled
     End Sub
 End Class

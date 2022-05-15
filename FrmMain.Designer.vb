@@ -113,6 +113,7 @@ Partial Class Form1
         Me.TbxVersion = New System.Windows.Forms.TextBox()
         Me.LabUpdate = New ReaLTaiizor.Controls.SmallLabel()
         Me.CardSettingGeneral = New ReaLTaiizor.Controls.MaterialCard()
+        Me.SwitchLog = New ReaLTaiizor.Controls.MaterialSwitch()
         Me.LabSettingGeneral = New ReaLTaiizor.Controls.SmallLabel()
         Me.SwitchNotice = New ReaLTaiizor.Controls.MaterialSwitch()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -128,6 +129,8 @@ Partial Class Form1
         Me.TimNotice = New System.Windows.Forms.Timer(Me.components)
         Me.MaterialDrawer1 = New ReaLTaiizor.Controls.MaterialDrawer()
         Me.TimLog = New System.Windows.Forms.Timer(Me.components)
+        Me.LabWarnWordInput1 = New ReaLTaiizor.Controls.SmallLabel()
+        Me.LabWarnWordInput2 = New ReaLTaiizor.Controls.SmallLabel()
         Me.CrownMenuStrip1.SuspendLayout()
         Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -1337,6 +1340,9 @@ Partial Class Form1
         'CardSettingGeneral
         '
         Me.CardSettingGeneral.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CardSettingGeneral.Controls.Add(Me.LabWarnWordInput2)
+        Me.CardSettingGeneral.Controls.Add(Me.LabWarnWordInput1)
+        Me.CardSettingGeneral.Controls.Add(Me.SwitchLog)
         Me.CardSettingGeneral.Controls.Add(Me.LabSettingGeneral)
         Me.CardSettingGeneral.Controls.Add(Me.SwitchNotice)
         Me.CardSettingGeneral.Depth = 0
@@ -1348,6 +1354,22 @@ Partial Class Form1
         Me.CardSettingGeneral.Padding = New System.Windows.Forms.Padding(14)
         Me.CardSettingGeneral.Size = New System.Drawing.Size(866, 65)
         Me.CardSettingGeneral.TabIndex = 1
+        '
+        'SwitchLog
+        '
+        Me.SwitchLog.AutoSize = True
+        Me.SwitchLog.Depth = 0
+        Me.SwitchLog.Location = New System.Drawing.Point(205, 13)
+        Me.SwitchLog.Margin = New System.Windows.Forms.Padding(0)
+        Me.SwitchLog.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.SwitchLog.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.SwitchLog.Name = "SwitchLog"
+        Me.SwitchLog.Ripple = True
+        Me.SwitchLog.Size = New System.Drawing.Size(154, 37)
+        Me.SwitchLog.TabIndex = 1
+        Me.SwitchLog.Text = "实时刷新日志"
+        Me.SwitchLog.UseAccentColor = False
+        Me.SwitchLog.UseVisualStyleBackColor = True
         '
         'LabSettingGeneral
         '
@@ -1364,10 +1386,8 @@ Partial Class Form1
         'SwitchNotice
         '
         Me.SwitchNotice.AutoSize = True
-        Me.SwitchNotice.Checked = True
-        Me.SwitchNotice.CheckState = System.Windows.Forms.CheckState.Checked
         Me.SwitchNotice.Depth = 0
-        Me.SwitchNotice.Location = New System.Drawing.Point(14, 16)
+        Me.SwitchNotice.Location = New System.Drawing.Point(14, 13)
         Me.SwitchNotice.Margin = New System.Windows.Forms.Padding(0)
         Me.SwitchNotice.MouseLocation = New System.Drawing.Point(-1, -1)
         Me.SwitchNotice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
@@ -1485,7 +1505,6 @@ Partial Class Form1
         '
         'TimNotice
         '
-        Me.TimNotice.Enabled = True
         Me.TimNotice.Interval = 5000
         '
         'MaterialDrawer1
@@ -1513,7 +1532,30 @@ Partial Class Form1
         '
         'TimLog
         '
-        Me.TimLog.Enabled = True
+        '
+        'LabWarnWordInput1
+        '
+        Me.LabWarnWordInput1.AutoSize = True
+        Me.LabWarnWordInput1.BackColor = System.Drawing.Color.Transparent
+        Me.LabWarnWordInput1.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LabWarnWordInput1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.LabWarnWordInput1.Location = New System.Drawing.Point(16, 45)
+        Me.LabWarnWordInput1.Name = "LabWarnWordInput1"
+        Me.LabWarnWordInput1.Size = New System.Drawing.Size(211, 13)
+        Me.LabWarnWordInput1.TabIndex = 3
+        Me.LabWarnWordInput1.Text = "(打开可能会导致无法正常输入文字) "
+        '
+        'LabWarnWordInput2
+        '
+        Me.LabWarnWordInput2.AutoSize = True
+        Me.LabWarnWordInput2.BackColor = System.Drawing.Color.Transparent
+        Me.LabWarnWordInput2.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LabWarnWordInput2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.LabWarnWordInput2.Location = New System.Drawing.Point(227, 45)
+        Me.LabWarnWordInput2.Name = "LabWarnWordInput2"
+        Me.LabWarnWordInput2.Size = New System.Drawing.Size(211, 13)
+        Me.LabWarnWordInput2.TabIndex = 4
+        Me.LabWarnWordInput2.Text = "(打开可能会导致无法正常输入文字) "
         '
         'Form1
         '
@@ -1691,4 +1733,7 @@ Partial Class Form1
     Friend WithEvents BtnCleanLog As ReaLTaiizor.Controls.MaterialButton
     Friend WithEvents TimLog As Timer
     Friend WithEvents CardAbout As ReaLTaiizor.Controls.ParrotCard
+    Friend WithEvents SwitchLog As ReaLTaiizor.Controls.MaterialSwitch
+    Friend WithEvents LabWarnWordInput2 As ReaLTaiizor.Controls.SmallLabel
+    Friend WithEvents LabWarnWordInput1 As ReaLTaiizor.Controls.SmallLabel
 End Class
