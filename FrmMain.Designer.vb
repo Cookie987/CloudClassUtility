@@ -22,6 +22,8 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.CrownMenuStrip1 = New ReaLTaiizor.Controls.CrownMenuStrip()
         Me.窗口WToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -29,6 +31,7 @@ Partial Class Form1
         Me.高级AToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.监视器VToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.设置SToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.测试窗口TToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.日志LToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.查看日志VToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.导出日志ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -36,25 +39,122 @@ Partial Class Form1
         Me.帮助HToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.检测更新UToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.关于CloudClassUtilityToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MaterialCard1 = New ReaLTaiizor.Controls.MaterialCard()
-        Me.MetroTabControl1 = New ReaLTaiizor.Controls.MetroTabControl()
+        Me.MaterialTabControl1 = New ReaLTaiizor.Controls.MaterialTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.BtnChance = New ReaLTaiizor.Controls.MaterialButton()
-        Me.BtnNextStep = New ReaLTaiizor.Controls.MaterialButton()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.CardNotice = New ReaLTaiizor.Controls.MaterialCard()
+        Me.TcNotice = New ReaLTaiizor.Controls.MetroTabControl()
+        Me.TpNotice1 = New System.Windows.Forms.TabPage()
+        Me.LabNotice1_2 = New ReaLTaiizor.Controls.MaterialLabel()
+        Me.LabNotice1_1 = New ReaLTaiizor.Controls.MaterialLabel()
+        Me.TpNotice2 = New System.Windows.Forms.TabPage()
+        Me.LabNotice2 = New ReaLTaiizor.Controls.MaterialLabel()
+        Me.LabNotice = New ReaLTaiizor.Controls.MaterialLabel()
+        Me.TpNotice3 = New System.Windows.Forms.TabPage()
         Me.MaterialLabel1 = New ReaLTaiizor.Controls.MaterialLabel()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.BtnLastStep = New ReaLTaiizor.Controls.MaterialButton()
+        Me.TpPreview = New System.Windows.Forms.TabPage()
         Me.MaterialLabel2 = New ReaLTaiizor.Controls.MaterialLabel()
-        Me.BtnOK = New ReaLTaiizor.Controls.MaterialButton()
+        Me.SmallLabel1 = New ReaLTaiizor.Controls.SmallLabel()
+        Me.MaterialCard1 = New ReaLTaiizor.Controls.MaterialCard()
+        Me.SliDelay = New MaterialSkin.Controls.MaterialSlider()
+        Me.SmallLabel2 = New ReaLTaiizor.Controls.SmallLabel()
+        Me.CardCho = New MaterialSkin.Controls.MaterialCard()
+        Me.LabChooseWay = New ReaLTaiizor.Controls.SmallLabel()
+        Me.CbxCustom = New ReaLTaiizor.Controls.MaterialCheckBox()
+        Me.TbxCustom = New ReaLTaiizor.Controls.MaterialSingleTextBox()
+        Me.CbxRcc = New ReaLTaiizor.Controls.MaterialCheckBox()
+        Me.CbxJiyu = New ReaLTaiizor.Controls.MaterialCheckBox()
+        Me.CbxRedSpider = New ReaLTaiizor.Controls.MaterialCheckBox()
+        Me.BtnStop = New ReaLTaiizor.Controls.MaterialButton()
+        Me.BtnStart = New ReaLTaiizor.Controls.MaterialButton()
+        Me.SwitchStat = New ReaLTaiizor.Controls.MaterialSwitch()
+        Me.StatCard = New ReaLTaiizor.Controls.ParrotCard()
+        Me.CardWelcome = New MaterialSkin.Controls.MaterialCard()
+        Me.LabWelcome = New ReaLTaiizor.Controls.MaterialLabel()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.CardOutput = New ReaLTaiizor.Controls.MaterialCard()
+        Me.TbxOutput = New System.Windows.Forms.TextBox()
+        Me.LabOutput = New ReaLTaiizor.Controls.SmallLabel()
+        Me.MaterialCard2 = New ReaLTaiizor.Controls.MaterialCard()
+        Me.LabRedSpider = New ReaLTaiizor.Controls.SmallLabel()
+        Me.CardJiyu = New ReaLTaiizor.Controls.MaterialCard()
+        Me.BtnUniJiyuUsbDriver = New ReaLTaiizor.Controls.MaterialButton()
+        Me.GetJiyuPasswd = New ReaLTaiizor.Controls.MaterialButton()
+        Me.LabJiyu = New ReaLTaiizor.Controls.SmallLabel()
+        Me.CardUDPAttack = New ReaLTaiizor.Controls.MaterialCard()
+        Me.BtnReboot = New ReaLTaiizor.Controls.MaterialButton()
+        Me.BtnHalt = New ReaLTaiizor.Controls.MaterialButton()
+        Me.TbxCommand = New ReaLTaiizor.Controls.MaterialSingleTextBox()
+        Me.TbxSendText = New ReaLTaiizor.Controls.MaterialSingleTextBox()
+        Me.TbxPort = New ReaLTaiizor.Controls.MaterialSingleTextBox()
+        Me.TbxIPAddress = New ReaLTaiizor.Controls.MaterialSingleTextBox()
+        Me.BtnSendCommand = New ReaLTaiizor.Controls.MaterialButton()
+        Me.BtnSendText = New ReaLTaiizor.Controls.MaterialButton()
+        Me.LabUDPTips2 = New System.Windows.Forms.Label()
+        Me.LabUDPTips1 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.LabUDPAuthor = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.LabUDPWarn = New System.Windows.Forms.Label()
+        Me.LabUDP = New ReaLTaiizor.Controls.SmallLabel()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.CardLog = New ReaLTaiizor.Controls.MaterialCard()
+        Me.BtnCleanLog = New ReaLTaiizor.Controls.MaterialButton()
+        Me.BtnExportLog = New ReaLTaiizor.Controls.MaterialButton()
+        Me.TbxLog = New System.Windows.Forms.TextBox()
+        Me.LabLog = New ReaLTaiizor.Controls.SmallLabel()
+        Me.CardUpdate = New ReaLTaiizor.Controls.MaterialCard()
+        Me.BtnReCheckUpdate = New ReaLTaiizor.Controls.MaterialButton()
+        Me.GbxLog = New System.Windows.Forms.GroupBox()
+        Me.RtbUpdate = New System.Windows.Forms.RichTextBox()
+        Me.GbxVersion = New System.Windows.Forms.GroupBox()
+        Me.TbxVersion = New System.Windows.Forms.TextBox()
+        Me.LabUpdate = New ReaLTaiizor.Controls.SmallLabel()
+        Me.CardSettingGeneral = New ReaLTaiizor.Controls.MaterialCard()
+        Me.LabSettingGeneral = New ReaLTaiizor.Controls.SmallLabel()
+        Me.SwitchNotice = New ReaLTaiizor.Controls.MaterialSwitch()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.CardAbout = New ReaLTaiizor.Controls.ParrotCard()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.MaterialDivider1 = New ReaLTaiizor.Controls.MaterialDivider()
+        Me.PbtnMenu = New System.Windows.Forms.PictureBox()
+        Me.Title = New System.Windows.Forms.Label()
+        Me.PbtnClose = New System.Windows.Forms.PictureBox()
+        Me.PbtnMinimize = New System.Windows.Forms.PictureBox()
+        Me.TimStat = New System.Windows.Forms.Timer(Me.components)
+        Me.TimMain = New System.Windows.Forms.Timer(Me.components)
+        Me.TimNotice = New System.Windows.Forms.Timer(Me.components)
+        Me.MaterialDrawer1 = New ReaLTaiizor.Controls.MaterialDrawer()
+        Me.TimLog = New System.Windows.Forms.Timer(Me.components)
         Me.CrownMenuStrip1.SuspendLayout()
-        Me.MaterialCard1.SuspendLayout()
-        Me.MetroTabControl1.SuspendLayout()
+        Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CardNotice.SuspendLayout()
+        Me.TcNotice.SuspendLayout()
+        Me.TpNotice1.SuspendLayout()
+        Me.TpNotice2.SuspendLayout()
+        Me.TpNotice3.SuspendLayout()
+        Me.TpPreview.SuspendLayout()
+        Me.MaterialCard1.SuspendLayout()
+        Me.CardCho.SuspendLayout()
+        Me.CardWelcome.SuspendLayout()
         Me.TabPage2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CardOutput.SuspendLayout()
+        Me.MaterialCard2.SuspendLayout()
+        Me.CardJiyu.SuspendLayout()
+        Me.CardUDPAttack.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
+        Me.CardLog.SuspendLayout()
+        Me.CardUpdate.SuspendLayout()
+        Me.GbxLog.SuspendLayout()
+        Me.GbxVersion.SuspendLayout()
+        Me.CardSettingGeneral.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
+        CType(Me.PbtnMenu, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PbtnClose, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PbtnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'CrownMenuStrip1
@@ -69,11 +169,12 @@ Partial Class Form1
         Me.CrownMenuStrip1.Size = New System.Drawing.Size(902, 24)
         Me.CrownMenuStrip1.TabIndex = 3
         Me.CrownMenuStrip1.Text = "CrownMenuStrip1"
+        Me.CrownMenuStrip1.Visible = False
         '
         '窗口WToolStripMenuItem1
         '
         Me.窗口WToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.窗口WToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.主窗口MToolStripMenuItem1, Me.高级AToolStripMenuItem1, Me.监视器VToolStripMenuItem, Me.设置SToolStripMenuItem1})
+        Me.窗口WToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.主窗口MToolStripMenuItem1, Me.高级AToolStripMenuItem1, Me.监视器VToolStripMenuItem, Me.设置SToolStripMenuItem1, Me.测试窗口TToolStripMenuItem})
         Me.窗口WToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.窗口WToolStripMenuItem1.Name = "窗口WToolStripMenuItem1"
         Me.窗口WToolStripMenuItem1.Size = New System.Drawing.Size(62, 20)
@@ -84,7 +185,7 @@ Partial Class Form1
         Me.主窗口MToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.主窗口MToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.主窗口MToolStripMenuItem1.Name = "主窗口MToolStripMenuItem1"
-        Me.主窗口MToolStripMenuItem1.Size = New System.Drawing.Size(129, 22)
+        Me.主窗口MToolStripMenuItem1.Size = New System.Drawing.Size(138, 22)
         Me.主窗口MToolStripMenuItem1.Text = "主窗口(&M)"
         '
         '高级AToolStripMenuItem1
@@ -92,7 +193,7 @@ Partial Class Form1
         Me.高级AToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.高级AToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.高级AToolStripMenuItem1.Name = "高级AToolStripMenuItem1"
-        Me.高级AToolStripMenuItem1.Size = New System.Drawing.Size(129, 22)
+        Me.高级AToolStripMenuItem1.Size = New System.Drawing.Size(138, 22)
         Me.高级AToolStripMenuItem1.Text = "高级(&A)"
         '
         '监视器VToolStripMenuItem
@@ -100,7 +201,7 @@ Partial Class Form1
         Me.监视器VToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.监视器VToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.监视器VToolStripMenuItem.Name = "监视器VToolStripMenuItem"
-        Me.监视器VToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
+        Me.监视器VToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
         Me.监视器VToolStripMenuItem.Text = "监视器(&V)"
         '
         '设置SToolStripMenuItem1
@@ -108,8 +209,16 @@ Partial Class Form1
         Me.设置SToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.设置SToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.设置SToolStripMenuItem1.Name = "设置SToolStripMenuItem1"
-        Me.设置SToolStripMenuItem1.Size = New System.Drawing.Size(129, 22)
+        Me.设置SToolStripMenuItem1.Size = New System.Drawing.Size(138, 22)
         Me.设置SToolStripMenuItem1.Text = "设置(&S)"
+        '
+        '测试窗口TToolStripMenuItem
+        '
+        Me.测试窗口TToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.测试窗口TToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.测试窗口TToolStripMenuItem.Name = "测试窗口TToolStripMenuItem"
+        Me.测试窗口TToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
+        Me.测试窗口TToolStripMenuItem.Text = "测试窗口(&T)"
         '
         '日志LToolStripMenuItem
         '
@@ -169,241 +278,1311 @@ Partial Class Form1
         Me.关于CloudClassUtilityToolStripMenuItem1.Size = New System.Drawing.Size(198, 22)
         Me.关于CloudClassUtilityToolStripMenuItem1.Text = "关于 CloudClassUtility"
         '
+        'MaterialTabControl1
+        '
+        Me.MaterialTabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.MaterialTabControl1.Controls.Add(Me.TabPage1)
+        Me.MaterialTabControl1.Controls.Add(Me.TabPage2)
+        Me.MaterialTabControl1.Controls.Add(Me.TabPage3)
+        Me.MaterialTabControl1.Controls.Add(Me.TabPage4)
+        Me.MaterialTabControl1.Depth = 0
+        Me.MaterialTabControl1.ImageList = Me.ImageList1
+        Me.MaterialTabControl1.Location = New System.Drawing.Point(0, 35)
+        Me.MaterialTabControl1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.MaterialTabControl1.Multiline = True
+        Me.MaterialTabControl1.Name = "MaterialTabControl1"
+        Me.MaterialTabControl1.SelectedIndex = 0
+        Me.MaterialTabControl1.Size = New System.Drawing.Size(902, 511)
+        Me.MaterialTabControl1.TabIndex = 5
+        Me.MaterialTabControl1.TabStop = False
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.CardNotice)
+        Me.TabPage1.Controls.Add(Me.MaterialCard1)
+        Me.TabPage1.Controls.Add(Me.CardCho)
+        Me.TabPage1.Controls.Add(Me.BtnStop)
+        Me.TabPage1.Controls.Add(Me.BtnStart)
+        Me.TabPage1.Controls.Add(Me.SwitchStat)
+        Me.TabPage1.Controls.Add(Me.StatCard)
+        Me.TabPage1.Controls.Add(Me.CardWelcome)
+        Me.TabPage1.ImageIndex = 0
+        Me.TabPage1.Location = New System.Drawing.Point(4, 31)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(894, 476)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "主页"
+        '
+        'CardNotice
+        '
+        Me.CardNotice.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CardNotice.Controls.Add(Me.TcNotice)
+        Me.CardNotice.Controls.Add(Me.SmallLabel1)
+        Me.CardNotice.Depth = 0
+        Me.CardNotice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CardNotice.Location = New System.Drawing.Point(17, 183)
+        Me.CardNotice.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardNotice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CardNotice.Name = "CardNotice"
+        Me.CardNotice.Padding = New System.Windows.Forms.Padding(14)
+        Me.CardNotice.Size = New System.Drawing.Size(861, 92)
+        Me.CardNotice.TabIndex = 17
+        '
+        'TcNotice
+        '
+        Me.TcNotice.AnimateEasingType = ReaLTaiizor.[Enum].Metro.EasingType.CubeOut
+        Me.TcNotice.AnimateTime = 1000
+        Me.TcNotice.BackgroundColor = System.Drawing.Color.White
+        Me.TcNotice.Controls.Add(Me.TpNotice1)
+        Me.TcNotice.Controls.Add(Me.TpNotice2)
+        Me.TcNotice.Controls.Add(Me.TpNotice3)
+        Me.TcNotice.Controls.Add(Me.TpPreview)
+        Me.TcNotice.ControlsVisible = True
+        Me.TcNotice.IsDerivedStyle = True
+        Me.TcNotice.ItemSize = New System.Drawing.Size(100, 8)
+        Me.TcNotice.Location = New System.Drawing.Point(17, 20)
+        Me.TcNotice.MCursor = System.Windows.Forms.Cursors.Hand
+        Me.TcNotice.Multiline = True
+        Me.TcNotice.Name = "TcNotice"
+        Me.TcNotice.SelectedIndex = 0
+        Me.TcNotice.SelectedTextColor = System.Drawing.Color.White
+        Me.TcNotice.Size = New System.Drawing.Size(838, 69)
+        Me.TcNotice.SizeMode = System.Windows.Forms.TabSizeMode.Fixed
+        Me.TcNotice.Speed = 100
+        Me.TcNotice.Style = ReaLTaiizor.[Enum].Metro.Style.Light
+        Me.TcNotice.StyleManager = Nothing
+        Me.TcNotice.TabIndex = 17
+        Me.TcNotice.TabStop = False
+        Me.TcNotice.TabStyle = ReaLTaiizor.[Enum].Metro.TabStyle.Style2
+        Me.TcNotice.ThemeAuthor = "Taiizor"
+        Me.TcNotice.ThemeName = "MetroLight"
+        Me.TcNotice.UnselectedTextColor = System.Drawing.Color.Gray
+        '
+        'TpNotice1
+        '
+        Me.TpNotice1.Controls.Add(Me.LabNotice1_2)
+        Me.TpNotice1.Controls.Add(Me.LabNotice1_1)
+        Me.TpNotice1.Location = New System.Drawing.Point(4, 12)
+        Me.TpNotice1.Name = "TpNotice1"
+        Me.TpNotice1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TpNotice1.Size = New System.Drawing.Size(830, 53)
+        Me.TpNotice1.TabIndex = 0
+        '
+        'LabNotice1_2
+        '
+        Me.LabNotice1_2.AutoSize = True
+        Me.LabNotice1_2.Depth = 0
+        Me.LabNotice1_2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.LabNotice1_2.Location = New System.Drawing.Point(350, 27)
+        Me.LabNotice1_2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.LabNotice1_2.Name = "LabNotice1_2"
+        Me.LabNotice1_2.Size = New System.Drawing.Size(130, 19)
+        Me.LabNotice1_2.TabIndex = 1
+        Me.LabNotice1_2.Text = "预计在 5 月底修复"
+        '
+        'LabNotice1_1
+        '
+        Me.LabNotice1_1.AutoSize = True
+        Me.LabNotice1_1.Depth = 0
+        Me.LabNotice1_1.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.LabNotice1_1.Location = New System.Drawing.Point(74, 8)
+        Me.LabNotice1_1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.LabNotice1_1.Name = "LabNotice1_1"
+        Me.LabNotice1_1.Size = New System.Drawing.Size(683, 19)
+        Me.LabNotice1_1.TabIndex = 0
+        Me.LabNotice1_1.Text = "由于 Vercel  升级到了 Build Output v3 版本, 而 vercel-php 没有及时跟进, 导致检测更新服务不可用"
+        '
+        'TpNotice2
+        '
+        Me.TpNotice2.Controls.Add(Me.LabNotice2)
+        Me.TpNotice2.Controls.Add(Me.LabNotice)
+        Me.TpNotice2.Location = New System.Drawing.Point(4, 12)
+        Me.TpNotice2.Name = "TpNotice2"
+        Me.TpNotice2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TpNotice2.Size = New System.Drawing.Size(830, 53)
+        Me.TpNotice2.TabIndex = 1
+        '
+        'LabNotice2
+        '
+        Me.LabNotice2.AutoSize = True
+        Me.LabNotice2.Depth = 0
+        Me.LabNotice2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.LabNotice2.Location = New System.Drawing.Point(331, 26)
+        Me.LabNotice2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.LabNotice2.Name = "LabNotice2"
+        Me.LabNotice2.Size = New System.Drawing.Size(169, 19)
+        Me.LabNotice2.TabIndex = 13
+        Me.LabNotice2.Text = "在 Github 上提出 Issue !"
+        '
+        'LabNotice
+        '
+        Me.LabNotice.AutoSize = True
+        Me.LabNotice.Depth = 0
+        Me.LabNotice.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.LabNotice.Location = New System.Drawing.Point(312, 7)
+        Me.LabNotice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.LabNotice.Name = "LabNotice"
+        Me.LabNotice.Size = New System.Drawing.Size(207, 19)
+        Me.LabNotice.TabIndex = 12
+        Me.LabNotice.Text = "对于我们的新 UI 有什么建议?"
+        '
+        'TpNotice3
+        '
+        Me.TpNotice3.Controls.Add(Me.MaterialLabel1)
+        Me.TpNotice3.Location = New System.Drawing.Point(4, 12)
+        Me.TpNotice3.Name = "TpNotice3"
+        Me.TpNotice3.Size = New System.Drawing.Size(830, 53)
+        Me.TpNotice3.TabIndex = 2
+        '
+        'MaterialLabel1
+        '
+        Me.MaterialLabel1.AutoSize = True
+        Me.MaterialLabel1.Depth = 0
+        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel1.Location = New System.Drawing.Point(281, 18)
+        Me.MaterialLabel1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.MaterialLabel1.Name = "MaterialLabel1"
+        Me.MaterialLabel1.Size = New System.Drawing.Size(268, 19)
+        Me.MaterialLabel1.TabIndex = 0
+        Me.MaterialLabel1.Text = "遇到问题? 在 Github 给我们提出建议 !"
+        '
+        'TpPreview
+        '
+        Me.TpPreview.Controls.Add(Me.MaterialLabel2)
+        Me.TpPreview.Location = New System.Drawing.Point(4, 12)
+        Me.TpPreview.Name = "TpPreview"
+        Me.TpPreview.Size = New System.Drawing.Size(830, 53)
+        Me.TpPreview.TabIndex = 3
+        '
+        'MaterialLabel2
+        '
+        Me.MaterialLabel2.AutoSize = True
+        Me.MaterialLabel2.Depth = 0
+        Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel2.Location = New System.Drawing.Point(347, 18)
+        Me.MaterialLabel2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.MaterialLabel2.Name = "MaterialLabel2"
+        Me.MaterialLabel2.Size = New System.Drawing.Size(137, 19)
+        Me.MaterialLabel2.TabIndex = 0
+        Me.MaterialLabel2.Text = "您正在使用预览版 !"
+        '
+        'SmallLabel1
+        '
+        Me.SmallLabel1.AutoSize = True
+        Me.SmallLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.SmallLabel1.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.SmallLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.SmallLabel1.Location = New System.Drawing.Point(2, 4)
+        Me.SmallLabel1.Name = "SmallLabel1"
+        Me.SmallLabel1.Size = New System.Drawing.Size(33, 13)
+        Me.SmallLabel1.TabIndex = 15
+        Me.SmallLabel1.Text = "公告"
+        '
         'MaterialCard1
         '
         Me.MaterialCard1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.MaterialCard1.Controls.Add(Me.MetroTabControl1)
+        Me.MaterialCard1.Controls.Add(Me.SliDelay)
+        Me.MaterialCard1.Controls.Add(Me.SmallLabel2)
         Me.MaterialCard1.Depth = 0
-        Me.MaterialCard1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MaterialCard1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialCard1.Location = New System.Drawing.Point(0, 24)
+        Me.MaterialCard1.Location = New System.Drawing.Point(17, 88)
         Me.MaterialCard1.Margin = New System.Windows.Forms.Padding(14)
         Me.MaterialCard1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.MaterialCard1.Name = "MaterialCard1"
         Me.MaterialCard1.Padding = New System.Windows.Forms.Padding(14)
-        Me.MaterialCard1.Size = New System.Drawing.Size(902, 490)
-        Me.MaterialCard1.TabIndex = 5
-        Me.MaterialCard1.Visible = False
+        Me.MaterialCard1.Size = New System.Drawing.Size(288, 68)
+        Me.MaterialCard1.TabIndex = 15
         '
-        'MetroTabControl1
+        'SliDelay
         '
-        Me.MetroTabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.SliDelay.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MetroTabControl1.AnimateEasingType = ReaLTaiizor.[Enum].Metro.EasingType.CubeOut
-        Me.MetroTabControl1.AnimateTime = 1000
-        Me.MetroTabControl1.BackgroundColor = System.Drawing.Color.White
-        Me.MetroTabControl1.Controls.Add(Me.TabPage1)
-        Me.MetroTabControl1.Controls.Add(Me.TabPage2)
-        Me.MetroTabControl1.ControlsVisible = True
-        Me.MetroTabControl1.IsDerivedStyle = True
-        Me.MetroTabControl1.ItemSize = New System.Drawing.Size(100, 38)
-        Me.MetroTabControl1.Location = New System.Drawing.Point(0, 0)
-        Me.MetroTabControl1.MCursor = System.Windows.Forms.Cursors.Hand
-        Me.MetroTabControl1.Name = "MetroTabControl1"
-        Me.MetroTabControl1.SelectedIndex = 0
-        Me.MetroTabControl1.SelectedTextColor = System.Drawing.Color.White
-        Me.MetroTabControl1.Size = New System.Drawing.Size(902, 490)
-        Me.MetroTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed
-        Me.MetroTabControl1.Speed = 100
-        Me.MetroTabControl1.Style = ReaLTaiizor.[Enum].Metro.Style.Light
-        Me.MetroTabControl1.StyleManager = Nothing
-        Me.MetroTabControl1.TabIndex = 0
-        Me.MetroTabControl1.ThemeAuthor = "Taiizor"
-        Me.MetroTabControl1.ThemeName = "MetroLight"
-        Me.MetroTabControl1.UnselectedTextColor = System.Drawing.Color.Gray
+        Me.SliDelay.Depth = 0
+        Me.SliDelay.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.SliDelay.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SliDelay.Location = New System.Drawing.Point(11, 17)
+        Me.SliDelay.MouseState = MaterialSkin.MouseState.HOVER
+        Me.SliDelay.Name = "SliDelay"
+        Me.SliDelay.RangeMax = 2000
+        Me.SliDelay.RangeMin = 200
+        Me.SliDelay.ShowText = False
+        Me.SliDelay.Size = New System.Drawing.Size(260, 40)
+        Me.SliDelay.TabIndex = 4
+        Me.SliDelay.Text = "MaterialSlider1"
+        Me.SliDelay.Value = 500
         '
-        'TabPage1
+        'SmallLabel2
         '
-        Me.TabPage1.Controls.Add(Me.BtnChance)
-        Me.TabPage1.Controls.Add(Me.BtnNextStep)
-        Me.TabPage1.Controls.Add(Me.PictureBox1)
-        Me.TabPage1.Controls.Add(Me.MaterialLabel1)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 42)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(894, 444)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "步骤1"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        Me.SmallLabel2.AutoSize = True
+        Me.SmallLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.SmallLabel2.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.SmallLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.SmallLabel2.Location = New System.Drawing.Point(2, 4)
+        Me.SmallLabel2.Name = "SmallLabel2"
+        Me.SmallLabel2.Size = New System.Drawing.Size(33, 13)
+        Me.SmallLabel2.TabIndex = 16
+        Me.SmallLabel2.Text = "周期"
         '
-        'BtnChance
+        'CardCho
         '
-        Me.BtnChance.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.BtnChance.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnChance.Depth = 0
-        Me.BtnChance.DrawShadows = True
-        Me.BtnChance.HighEmphasis = True
-        Me.BtnChance.Icon = Nothing
-        Me.BtnChance.Location = New System.Drawing.Point(14, 392)
-        Me.BtnChance.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.BtnChance.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
-        Me.BtnChance.Name = "BtnChance"
-        Me.BtnChance.Size = New System.Drawing.Size(53, 36)
-        Me.BtnChance.TabIndex = 11
-        Me.BtnChance.Text = "取消"
-        Me.BtnChance.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
-        Me.BtnChance.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.BtnChance.UseAccentColor = False
-        Me.BtnChance.UseVisualStyleBackColor = True
+        Me.CardCho.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CardCho.Controls.Add(Me.LabChooseWay)
+        Me.CardCho.Controls.Add(Me.CbxCustom)
+        Me.CardCho.Controls.Add(Me.TbxCustom)
+        Me.CardCho.Controls.Add(Me.CbxRcc)
+        Me.CardCho.Controls.Add(Me.CbxJiyu)
+        Me.CardCho.Controls.Add(Me.CbxRedSpider)
+        Me.CardCho.Depth = 0
+        Me.CardCho.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CardCho.Location = New System.Drawing.Point(317, 88)
+        Me.CardCho.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardCho.MouseState = MaterialSkin.MouseState.HOVER
+        Me.CardCho.Name = "CardCho"
+        Me.CardCho.Padding = New System.Windows.Forms.Padding(14)
+        Me.CardCho.Size = New System.Drawing.Size(561, 68)
+        Me.CardCho.TabIndex = 14
         '
-        'BtnNextStep
+        'LabChooseWay
         '
-        Me.BtnNextStep.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnNextStep.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnNextStep.Depth = 0
-        Me.BtnNextStep.DrawShadows = True
-        Me.BtnNextStep.HighEmphasis = True
-        Me.BtnNextStep.Icon = Nothing
-        Me.BtnNextStep.Location = New System.Drawing.Point(811, 392)
-        Me.BtnNextStep.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.BtnNextStep.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
-        Me.BtnNextStep.Name = "BtnNextStep"
-        Me.BtnNextStep.Size = New System.Drawing.Size(69, 36)
-        Me.BtnNextStep.TabIndex = 8
-        Me.BtnNextStep.Text = "下一步"
-        Me.BtnNextStep.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
-        Me.BtnNextStep.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.BtnNextStep.UseAccentColor = False
-        Me.BtnNextStep.UseVisualStyleBackColor = True
+        Me.LabChooseWay.AutoSize = True
+        Me.LabChooseWay.BackColor = System.Drawing.Color.Transparent
+        Me.LabChooseWay.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LabChooseWay.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.LabChooseWay.Location = New System.Drawing.Point(2, 4)
+        Me.LabChooseWay.Name = "LabChooseWay"
+        Me.LabChooseWay.Size = New System.Drawing.Size(33, 13)
+        Me.LabChooseWay.TabIndex = 14
+        Me.LabChooseWay.Text = "方案"
         '
-        'PictureBox1
+        'CbxCustom
         '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Image = Global.CloudClassUtility.My.Resources.Resources.warning
-        Me.PictureBox1.Location = New System.Drawing.Point(393, 6)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(108, 107)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
+        Me.CbxCustom.AutoSize = True
+        Me.CbxCustom.Depth = 0
+        Me.CbxCustom.Location = New System.Drawing.Point(283, 19)
+        Me.CbxCustom.Margin = New System.Windows.Forms.Padding(0)
+        Me.CbxCustom.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.CbxCustom.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CbxCustom.Name = "CbxCustom"
+        Me.CbxCustom.Ripple = True
+        Me.CbxCustom.Size = New System.Drawing.Size(91, 37)
+        Me.CbxCustom.TabIndex = 8
+        Me.CbxCustom.Text = "自定义: "
+        Me.CbxCustom.UseVisualStyleBackColor = True
         '
-        'MaterialLabel1
+        'TbxCustom
         '
-        Me.MaterialLabel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MaterialLabel1.AutoEllipsis = True
-        Me.MaterialLabel1.Depth = 0
-        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel1.Location = New System.Drawing.Point(13, 3)
-        Me.MaterialLabel1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
-        Me.MaterialLabel1.Name = "MaterialLabel1"
-        Me.MaterialLabel1.Size = New System.Drawing.Size(868, 383)
-        Me.MaterialLabel1.TabIndex = 6
-        Me.MaterialLabel1.Text = "..."
-        Me.MaterialLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.TbxCustom.Depth = 0
+        Me.TbxCustom.Location = New System.Drawing.Point(377, 28)
+        Me.TbxCustom.MaxLength = 32767
+        Me.TbxCustom.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.TbxCustom.Name = "TbxCustom"
+        Me.TbxCustom.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TbxCustom.SelectedText = ""
+        Me.TbxCustom.SelectionLength = 0
+        Me.TbxCustom.SelectionStart = 0
+        Me.TbxCustom.Size = New System.Drawing.Size(166, 25)
+        Me.TbxCustom.TabIndex = 9
+        Me.TbxCustom.TabStop = False
+        Me.TbxCustom.UseAccentColor = False
+        Me.TbxCustom.UseSystemPasswordChar = False
+        '
+        'CbxRcc
+        '
+        Me.CbxRcc.AutoSize = True
+        Me.CbxRcc.Depth = 0
+        Me.CbxRcc.Location = New System.Drawing.Point(183, 19)
+        Me.CbxRcc.Margin = New System.Windows.Forms.Padding(0)
+        Me.CbxRcc.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.CbxRcc.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CbxRcc.Name = "CbxRcc"
+        Me.CbxRcc.Ripple = True
+        Me.CbxRcc.Size = New System.Drawing.Size(83, 37)
+        Me.CbxRcc.TabIndex = 7
+        Me.CbxRcc.Text = "云课堂"
+        Me.CbxRcc.UseVisualStyleBackColor = True
+        '
+        'CbxJiyu
+        '
+        Me.CbxJiyu.AutoSize = True
+        Me.CbxJiyu.Depth = 0
+        Me.CbxJiyu.Location = New System.Drawing.Point(12, 19)
+        Me.CbxJiyu.Margin = New System.Windows.Forms.Padding(0)
+        Me.CbxJiyu.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.CbxJiyu.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CbxJiyu.Name = "CbxJiyu"
+        Me.CbxJiyu.Ripple = True
+        Me.CbxJiyu.Size = New System.Drawing.Size(67, 37)
+        Me.CbxJiyu.TabIndex = 5
+        Me.CbxJiyu.Text = "极域"
+        Me.CbxJiyu.UseVisualStyleBackColor = True
+        '
+        'CbxRedSpider
+        '
+        Me.CbxRedSpider.AutoSize = True
+        Me.CbxRedSpider.Depth = 0
+        Me.CbxRedSpider.Location = New System.Drawing.Point(90, 19)
+        Me.CbxRedSpider.Margin = New System.Windows.Forms.Padding(0)
+        Me.CbxRedSpider.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.CbxRedSpider.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CbxRedSpider.Name = "CbxRedSpider"
+        Me.CbxRedSpider.Ripple = True
+        Me.CbxRedSpider.Size = New System.Drawing.Size(83, 37)
+        Me.CbxRedSpider.TabIndex = 6
+        Me.CbxRedSpider.Text = "红蜘蛛"
+        Me.CbxRedSpider.UseVisualStyleBackColor = True
+        '
+        'BtnStop
+        '
+        Me.BtnStop.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnStop.Depth = 0
+        Me.BtnStop.DrawShadows = True
+        Me.BtnStop.Enabled = False
+        Me.BtnStop.HighEmphasis = True
+        Me.BtnStop.Icon = Nothing
+        Me.BtnStop.Location = New System.Drawing.Point(793, 18)
+        Me.BtnStop.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnStop.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnStop.Name = "BtnStop"
+        Me.BtnStop.Size = New System.Drawing.Size(85, 36)
+        Me.BtnStop.TabIndex = 3
+        Me.BtnStop.Text = "恢复控制"
+        Me.BtnStop.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnStop.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnStop.UseAccentColor = False
+        Me.BtnStop.UseVisualStyleBackColor = True
+        '
+        'BtnStart
+        '
+        Me.BtnStart.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnStart.Depth = 0
+        Me.BtnStart.DrawShadows = True
+        Me.BtnStart.HighEmphasis = True
+        Me.BtnStart.Icon = Nothing
+        Me.BtnStart.Location = New System.Drawing.Point(690, 18)
+        Me.BtnStart.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnStart.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnStart.Name = "BtnStart"
+        Me.BtnStart.Size = New System.Drawing.Size(85, 36)
+        Me.BtnStart.TabIndex = 2
+        Me.BtnStart.Text = "脱离控制"
+        Me.BtnStart.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnStart.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnStart.UseAccentColor = False
+        Me.BtnStart.UseVisualStyleBackColor = True
+        '
+        'SwitchStat
+        '
+        Me.SwitchStat.AutoSize = True
+        Me.SwitchStat.Depth = 0
+        Me.SwitchStat.Location = New System.Drawing.Point(330, 19)
+        Me.SwitchStat.Margin = New System.Windows.Forms.Padding(0)
+        Me.SwitchStat.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.SwitchStat.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.SwitchStat.Name = "SwitchStat"
+        Me.SwitchStat.Ripple = True
+        Me.SwitchStat.Size = New System.Drawing.Size(186, 37)
+        Me.SwitchStat.TabIndex = 1
+        Me.SwitchStat.Text = "实时刷新运行状态"
+        Me.SwitchStat.UseAccentColor = False
+        Me.SwitchStat.UseVisualStyleBackColor = True
+        '
+        'StatCard
+        '
+        Me.StatCard.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.StatCard.BackColor = System.Drawing.Color.Transparent
+        Me.StatCard.Color1 = System.Drawing.Color.DodgerBlue
+        Me.StatCard.Color2 = System.Drawing.Color.LimeGreen
+        Me.StatCard.ForeColor = System.Drawing.Color.White
+        Me.StatCard.Location = New System.Drawing.Point(17, 333)
+        Me.StatCard.Name = "StatCard"
+        Me.StatCard.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality
+        Me.StatCard.Size = New System.Drawing.Size(861, 110)
+        Me.StatCard.TabIndex = 12
+        Me.StatCard.Text = "ParrotCard1"
+        Me.StatCard.Text1 = "当前状态"
+        Me.StatCard.Text2 = "实时刷新运行状态已关闭"
+        Me.StatCard.Text3 = "CloudClassUtility 3.410"
+        Me.StatCard.TextRenderingType = System.Drawing.Text.TextRenderingHint.SystemDefault
+        '
+        'CardWelcome
+        '
+        Me.CardWelcome.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CardWelcome.Controls.Add(Me.LabWelcome)
+        Me.CardWelcome.Depth = 0
+        Me.CardWelcome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CardWelcome.Location = New System.Drawing.Point(17, 14)
+        Me.CardWelcome.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardWelcome.MouseState = MaterialSkin.MouseState.HOVER
+        Me.CardWelcome.Name = "CardWelcome"
+        Me.CardWelcome.Padding = New System.Windows.Forms.Padding(14)
+        Me.CardWelcome.Size = New System.Drawing.Size(288, 46)
+        Me.CardWelcome.TabIndex = 0
+        '
+        'LabWelcome
+        '
+        Me.LabWelcome.AutoSize = True
+        Me.LabWelcome.Depth = 0
+        Me.LabWelcome.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.LabWelcome.Location = New System.Drawing.Point(17, 14)
+        Me.LabWelcome.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.LabWelcome.Name = "LabWelcome"
+        Me.LabWelcome.Size = New System.Drawing.Size(249, 19)
+        Me.LabWelcome.TabIndex = 0
+        Me.LabWelcome.Text = "欢迎使用 CloudClassUtility v3.410 !"
         '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.PictureBox2)
-        Me.TabPage2.Controls.Add(Me.BtnLastStep)
-        Me.TabPage2.Controls.Add(Me.MaterialLabel2)
-        Me.TabPage2.Controls.Add(Me.BtnOK)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 42)
+        Me.TabPage2.Controls.Add(Me.CardOutput)
+        Me.TabPage2.Controls.Add(Me.MaterialCard2)
+        Me.TabPage2.Controls.Add(Me.CardJiyu)
+        Me.TabPage2.Controls.Add(Me.CardUDPAttack)
+        Me.TabPage2.ImageIndex = 1
+        Me.TabPage2.Location = New System.Drawing.Point(4, 31)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(894, 444)
+        Me.TabPage2.Size = New System.Drawing.Size(894, 476)
         Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "步骤2"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.TabPage2.Text = "高级"
         '
-        'PictureBox2
+        'CardOutput
         '
-        Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox2.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox2.Image = Global.CloudClassUtility.My.Resources.Resources.warning
-        Me.PictureBox2.Location = New System.Drawing.Point(393, 6)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(108, 107)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 15
-        Me.PictureBox2.TabStop = False
+        Me.CardOutput.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CardOutput.Controls.Add(Me.TbxOutput)
+        Me.CardOutput.Controls.Add(Me.LabOutput)
+        Me.CardOutput.Depth = 0
+        Me.CardOutput.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CardOutput.Location = New System.Drawing.Point(361, 17)
+        Me.CardOutput.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardOutput.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CardOutput.Name = "CardOutput"
+        Me.CardOutput.Padding = New System.Windows.Forms.Padding(14)
+        Me.CardOutput.Size = New System.Drawing.Size(514, 324)
+        Me.CardOutput.TabIndex = 3
         '
-        'BtnLastStep
+        'TbxOutput
         '
-        Me.BtnLastStep.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.BtnLastStep.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnLastStep.Depth = 0
-        Me.BtnLastStep.DrawShadows = True
-        Me.BtnLastStep.HighEmphasis = True
-        Me.BtnLastStep.Icon = Nothing
-        Me.BtnLastStep.Location = New System.Drawing.Point(14, 392)
-        Me.BtnLastStep.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.BtnLastStep.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
-        Me.BtnLastStep.Name = "BtnLastStep"
-        Me.BtnLastStep.Size = New System.Drawing.Size(69, 36)
-        Me.BtnLastStep.TabIndex = 14
-        Me.BtnLastStep.Text = "上一步"
-        Me.BtnLastStep.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
-        Me.BtnLastStep.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.BtnLastStep.UseAccentColor = False
-        Me.BtnLastStep.UseVisualStyleBackColor = True
-        '
-        'MaterialLabel2
-        '
-        Me.MaterialLabel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TbxOutput.AcceptsReturn = True
+        Me.TbxOutput.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MaterialLabel2.AutoEllipsis = True
-        Me.MaterialLabel2.Depth = 0
-        Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel2.Location = New System.Drawing.Point(14, 3)
-        Me.MaterialLabel2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
-        Me.MaterialLabel2.Name = "MaterialLabel2"
-        Me.MaterialLabel2.Size = New System.Drawing.Size(868, 383)
-        Me.MaterialLabel2.TabIndex = 12
-        Me.MaterialLabel2.Text = "..."
-        Me.MaterialLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.TbxOutput.Location = New System.Drawing.Point(17, 20)
+        Me.TbxOutput.MaxLength = 0
+        Me.TbxOutput.Multiline = True
+        Me.TbxOutput.Name = "TbxOutput"
+        Me.TbxOutput.ReadOnly = True
+        Me.TbxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TbxOutput.Size = New System.Drawing.Size(480, 287)
+        Me.TbxOutput.TabIndex = 8
         '
-        'BtnOK
+        'LabOutput
         '
-        Me.BtnOK.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnOK.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnOK.Depth = 0
-        Me.BtnOK.DrawShadows = True
-        Me.BtnOK.HighEmphasis = True
-        Me.BtnOK.Icon = Nothing
-        Me.BtnOK.Location = New System.Drawing.Point(827, 392)
-        Me.BtnOK.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.BtnOK.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
-        Me.BtnOK.Name = "BtnOK"
-        Me.BtnOK.Size = New System.Drawing.Size(53, 36)
-        Me.BtnOK.TabIndex = 11
-        Me.BtnOK.Text = "确认"
-        Me.BtnOK.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
-        Me.BtnOK.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.BtnOK.UseAccentColor = False
-        Me.BtnOK.UseVisualStyleBackColor = True
+        Me.LabOutput.AutoSize = True
+        Me.LabOutput.BackColor = System.Drawing.Color.Transparent
+        Me.LabOutput.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LabOutput.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.LabOutput.Location = New System.Drawing.Point(2, 4)
+        Me.LabOutput.Name = "LabOutput"
+        Me.LabOutput.Size = New System.Drawing.Size(33, 13)
+        Me.LabOutput.TabIndex = 0
+        Me.LabOutput.Text = "输出"
+        '
+        'MaterialCard2
+        '
+        Me.MaterialCard2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialCard2.Controls.Add(Me.LabRedSpider)
+        Me.MaterialCard2.Depth = 0
+        Me.MaterialCard2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialCard2.Location = New System.Drawing.Point(361, 369)
+        Me.MaterialCard2.Margin = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.MaterialCard2.Name = "MaterialCard2"
+        Me.MaterialCard2.Padding = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard2.Size = New System.Drawing.Size(514, 63)
+        Me.MaterialCard2.TabIndex = 2
+        '
+        'LabRedSpider
+        '
+        Me.LabRedSpider.AutoSize = True
+        Me.LabRedSpider.BackColor = System.Drawing.Color.Transparent
+        Me.LabRedSpider.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LabRedSpider.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.LabRedSpider.Location = New System.Drawing.Point(2, 4)
+        Me.LabRedSpider.Name = "LabRedSpider"
+        Me.LabRedSpider.Size = New System.Drawing.Size(59, 13)
+        Me.LabRedSpider.TabIndex = 17
+        Me.LabRedSpider.Text = "红蜘蛛类"
+        '
+        'CardJiyu
+        '
+        Me.CardJiyu.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CardJiyu.Controls.Add(Me.BtnUniJiyuUsbDriver)
+        Me.CardJiyu.Controls.Add(Me.GetJiyuPasswd)
+        Me.CardJiyu.Controls.Add(Me.LabJiyu)
+        Me.CardJiyu.Depth = 0
+        Me.CardJiyu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CardJiyu.Location = New System.Drawing.Point(19, 369)
+        Me.CardJiyu.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardJiyu.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CardJiyu.Name = "CardJiyu"
+        Me.CardJiyu.Padding = New System.Windows.Forms.Padding(14)
+        Me.CardJiyu.Size = New System.Drawing.Size(312, 63)
+        Me.CardJiyu.TabIndex = 1
+        '
+        'BtnUniJiyuUsbDriver
+        '
+        Me.BtnUniJiyuUsbDriver.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnUniJiyuUsbDriver.Depth = 0
+        Me.BtnUniJiyuUsbDriver.DrawShadows = True
+        Me.BtnUniJiyuUsbDriver.HighEmphasis = True
+        Me.BtnUniJiyuUsbDriver.Icon = Nothing
+        Me.BtnUniJiyuUsbDriver.Location = New System.Drawing.Point(143, 20)
+        Me.BtnUniJiyuUsbDriver.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnUniJiyuUsbDriver.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnUniJiyuUsbDriver.Name = "BtnUniJiyuUsbDriver"
+        Me.BtnUniJiyuUsbDriver.Size = New System.Drawing.Size(151, 36)
+        Me.BtnUniJiyuUsbDriver.TabIndex = 10
+        Me.BtnUniJiyuUsbDriver.Text = "卸载极域 USB 驱动"
+        Me.BtnUniJiyuUsbDriver.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnUniJiyuUsbDriver.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnUniJiyuUsbDriver.UseAccentColor = False
+        Me.BtnUniJiyuUsbDriver.UseVisualStyleBackColor = True
+        '
+        'GetJiyuPasswd
+        '
+        Me.GetJiyuPasswd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GetJiyuPasswd.Depth = 0
+        Me.GetJiyuPasswd.DrawShadows = True
+        Me.GetJiyuPasswd.Font = New System.Drawing.Font("更纱黑体 UI SC", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.GetJiyuPasswd.HighEmphasis = True
+        Me.GetJiyuPasswd.Icon = Nothing
+        Me.GetJiyuPasswd.Location = New System.Drawing.Point(18, 20)
+        Me.GetJiyuPasswd.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.GetJiyuPasswd.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.GetJiyuPasswd.Name = "GetJiyuPasswd"
+        Me.GetJiyuPasswd.Size = New System.Drawing.Size(117, 36)
+        Me.GetJiyuPasswd.TabIndex = 9
+        Me.GetJiyuPasswd.Text = "获取极域密码"
+        Me.GetJiyuPasswd.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.GetJiyuPasswd.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.GetJiyuPasswd.UseAccentColor = False
+        Me.GetJiyuPasswd.UseVisualStyleBackColor = True
+        '
+        'LabJiyu
+        '
+        Me.LabJiyu.AutoSize = True
+        Me.LabJiyu.BackColor = System.Drawing.Color.Transparent
+        Me.LabJiyu.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LabJiyu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.LabJiyu.Location = New System.Drawing.Point(2, 4)
+        Me.LabJiyu.Name = "LabJiyu"
+        Me.LabJiyu.Size = New System.Drawing.Size(46, 13)
+        Me.LabJiyu.TabIndex = 17
+        Me.LabJiyu.Text = "极域类"
+        '
+        'CardUDPAttack
+        '
+        Me.CardUDPAttack.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CardUDPAttack.Controls.Add(Me.BtnReboot)
+        Me.CardUDPAttack.Controls.Add(Me.BtnHalt)
+        Me.CardUDPAttack.Controls.Add(Me.TbxCommand)
+        Me.CardUDPAttack.Controls.Add(Me.TbxSendText)
+        Me.CardUDPAttack.Controls.Add(Me.TbxPort)
+        Me.CardUDPAttack.Controls.Add(Me.TbxIPAddress)
+        Me.CardUDPAttack.Controls.Add(Me.BtnSendCommand)
+        Me.CardUDPAttack.Controls.Add(Me.BtnSendText)
+        Me.CardUDPAttack.Controls.Add(Me.LabUDPTips2)
+        Me.CardUDPAttack.Controls.Add(Me.LabUDPTips1)
+        Me.CardUDPAttack.Controls.Add(Me.Label8)
+        Me.CardUDPAttack.Controls.Add(Me.Label7)
+        Me.CardUDPAttack.Controls.Add(Me.Label6)
+        Me.CardUDPAttack.Controls.Add(Me.LabUDPAuthor)
+        Me.CardUDPAttack.Controls.Add(Me.Label4)
+        Me.CardUDPAttack.Controls.Add(Me.Label3)
+        Me.CardUDPAttack.Controls.Add(Me.LabUDPWarn)
+        Me.CardUDPAttack.Controls.Add(Me.LabUDP)
+        Me.CardUDPAttack.Depth = 0
+        Me.CardUDPAttack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CardUDPAttack.Location = New System.Drawing.Point(19, 17)
+        Me.CardUDPAttack.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardUDPAttack.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CardUDPAttack.Name = "CardUDPAttack"
+        Me.CardUDPAttack.Padding = New System.Windows.Forms.Padding(14)
+        Me.CardUDPAttack.Size = New System.Drawing.Size(312, 324)
+        Me.CardUDPAttack.TabIndex = 0
+        '
+        'BtnReboot
+        '
+        Me.BtnReboot.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnReboot.Depth = 0
+        Me.BtnReboot.DrawShadows = True
+        Me.BtnReboot.HighEmphasis = True
+        Me.BtnReboot.Icon = Nothing
+        Me.BtnReboot.Location = New System.Drawing.Point(167, 249)
+        Me.BtnReboot.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnReboot.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnReboot.Name = "BtnReboot"
+        Me.BtnReboot.Size = New System.Drawing.Size(117, 36)
+        Me.BtnReboot.TabIndex = 7
+        Me.BtnReboot.Text = "填入重启指令"
+        Me.BtnReboot.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnReboot.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnReboot.UseAccentColor = False
+        Me.BtnReboot.UseVisualStyleBackColor = True
+        '
+        'BtnHalt
+        '
+        Me.BtnHalt.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnHalt.Depth = 0
+        Me.BtnHalt.DrawShadows = True
+        Me.BtnHalt.HighEmphasis = True
+        Me.BtnHalt.Icon = Nothing
+        Me.BtnHalt.Location = New System.Drawing.Point(28, 249)
+        Me.BtnHalt.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnHalt.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnHalt.Name = "BtnHalt"
+        Me.BtnHalt.Size = New System.Drawing.Size(117, 36)
+        Me.BtnHalt.TabIndex = 6
+        Me.BtnHalt.Text = "填入关机指令"
+        Me.BtnHalt.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnHalt.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnHalt.UseAccentColor = False
+        Me.BtnHalt.UseVisualStyleBackColor = True
+        '
+        'TbxCommand
+        '
+        Me.TbxCommand.Depth = 0
+        Me.TbxCommand.Location = New System.Drawing.Point(86, 167)
+        Me.TbxCommand.MaxLength = 100
+        Me.TbxCommand.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.TbxCommand.Name = "TbxCommand"
+        Me.TbxCommand.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TbxCommand.SelectedText = ""
+        Me.TbxCommand.SelectionLength = 0
+        Me.TbxCommand.SelectionStart = 0
+        Me.TbxCommand.Size = New System.Drawing.Size(203, 25)
+        Me.TbxCommand.TabIndex = 4
+        Me.TbxCommand.TabStop = False
+        Me.TbxCommand.UseAccentColor = False
+        Me.TbxCommand.UseSystemPasswordChar = False
+        '
+        'TbxSendText
+        '
+        Me.TbxSendText.Depth = 0
+        Me.TbxSendText.Location = New System.Drawing.Point(85, 88)
+        Me.TbxSendText.MaxLength = 100
+        Me.TbxSendText.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.TbxSendText.Name = "TbxSendText"
+        Me.TbxSendText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TbxSendText.SelectedText = ""
+        Me.TbxSendText.SelectionLength = 0
+        Me.TbxSendText.SelectionStart = 0
+        Me.TbxSendText.Size = New System.Drawing.Size(204, 25)
+        Me.TbxSendText.TabIndex = 2
+        Me.TbxSendText.TabStop = False
+        Me.TbxSendText.UseAccentColor = False
+        Me.TbxSendText.UseSystemPasswordChar = False
+        '
+        'TbxPort
+        '
+        Me.TbxPort.Depth = 0
+        Me.TbxPort.Location = New System.Drawing.Point(85, 57)
+        Me.TbxPort.MaxLength = 32767
+        Me.TbxPort.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.TbxPort.Name = "TbxPort"
+        Me.TbxPort.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TbxPort.SelectedText = ""
+        Me.TbxPort.SelectionLength = 0
+        Me.TbxPort.SelectionStart = 0
+        Me.TbxPort.Size = New System.Drawing.Size(204, 25)
+        Me.TbxPort.TabIndex = 1
+        Me.TbxPort.TabStop = False
+        Me.TbxPort.Text = "4705"
+        Me.TbxPort.UseAccentColor = False
+        Me.TbxPort.UseSystemPasswordChar = False
+        '
+        'TbxIPAddress
+        '
+        Me.TbxIPAddress.Depth = 0
+        Me.TbxIPAddress.Location = New System.Drawing.Point(86, 26)
+        Me.TbxIPAddress.MaxLength = 32767
+        Me.TbxIPAddress.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.TbxIPAddress.Name = "TbxIPAddress"
+        Me.TbxIPAddress.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TbxIPAddress.SelectedText = ""
+        Me.TbxIPAddress.SelectionLength = 0
+        Me.TbxIPAddress.SelectionStart = 0
+        Me.TbxIPAddress.Size = New System.Drawing.Size(203, 25)
+        Me.TbxIPAddress.TabIndex = 0
+        Me.TbxIPAddress.TabStop = False
+        Me.TbxIPAddress.UseAccentColor = False
+        Me.TbxIPAddress.UseSystemPasswordChar = False
+        '
+        'BtnSendCommand
+        '
+        Me.BtnSendCommand.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnSendCommand.Depth = 0
+        Me.BtnSendCommand.DrawShadows = True
+        Me.BtnSendCommand.HighEmphasis = True
+        Me.BtnSendCommand.Icon = Nothing
+        Me.BtnSendCommand.Location = New System.Drawing.Point(236, 201)
+        Me.BtnSendCommand.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnSendCommand.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnSendCommand.Name = "BtnSendCommand"
+        Me.BtnSendCommand.Size = New System.Drawing.Size(53, 36)
+        Me.BtnSendCommand.TabIndex = 5
+        Me.BtnSendCommand.Text = "发送"
+        Me.BtnSendCommand.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnSendCommand.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnSendCommand.UseAccentColor = False
+        Me.BtnSendCommand.UseVisualStyleBackColor = True
+        '
+        'BtnSendText
+        '
+        Me.BtnSendText.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnSendText.Depth = 0
+        Me.BtnSendText.DrawShadows = True
+        Me.BtnSendText.HighEmphasis = True
+        Me.BtnSendText.Icon = Nothing
+        Me.BtnSendText.Location = New System.Drawing.Point(236, 122)
+        Me.BtnSendText.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnSendText.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnSendText.Name = "BtnSendText"
+        Me.BtnSendText.Size = New System.Drawing.Size(53, 36)
+        Me.BtnSendText.TabIndex = 3
+        Me.BtnSendText.Text = "发送"
+        Me.BtnSendText.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnSendText.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnSendText.UseAccentColor = False
+        Me.BtnSendText.UseVisualStyleBackColor = True
+        '
+        'LabUDPTips2
+        '
+        Me.LabUDPTips2.AutoSize = True
+        Me.LabUDPTips2.Location = New System.Drawing.Point(86, 195)
+        Me.LabUDPTips2.Name = "LabUDPTips2"
+        Me.LabUDPTips2.Size = New System.Drawing.Size(106, 15)
+        Me.LabUDPTips2.TabIndex = 36
+        Me.LabUDPTips2.Text = "* 最多 100 个字符"
+        '
+        'LabUDPTips1
+        '
+        Me.LabUDPTips1.AutoSize = True
+        Me.LabUDPTips1.Location = New System.Drawing.Point(85, 116)
+        Me.LabUDPTips1.Name = "LabUDPTips1"
+        Me.LabUDPTips1.Size = New System.Drawing.Size(106, 15)
+        Me.LabUDPTips1.TabIndex = 35
+        Me.LabUDPTips1.Text = "* 最多 100 个字符"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(86, 203)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(0, 15)
+        Me.Label8.TabIndex = 34
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(23, 167)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(61, 15)
+        Me.Label7.TabIndex = 33
+        Me.Label7.Text = "发送命令: "
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(23, 88)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(61, 15)
+        Me.Label6.TabIndex = 32
+        Me.Label6.Text = "发送文字: "
+        '
+        'LabUDPAuthor
+        '
+        Me.LabUDPAuthor.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.LabUDPAuthor.AutoSize = True
+        Me.LabUDPAuthor.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LabUDPAuthor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.LabUDPAuthor.Location = New System.Drawing.Point(66, 306)
+        Me.LabUDPAuthor.Name = "LabUDPAuthor"
+        Me.LabUDPAuthor.Size = New System.Drawing.Size(180, 15)
+        Me.LabUDPAuthor.TabIndex = 31
+        Me.LabUDPAuthor.Text = "本功能原理由 ht0Ruial 大佬提供"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(47, 57)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(37, 15)
+        Me.Label4.TabIndex = 26
+        Me.Label4.Text = "端口: "
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(33, 26)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(51, 15)
+        Me.Label3.TabIndex = 24
+        Me.Label3.Text = "IP 地址: "
+        '
+        'LabUDPWarn
+        '
+        Me.LabUDPWarn.AutoSize = True
+        Me.LabUDPWarn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LabUDPWarn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.LabUDPWarn.Location = New System.Drawing.Point(19, 291)
+        Me.LabUDPWarn.Name = "LabUDPWarn"
+        Me.LabUDPWarn.Size = New System.Drawing.Size(274, 15)
+        Me.LabUDPWarn.TabIndex = 21
+        Me.LabUDPWarn.Text = "警告: 因使用此功能而造成的任何后果, 与作者无关!"
+        '
+        'LabUDP
+        '
+        Me.LabUDP.AutoSize = True
+        Me.LabUDP.BackColor = System.Drawing.Color.Transparent
+        Me.LabUDP.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LabUDP.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.LabUDP.Location = New System.Drawing.Point(2, 4)
+        Me.LabUDP.Name = "LabUDP"
+        Me.LabUDP.Size = New System.Drawing.Size(87, 13)
+        Me.LabUDP.TabIndex = 16
+        Me.LabUDP.Text = "极域 UDP 攻击"
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Controls.Add(Me.CardLog)
+        Me.TabPage3.Controls.Add(Me.CardUpdate)
+        Me.TabPage3.Controls.Add(Me.CardSettingGeneral)
+        Me.TabPage3.ImageIndex = 2
+        Me.TabPage3.Location = New System.Drawing.Point(4, 31)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(894, 476)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "设置"
+        '
+        'CardLog
+        '
+        Me.CardLog.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CardLog.Controls.Add(Me.BtnCleanLog)
+        Me.CardLog.Controls.Add(Me.BtnExportLog)
+        Me.CardLog.Controls.Add(Me.TbxLog)
+        Me.CardLog.Controls.Add(Me.LabLog)
+        Me.CardLog.Depth = 0
+        Me.CardLog.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CardLog.Location = New System.Drawing.Point(16, 335)
+        Me.CardLog.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardLog.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CardLog.Name = "CardLog"
+        Me.CardLog.Padding = New System.Windows.Forms.Padding(14)
+        Me.CardLog.Size = New System.Drawing.Size(864, 127)
+        Me.CardLog.TabIndex = 3
+        '
+        'BtnCleanLog
+        '
+        Me.BtnCleanLog.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnCleanLog.Depth = 0
+        Me.BtnCleanLog.DrawShadows = True
+        Me.BtnCleanLog.HighEmphasis = True
+        Me.BtnCleanLog.Icon = Nothing
+        Me.BtnCleanLog.Location = New System.Drawing.Point(761, 74)
+        Me.BtnCleanLog.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnCleanLog.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnCleanLog.Name = "BtnCleanLog"
+        Me.BtnCleanLog.Size = New System.Drawing.Size(85, 36)
+        Me.BtnCleanLog.TabIndex = 6
+        Me.BtnCleanLog.Text = "清除日志"
+        Me.BtnCleanLog.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnCleanLog.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnCleanLog.UseAccentColor = False
+        Me.BtnCleanLog.UseVisualStyleBackColor = True
+        '
+        'BtnExportLog
+        '
+        Me.BtnExportLog.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnExportLog.Depth = 0
+        Me.BtnExportLog.DrawShadows = True
+        Me.BtnExportLog.HighEmphasis = True
+        Me.BtnExportLog.Icon = Nothing
+        Me.BtnExportLog.Location = New System.Drawing.Point(761, 20)
+        Me.BtnExportLog.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnExportLog.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnExportLog.Name = "BtnExportLog"
+        Me.BtnExportLog.Size = New System.Drawing.Size(85, 36)
+        Me.BtnExportLog.TabIndex = 5
+        Me.BtnExportLog.Text = "导出日志"
+        Me.BtnExportLog.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnExportLog.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnExportLog.UseAccentColor = False
+        Me.BtnExportLog.UseVisualStyleBackColor = True
+        '
+        'TbxLog
+        '
+        Me.TbxLog.Location = New System.Drawing.Point(19, 20)
+        Me.TbxLog.MaxLength = 0
+        Me.TbxLog.Multiline = True
+        Me.TbxLog.Name = "TbxLog"
+        Me.TbxLog.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TbxLog.Size = New System.Drawing.Size(731, 90)
+        Me.TbxLog.TabIndex = 4
+        '
+        'LabLog
+        '
+        Me.LabLog.AutoSize = True
+        Me.LabLog.BackColor = System.Drawing.Color.Transparent
+        Me.LabLog.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LabLog.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.LabLog.Location = New System.Drawing.Point(2, 4)
+        Me.LabLog.Name = "LabLog"
+        Me.LabLog.Size = New System.Drawing.Size(33, 13)
+        Me.LabLog.TabIndex = 0
+        Me.LabLog.Text = "日志"
+        '
+        'CardUpdate
+        '
+        Me.CardUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CardUpdate.Controls.Add(Me.BtnReCheckUpdate)
+        Me.CardUpdate.Controls.Add(Me.GbxLog)
+        Me.CardUpdate.Controls.Add(Me.GbxVersion)
+        Me.CardUpdate.Controls.Add(Me.LabUpdate)
+        Me.CardUpdate.Depth = 0
+        Me.CardUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CardUpdate.Location = New System.Drawing.Point(14, 107)
+        Me.CardUpdate.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardUpdate.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CardUpdate.Name = "CardUpdate"
+        Me.CardUpdate.Padding = New System.Windows.Forms.Padding(14)
+        Me.CardUpdate.Size = New System.Drawing.Size(866, 200)
+        Me.CardUpdate.TabIndex = 2
+        '
+        'BtnReCheckUpdate
+        '
+        Me.BtnReCheckUpdate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnReCheckUpdate.Depth = 0
+        Me.BtnReCheckUpdate.DrawShadows = True
+        Me.BtnReCheckUpdate.HighEmphasis = True
+        Me.BtnReCheckUpdate.Icon = Nothing
+        Me.BtnReCheckUpdate.Location = New System.Drawing.Point(21, 151)
+        Me.BtnReCheckUpdate.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnReCheckUpdate.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.BtnReCheckUpdate.Name = "BtnReCheckUpdate"
+        Me.BtnReCheckUpdate.Size = New System.Drawing.Size(85, 36)
+        Me.BtnReCheckUpdate.TabIndex = 2
+        Me.BtnReCheckUpdate.Text = "检查更新"
+        Me.BtnReCheckUpdate.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
+        Me.BtnReCheckUpdate.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.BtnReCheckUpdate.UseAccentColor = False
+        Me.BtnReCheckUpdate.UseVisualStyleBackColor = True
+        '
+        'GbxLog
+        '
+        Me.GbxLog.Controls.Add(Me.RtbUpdate)
+        Me.GbxLog.Location = New System.Drawing.Point(427, 20)
+        Me.GbxLog.Name = "GbxLog"
+        Me.GbxLog.Size = New System.Drawing.Size(419, 167)
+        Me.GbxLog.TabIndex = 4
+        Me.GbxLog.TabStop = False
+        Me.GbxLog.Text = "更新日志"
+        '
+        'RtbUpdate
+        '
+        Me.RtbUpdate.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.RtbUpdate.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RtbUpdate.Location = New System.Drawing.Point(6, 21)
+        Me.RtbUpdate.Name = "RtbUpdate"
+        Me.RtbUpdate.ReadOnly = True
+        Me.RtbUpdate.Size = New System.Drawing.Size(407, 137)
+        Me.RtbUpdate.TabIndex = 3
+        Me.RtbUpdate.Text = ""
+        '
+        'GbxVersion
+        '
+        Me.GbxVersion.Controls.Add(Me.TbxVersion)
+        Me.GbxVersion.Location = New System.Drawing.Point(21, 20)
+        Me.GbxVersion.Name = "GbxVersion"
+        Me.GbxVersion.Size = New System.Drawing.Size(379, 122)
+        Me.GbxVersion.TabIndex = 3
+        Me.GbxVersion.TabStop = False
+        Me.GbxVersion.Text = "版本"
+        '
+        'TbxVersion
+        '
+        Me.TbxVersion.Location = New System.Drawing.Point(6, 21)
+        Me.TbxVersion.Multiline = True
+        Me.TbxVersion.Name = "TbxVersion"
+        Me.TbxVersion.ReadOnly = True
+        Me.TbxVersion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TbxVersion.Size = New System.Drawing.Size(367, 95)
+        Me.TbxVersion.TabIndex = 1
+        '
+        'LabUpdate
+        '
+        Me.LabUpdate.AutoSize = True
+        Me.LabUpdate.BackColor = System.Drawing.Color.Transparent
+        Me.LabUpdate.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LabUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.LabUpdate.Location = New System.Drawing.Point(2, 4)
+        Me.LabUpdate.Name = "LabUpdate"
+        Me.LabUpdate.Size = New System.Drawing.Size(33, 13)
+        Me.LabUpdate.TabIndex = 0
+        Me.LabUpdate.Text = "更新"
+        '
+        'CardSettingGeneral
+        '
+        Me.CardSettingGeneral.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CardSettingGeneral.Controls.Add(Me.LabSettingGeneral)
+        Me.CardSettingGeneral.Controls.Add(Me.SwitchNotice)
+        Me.CardSettingGeneral.Depth = 0
+        Me.CardSettingGeneral.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CardSettingGeneral.Location = New System.Drawing.Point(14, 14)
+        Me.CardSettingGeneral.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardSettingGeneral.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CardSettingGeneral.Name = "CardSettingGeneral"
+        Me.CardSettingGeneral.Padding = New System.Windows.Forms.Padding(14)
+        Me.CardSettingGeneral.Size = New System.Drawing.Size(866, 65)
+        Me.CardSettingGeneral.TabIndex = 1
+        '
+        'LabSettingGeneral
+        '
+        Me.LabSettingGeneral.AutoSize = True
+        Me.LabSettingGeneral.BackColor = System.Drawing.Color.Transparent
+        Me.LabSettingGeneral.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LabSettingGeneral.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.LabSettingGeneral.Location = New System.Drawing.Point(2, 4)
+        Me.LabSettingGeneral.Name = "LabSettingGeneral"
+        Me.LabSettingGeneral.Size = New System.Drawing.Size(33, 13)
+        Me.LabSettingGeneral.TabIndex = 2
+        Me.LabSettingGeneral.Text = "通用"
+        '
+        'SwitchNotice
+        '
+        Me.SwitchNotice.AutoSize = True
+        Me.SwitchNotice.Checked = True
+        Me.SwitchNotice.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.SwitchNotice.Depth = 0
+        Me.SwitchNotice.Location = New System.Drawing.Point(14, 16)
+        Me.SwitchNotice.Margin = New System.Windows.Forms.Padding(0)
+        Me.SwitchNotice.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.SwitchNotice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.SwitchNotice.Name = "SwitchNotice"
+        Me.SwitchNotice.Ripple = True
+        Me.SwitchNotice.Size = New System.Drawing.Size(154, 37)
+        Me.SwitchNotice.TabIndex = 0
+        Me.SwitchNotice.Text = "主页公告轮播"
+        Me.SwitchNotice.UseAccentColor = False
+        Me.SwitchNotice.UseVisualStyleBackColor = True
+        '
+        'TabPage4
+        '
+        Me.TabPage4.Controls.Add(Me.CardAbout)
+        Me.TabPage4.ImageIndex = 3
+        Me.TabPage4.Location = New System.Drawing.Point(4, 31)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(894, 476)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "关于"
+        '
+        'CardAbout
+        '
+        Me.CardAbout.BackColor = System.Drawing.Color.Transparent
+        Me.CardAbout.Color1 = System.Drawing.Color.DodgerBlue
+        Me.CardAbout.Color2 = System.Drawing.Color.LimeGreen
+        Me.CardAbout.ForeColor = System.Drawing.Color.White
+        Me.CardAbout.Location = New System.Drawing.Point(-6, 0)
+        Me.CardAbout.Name = "CardAbout"
+        Me.CardAbout.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality
+        Me.CardAbout.Size = New System.Drawing.Size(912, 522)
+        Me.CardAbout.TabIndex = 0
+        Me.CardAbout.Text = "ParrotCard1"
+        Me.CardAbout.Text1 = ""
+        Me.CardAbout.Text2 = " CloudClassUtility -- 一款简易, 快速的微机课工具."
+        Me.CardAbout.Text3 = " [C] 2022 Cookie987"
+        Me.CardAbout.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "baseline_home_black_18dp.png")
+        Me.ImageList1.Images.SetKeyName(1, "baseline_extension_black_18dp.png")
+        Me.ImageList1.Images.SetKeyName(2, "baseline_settings_black_18dp.png")
+        Me.ImageList1.Images.SetKeyName(3, "baseline_info_black_18dp.png")
+        '
+        'MaterialDivider1
+        '
+        Me.MaterialDivider1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.MaterialDivider1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(181, Byte), Integer))
+        Me.MaterialDivider1.Depth = 0
+        Me.MaterialDivider1.Location = New System.Drawing.Point(0, 0)
+        Me.MaterialDivider1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.MaterialDivider1.Name = "MaterialDivider1"
+        Me.MaterialDivider1.Size = New System.Drawing.Size(902, 38)
+        Me.MaterialDivider1.TabIndex = 8
+        Me.MaterialDivider1.Text = "MaterialDivider1"
+        '
+        'PbtnMenu
+        '
+        Me.PbtnMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(181, Byte), Integer))
+        Me.PbtnMenu.Image = Global.CloudClassUtility.My.Resources.Resources.baseline_menu_white_18dp
+        Me.PbtnMenu.Location = New System.Drawing.Point(9, 8)
+        Me.PbtnMenu.Name = "PbtnMenu"
+        Me.PbtnMenu.Size = New System.Drawing.Size(24, 24)
+        Me.PbtnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PbtnMenu.TabIndex = 2
+        Me.PbtnMenu.TabStop = False
+        '
+        'Title
+        '
+        Me.Title.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(181, Byte), Integer))
+        Me.Title.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Title.ForeColor = System.Drawing.Color.White
+        Me.Title.Location = New System.Drawing.Point(34, 8)
+        Me.Title.Name = "Title"
+        Me.Title.Size = New System.Drawing.Size(796, 24)
+        Me.Title.TabIndex = 9
+        Me.Title.Text = "CloudClassUtility"
+        '
+        'PbtnClose
+        '
+        Me.PbtnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PbtnClose.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(181, Byte), Integer))
+        Me.PbtnClose.Image = Global.CloudClassUtility.My.Resources.Resources.baseline_close_white_18dp
+        Me.PbtnClose.Location = New System.Drawing.Point(866, 8)
+        Me.PbtnClose.Name = "PbtnClose"
+        Me.PbtnClose.Size = New System.Drawing.Size(24, 24)
+        Me.PbtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PbtnClose.TabIndex = 2
+        Me.PbtnClose.TabStop = False
+        '
+        'PbtnMinimize
+        '
+        Me.PbtnMinimize.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PbtnMinimize.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(181, Byte), Integer))
+        Me.PbtnMinimize.Image = Global.CloudClassUtility.My.Resources.Resources.baseline_minimize_white_18dp
+        Me.PbtnMinimize.Location = New System.Drawing.Point(836, 8)
+        Me.PbtnMinimize.Name = "PbtnMinimize"
+        Me.PbtnMinimize.Size = New System.Drawing.Size(24, 24)
+        Me.PbtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PbtnMinimize.TabIndex = 10
+        Me.PbtnMinimize.TabStop = False
+        '
+        'TimStat
+        '
+        Me.TimStat.Interval = 2000
+        '
+        'TimMain
+        '
+        Me.TimMain.Interval = 200
+        '
+        'TimNotice
+        '
+        Me.TimNotice.Enabled = True
+        Me.TimNotice.Interval = 5000
+        '
+        'MaterialDrawer1
+        '
+        Me.MaterialDrawer1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.MaterialDrawer1.AutoHide = True
+        Me.MaterialDrawer1.BackgroundWithAccent = False
+        Me.MaterialDrawer1.BaseTabControl = Nothing
+        Me.MaterialDrawer1.Depth = 0
+        Me.MaterialDrawer1.DrawerHideTabName = New String(-1) {}
+        Me.MaterialDrawer1.DrawerNonClickTabPage = New System.Windows.Forms.TabPage(-1) {}
+        Me.MaterialDrawer1.HighlightWithAccent = True
+        Me.MaterialDrawer1.IndicatorWidth = 0
+        Me.MaterialDrawer1.IsOpen = False
+        Me.MaterialDrawer1.Location = New System.Drawing.Point(-254, 35)
+        Me.MaterialDrawer1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.MaterialDrawer1.Name = "MaterialDrawer1"
+        Me.MaterialDrawer1.ShowIconsWhenHidden = False
+        Me.MaterialDrawer1.ShowTabControl = Me.MaterialTabControl1
+        Me.MaterialDrawer1.Size = New System.Drawing.Size(254, 507)
+        Me.MaterialDrawer1.TabIndex = 11
+        Me.MaterialDrawer1.Text = "MaterialDrawer1"
+        Me.MaterialDrawer1.UseColors = True
+        '
+        'TimLog
+        '
+        Me.TimLog.Enabled = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(902, 514)
-        Me.Controls.Add(Me.MaterialCard1)
+        Me.ClientSize = New System.Drawing.Size(902, 545)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.MaterialDrawer1)
+        Me.Controls.Add(Me.PbtnMinimize)
+        Me.Controls.Add(Me.PbtnClose)
+        Me.Controls.Add(Me.Title)
+        Me.Controls.Add(Me.PbtnMenu)
+        Me.Controls.Add(Me.MaterialDivider1)
+        Me.Controls.Add(Me.MaterialTabControl1)
         Me.Controls.Add(Me.CrownMenuStrip1)
         Me.DoubleBuffered = True
-        Me.IsMdiContainer = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.MinimumSize = New System.Drawing.Size(126, 50)
         Me.Name = "Form1"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.Text = "CloudClassUtility"
-        Me.TransparencyKey = System.Drawing.Color.Fuchsia
         Me.CrownMenuStrip1.ResumeLayout(False)
         Me.CrownMenuStrip1.PerformLayout()
-        Me.MaterialCard1.ResumeLayout(False)
-        Me.MetroTabControl1.ResumeLayout(False)
+        Me.MaterialTabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.CardNotice.ResumeLayout(False)
+        Me.CardNotice.PerformLayout()
+        Me.TcNotice.ResumeLayout(False)
+        Me.TpNotice1.ResumeLayout(False)
+        Me.TpNotice1.PerformLayout()
+        Me.TpNotice2.ResumeLayout(False)
+        Me.TpNotice2.PerformLayout()
+        Me.TpNotice3.ResumeLayout(False)
+        Me.TpNotice3.PerformLayout()
+        Me.TpPreview.ResumeLayout(False)
+        Me.TpPreview.PerformLayout()
+        Me.MaterialCard1.ResumeLayout(False)
+        Me.MaterialCard1.PerformLayout()
+        Me.CardCho.ResumeLayout(False)
+        Me.CardCho.PerformLayout()
+        Me.CardWelcome.ResumeLayout(False)
+        Me.CardWelcome.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.CardOutput.ResumeLayout(False)
+        Me.CardOutput.PerformLayout()
+        Me.MaterialCard2.ResumeLayout(False)
+        Me.MaterialCard2.PerformLayout()
+        Me.CardJiyu.ResumeLayout(False)
+        Me.CardJiyu.PerformLayout()
+        Me.CardUDPAttack.ResumeLayout(False)
+        Me.CardUDPAttack.PerformLayout()
+        Me.TabPage3.ResumeLayout(False)
+        Me.CardLog.ResumeLayout(False)
+        Me.CardLog.PerformLayout()
+        Me.CardUpdate.ResumeLayout(False)
+        Me.CardUpdate.PerformLayout()
+        Me.GbxLog.ResumeLayout(False)
+        Me.GbxVersion.ResumeLayout(False)
+        Me.GbxVersion.PerformLayout()
+        Me.CardSettingGeneral.ResumeLayout(False)
+        Me.CardSettingGeneral.PerformLayout()
+        Me.TabPage4.ResumeLayout(False)
+        CType(Me.PbtnMenu, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PbtnClose, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PbtnMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -421,17 +1600,95 @@ Partial Class Form1
     Friend WithEvents 帮助HToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents 检测更新UToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents 关于CloudClassUtilityToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents MaterialCard1 As ReaLTaiizor.Controls.MaterialCard
     Friend WithEvents 监视器VToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MetroTabControl1 As ReaLTaiizor.Controls.MetroTabControl
+    Friend WithEvents 测试窗口TToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MaterialTabControl1 As ReaLTaiizor.Controls.MaterialTabControl
     Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents MaterialLabel1 As ReaLTaiizor.Controls.MaterialLabel
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents BtnNextStep As ReaLTaiizor.Controls.MaterialButton
-    Friend WithEvents BtnOK As ReaLTaiizor.Controls.MaterialButton
-    Friend WithEvents BtnChance As ReaLTaiizor.Controls.MaterialButton
-    Friend WithEvents BtnLastStep As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents CardWelcome As MaterialSkin.Controls.MaterialCard
+    Friend WithEvents LabWelcome As ReaLTaiizor.Controls.MaterialLabel
+    Friend WithEvents MaterialDivider1 As ReaLTaiizor.Controls.MaterialDivider
+    Friend WithEvents PbtnMenu As PictureBox
+    Friend WithEvents Title As Label
+    Friend WithEvents PbtnClose As PictureBox
+    Friend WithEvents PbtnMinimize As PictureBox
+    Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents StatCard As ReaLTaiizor.Controls.ParrotCard
+    Friend WithEvents TimStat As Timer
+    Friend WithEvents SwitchStat As ReaLTaiizor.Controls.MaterialSwitch
+    Friend WithEvents BtnStop As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents BtnStart As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents TimMain As Timer
+    Friend WithEvents CbxCustom As ReaLTaiizor.Controls.MaterialCheckBox
+    Friend WithEvents CbxRcc As ReaLTaiizor.Controls.MaterialCheckBox
+    Friend WithEvents CbxRedSpider As ReaLTaiizor.Controls.MaterialCheckBox
+    Friend WithEvents CbxJiyu As ReaLTaiizor.Controls.MaterialCheckBox
+    Friend WithEvents TbxCustom As ReaLTaiizor.Controls.MaterialSingleTextBox
+    Friend WithEvents CardCho As MaterialSkin.Controls.MaterialCard
+    Friend WithEvents LabChooseWay As ReaLTaiizor.Controls.SmallLabel
+    Friend WithEvents MaterialCard1 As ReaLTaiizor.Controls.MaterialCard
+    Friend WithEvents SliDelay As MaterialSkin.Controls.MaterialSlider
+    Friend WithEvents SmallLabel2 As ReaLTaiizor.Controls.SmallLabel
+    Friend WithEvents CardNotice As ReaLTaiizor.Controls.MaterialCard
+    Friend WithEvents TcNotice As ReaLTaiizor.Controls.MetroTabControl
+    Friend WithEvents TpNotice1 As TabPage
+    Friend WithEvents LabNotice1_2 As ReaLTaiizor.Controls.MaterialLabel
+    Friend WithEvents LabNotice1_1 As ReaLTaiizor.Controls.MaterialLabel
+    Friend WithEvents TpNotice2 As TabPage
+    Friend WithEvents LabNotice2 As ReaLTaiizor.Controls.MaterialLabel
+    Friend WithEvents LabNotice As ReaLTaiizor.Controls.MaterialLabel
+    Friend WithEvents TpNotice3 As TabPage
+    Friend WithEvents MaterialLabel1 As ReaLTaiizor.Controls.MaterialLabel
+    Friend WithEvents SmallLabel1 As ReaLTaiizor.Controls.SmallLabel
+    Friend WithEvents TimNotice As Timer
+    Friend WithEvents TpPreview As TabPage
     Friend WithEvents MaterialLabel2 As ReaLTaiizor.Controls.MaterialLabel
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents CardUDPAttack As ReaLTaiizor.Controls.MaterialCard
+    Friend WithEvents LabUDP As ReaLTaiizor.Controls.SmallLabel
+    Friend WithEvents BtnReboot As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents BtnHalt As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents TbxCommand As ReaLTaiizor.Controls.MaterialSingleTextBox
+    Friend WithEvents TbxSendText As ReaLTaiizor.Controls.MaterialSingleTextBox
+    Friend WithEvents TbxPort As ReaLTaiizor.Controls.MaterialSingleTextBox
+    Friend WithEvents TbxIPAddress As ReaLTaiizor.Controls.MaterialSingleTextBox
+    Friend WithEvents BtnSendCommand As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents BtnSendText As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents LabUDPTips2 As Label
+    Friend WithEvents LabUDPTips1 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents LabUDPAuthor As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents LabUDPWarn As Label
+    Friend WithEvents CardJiyu As ReaLTaiizor.Controls.MaterialCard
+    Friend WithEvents LabJiyu As ReaLTaiizor.Controls.SmallLabel
+    Friend WithEvents BtnUniJiyuUsbDriver As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents GetJiyuPasswd As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents MaterialCard2 As ReaLTaiizor.Controls.MaterialCard
+    Friend WithEvents LabRedSpider As ReaLTaiizor.Controls.SmallLabel
+    Friend WithEvents CardOutput As ReaLTaiizor.Controls.MaterialCard
+    Friend WithEvents TbxOutput As TextBox
+    Friend WithEvents LabOutput As ReaLTaiizor.Controls.SmallLabel
+    Friend WithEvents SwitchNotice As ReaLTaiizor.Controls.MaterialSwitch
+    Friend WithEvents CardSettingGeneral As ReaLTaiizor.Controls.MaterialCard
+    Friend WithEvents LabSettingGeneral As ReaLTaiizor.Controls.SmallLabel
+    Friend WithEvents MaterialDrawer1 As ReaLTaiizor.Controls.MaterialDrawer
+    Friend WithEvents CardUpdate As ReaLTaiizor.Controls.MaterialCard
+    Friend WithEvents LabUpdate As ReaLTaiizor.Controls.SmallLabel
+    Friend WithEvents BtnReCheckUpdate As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents GbxLog As GroupBox
+    Friend WithEvents RtbUpdate As RichTextBox
+    Friend WithEvents GbxVersion As GroupBox
+    Friend WithEvents TbxVersion As TextBox
+    Friend WithEvents CardLog As ReaLTaiizor.Controls.MaterialCard
+    Friend WithEvents TbxLog As TextBox
+    Friend WithEvents LabLog As ReaLTaiizor.Controls.SmallLabel
+    Friend WithEvents BtnExportLog As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents BtnCleanLog As ReaLTaiizor.Controls.MaterialButton
+    Friend WithEvents TimLog As Timer
+    Friend WithEvents CardAbout As ReaLTaiizor.Controls.ParrotCard
 End Class

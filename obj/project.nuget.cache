@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8YgMoMeTkpKU7MqqJ1xjEMYo4XhRv55S9bSxwEf76ljyS/Q9m82eaFY9TSnvrEOBb1vLkLp/l2PDLQrN+ZdiCw==",
+  "dgSpecHash": "jUO/hc4jh6FhLs7S7Q+hsR62lTwSHkPBILXo/YyXD/sAOy0++PnZJmCJV6RGdIP1w+o8OY28Yf6M2ocBToj9Bw==",
   "success": true,
   "projectFilePath": "C:\\Users\\bilic\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
   "expectedPackageFiles": [
+    "C:\\Users\\bilic\\.nuget\\packages\\materialskin.2\\2.3.1\\materialskin.2.2.3.1.nupkg.sha512",
     "C:\\Users\\bilic\\.nuget\\packages\\realtaiizor\\3.7.8.6\\realtaiizor.3.7.8.6.nupkg.sha512"
   ],
   "logs": []

@@ -17,11 +17,11 @@ Imports System.Reflection
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyCopyrightAttribute("[C] 2022 RedCookieStudios"),  _
  Assembly: System.Reflection.AssemblyDescriptionAttribute("CloudClassUtility"),  _
- Assembly: System.Reflection.AssemblyFileVersionAttribute("3.400.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.400"),  _
+ Assembly: System.Reflection.AssemblyFileVersionAttribute("3.410.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.410"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("CloudClassUtility"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("CloudClassUtility"),  _
- Assembly: System.Reflection.AssemblyVersionAttribute("3.400.0.0"),  _
+ Assembly: System.Reflection.AssemblyVersionAttribute("3.410.0.0"),  _
  Assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0"),  _
  Assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")> 
 

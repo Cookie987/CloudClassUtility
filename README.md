@@ -19,8 +19,10 @@
 
 CloudClassUtility 是一个多功能的微机课辅助程序, 可以让您解除老师的控制. 通过此程序, 您可以完成许多高级操作, 例如通过 "UDP 重放攻击" 配合 `Base64` 就能实现很多效果, 例如
 
+依次发送以下命令 (一行一条)
+
 ```bash
-echo bXNnYm94ICLE47XEtefE1NLRvq2xuyA/Pz8gutrByyIKZGltIHMKZG8gdW50aWwgcz01MApzPXMrMQptc2dib3ggIrj4ztKwtDUwtM672LO1sMkiLDY0Cmxvb3A= > .\---.txt && certutil -decode .\---.txt .\---.vbs && start ---.vbs
+echo bXNnYm94ICLE47XEtefE1NLRvq2xuyA/Pz8gutrByyI= > .\---.txt
 ```
 表示
 

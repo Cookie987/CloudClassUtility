@@ -7,9 +7,6 @@
     <Compile Update="FrmAbout.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmAdvance.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FrmCrackRedSpider.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -22,19 +19,10 @@
     <Compile Update="FrmMaster.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmMonitor.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FrmSetting.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FrmUdpAttack.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FrmUpdate.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FrmWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmTest.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

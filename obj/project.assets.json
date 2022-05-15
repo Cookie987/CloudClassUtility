@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "MaterialSkin.2/2.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0-windows7.0/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/MaterialSkin.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "ReaLTaiizor/3.7.8.6": {
         "type": "package",
         "compile": {
@@ -17,6 +29,23 @@
     }
   },
   "libraries": {
+    "MaterialSkin.2/2.3.1": {
+      "sha512": "w2vFxLNk4InCDU7pXDfBqPfv55HhBtuu8HRfEqQpeS3sNTS1pUzDs/hS0b5JW2/tKvt+P1of9OINP8a9omWDBg==",
+      "type": "package",
+      "path": "materialskin.2/2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MaterialSkin.dll",
+        "lib/net461/MaterialSkin.dll",
+        "lib/net48/MaterialSkin.dll",
+        "lib/net5.0-windows7.0/MaterialSkin.dll",
+        "materialskin.2.2.3.1.nupkg.sha512",
+        "materialskin.2.nuspec",
+        "nugetIcon.png"
+      ]
+    },
     "ReaLTaiizor/3.7.8.6": {
       "sha512": "b7vfciDcXqoIWjYrr760TyyEZSadlAgkaglLFPrRbzHNla7WqaojmC8VzLt/soaD2yGd/56LN0spedW7JcxMFw==",
       "type": "package",
@@ -43,6 +72,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "MaterialSkin.2 >= 2.3.1",
       "ReaLTaiizor >= 3.7.8.6"
     ]
   },
@@ -50,7 +80,7 @@
     "C:\\Users\\bilic\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "3.400.0",
+    "version": "3.410.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\bilic\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
       "projectName": "CloudClassUtility",
@@ -85,6 +115,10 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
+          "MaterialSkin.2": {
+            "target": "Package",
+            "version": "[2.3.1, )"
+          },
           "ReaLTaiizor": {
             "target": "Package",
             "version": "[3.7.8.6, )"
