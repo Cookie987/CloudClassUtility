@@ -8,7 +8,7 @@ Public Class Form1
     Dim Tab As Integer = 1
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LocalVersion = "22w29a"
+        LocalVersion = "22w31a"
         Delay = 500
         Log = Date.Now + " Program Started" + vbCrLf + Date.Now + " Version: " + LocalVersion + vbCrLf + Date.Now + " Start init" + vbCrLf
         Log += Date.Now + " Start unzip UdpAttack.exe" + vbCrLf
@@ -322,6 +322,26 @@ Public Class Form1
     End Sub
 
     Private Sub SwitchLog_CheckedChanged(sender As Object, e As EventArgs) Handles SwitchLog.CheckedChanged
-        SwitchLog.Checked = TimLog.Enabled
+        TimLog.Enabled = SwitchLog.Checked
+    End Sub
+
+    Private Sub MaterialTabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MaterialTabControl1.SelectedIndexChanged
+        If MaterialTabControl1.SelectedIndex = 1 Then
+            TimNotice.Enabled = False
+            TimLog.Enabled = False
+        Else
+            TimNotice.Enabled = SwitchNotice.Checked
+            TimLog.Enabled = SwitchLog.Checked
+        End If
+    End Sub
+
+    Private Sub TbxCustom_Enter(sender As Object, e As EventArgs) Handles TbxCustom.Enter
+        TimNotice.Enabled = False
+        TimLog.Enabled = False
+    End Sub
+
+    Private Sub TbxCustom_Leave(sender As Object, e As EventArgs) Handles TbxCustom.Leave
+        TimNotice.Enabled = SwitchNotice.Checked
+        TimLog.Enabled = SwitchLog.Checked
     End Sub
 End Class
