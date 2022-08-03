@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\bilic\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\bilic\\.nuget\\packages"
+      "C:\\Users\\Cookie987\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Cookie987\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

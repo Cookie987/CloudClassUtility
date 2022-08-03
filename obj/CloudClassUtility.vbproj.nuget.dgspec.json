@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bilic\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj": {}
+    "D:\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\bilic\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj": {
+    "D:\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj": {
       "version": "3.410.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bilic\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
+        "projectUniqueName": "D:\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
         "projectName": "CloudClassUtility",
-        "projectPath": "C:\\Users\\bilic\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
-        "packagesPath": "C:\\Users\\bilic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bilic\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\obj\\",
+        "projectPath": "D:\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
+        "packagesPath": "C:\\Users\\Cookie987\\.nuget\\packages\\",
+        "outputPath": "D:\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bilic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cookie987\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[0.10.17, )"
+            },
             "MaterialSkin.2": {
               "target": "Package",
               "version": "[2.3.1, )"
@@ -67,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

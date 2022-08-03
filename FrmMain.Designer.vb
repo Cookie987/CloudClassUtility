@@ -44,8 +44,6 @@ Partial Class Form1
         Me.CardNotice = New ReaLTaiizor.Controls.MaterialCard()
         Me.TcNotice = New ReaLTaiizor.Controls.MetroTabControl()
         Me.TpNotice1 = New System.Windows.Forms.TabPage()
-        Me.LabNotice1_2 = New ReaLTaiizor.Controls.MaterialLabel()
-        Me.LabNotice1_1 = New ReaLTaiizor.Controls.MaterialLabel()
         Me.TpNotice2 = New System.Windows.Forms.TabPage()
         Me.LabNotice2 = New ReaLTaiizor.Controls.MaterialLabel()
         Me.LabNotice = New ReaLTaiizor.Controls.MaterialLabel()
@@ -129,6 +127,7 @@ Partial Class Form1
         Me.TimNotice = New System.Windows.Forms.Timer(Me.components)
         Me.MaterialDrawer1 = New ReaLTaiizor.Controls.MaterialDrawer()
         Me.TimLog = New System.Windows.Forms.Timer(Me.components)
+        Me.LabNotice1_2 = New ReaLTaiizor.Controls.MaterialLabel()
         Me.CrownMenuStrip1.SuspendLayout()
         Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -167,7 +166,7 @@ Partial Class Form1
         Me.CrownMenuStrip1.MdiWindowListItem = Me.窗口WToolStripMenuItem1
         Me.CrownMenuStrip1.Name = "CrownMenuStrip1"
         Me.CrownMenuStrip1.Padding = New System.Windows.Forms.Padding(3, 2, 0, 2)
-        Me.CrownMenuStrip1.Size = New System.Drawing.Size(902, 24)
+        Me.CrownMenuStrip1.Size = New System.Drawing.Size(902, 27)
         Me.CrownMenuStrip1.TabIndex = 3
         Me.CrownMenuStrip1.Text = "CrownMenuStrip1"
         Me.CrownMenuStrip1.Visible = False
@@ -178,7 +177,7 @@ Partial Class Form1
         Me.窗口WToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.主窗口MToolStripMenuItem1, Me.高级AToolStripMenuItem1, Me.监视器VToolStripMenuItem, Me.设置SToolStripMenuItem1, Me.测试窗口TToolStripMenuItem})
         Me.窗口WToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.窗口WToolStripMenuItem1.Name = "窗口WToolStripMenuItem1"
-        Me.窗口WToolStripMenuItem1.Size = New System.Drawing.Size(62, 20)
+        Me.窗口WToolStripMenuItem1.Size = New System.Drawing.Size(64, 23)
         Me.窗口WToolStripMenuItem1.Text = "窗口(&W)"
         '
         '主窗口MToolStripMenuItem1
@@ -186,7 +185,7 @@ Partial Class Form1
         Me.主窗口MToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.主窗口MToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.主窗口MToolStripMenuItem1.Name = "主窗口MToolStripMenuItem1"
-        Me.主窗口MToolStripMenuItem1.Size = New System.Drawing.Size(138, 22)
+        Me.主窗口MToolStripMenuItem1.Size = New System.Drawing.Size(139, 22)
         Me.主窗口MToolStripMenuItem1.Text = "主窗口(&M)"
         '
         '高级AToolStripMenuItem1
@@ -194,7 +193,7 @@ Partial Class Form1
         Me.高级AToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.高级AToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.高级AToolStripMenuItem1.Name = "高级AToolStripMenuItem1"
-        Me.高级AToolStripMenuItem1.Size = New System.Drawing.Size(138, 22)
+        Me.高级AToolStripMenuItem1.Size = New System.Drawing.Size(139, 22)
         Me.高级AToolStripMenuItem1.Text = "高级(&A)"
         '
         '监视器VToolStripMenuItem
@@ -202,7 +201,7 @@ Partial Class Form1
         Me.监视器VToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.监视器VToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.监视器VToolStripMenuItem.Name = "监视器VToolStripMenuItem"
-        Me.监视器VToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
+        Me.监视器VToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.监视器VToolStripMenuItem.Text = "监视器(&V)"
         '
         '设置SToolStripMenuItem1
@@ -210,7 +209,7 @@ Partial Class Form1
         Me.设置SToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.设置SToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.设置SToolStripMenuItem1.Name = "设置SToolStripMenuItem1"
-        Me.设置SToolStripMenuItem1.Size = New System.Drawing.Size(138, 22)
+        Me.设置SToolStripMenuItem1.Size = New System.Drawing.Size(139, 22)
         Me.设置SToolStripMenuItem1.Text = "设置(&S)"
         '
         '测试窗口TToolStripMenuItem
@@ -218,7 +217,7 @@ Partial Class Form1
         Me.测试窗口TToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.测试窗口TToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.测试窗口TToolStripMenuItem.Name = "测试窗口TToolStripMenuItem"
-        Me.测试窗口TToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
+        Me.测试窗口TToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.测试窗口TToolStripMenuItem.Text = "测试窗口(&T)"
         '
         '日志LToolStripMenuItem
@@ -227,7 +226,7 @@ Partial Class Form1
         Me.日志LToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.查看日志VToolStripMenuItem1, Me.导出日志ToolStripMenuItem, Me.清除日志CToolStripMenuItem1})
         Me.日志LToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.日志LToolStripMenuItem.Name = "日志LToolStripMenuItem"
-        Me.日志LToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
+        Me.日志LToolStripMenuItem.Size = New System.Drawing.Size(58, 23)
         Me.日志LToolStripMenuItem.Text = "日志(&L)"
         '
         '查看日志VToolStripMenuItem1
@@ -235,7 +234,7 @@ Partial Class Form1
         Me.查看日志VToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.查看日志VToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.查看日志VToolStripMenuItem1.Name = "查看日志VToolStripMenuItem1"
-        Me.查看日志VToolStripMenuItem1.Size = New System.Drawing.Size(139, 22)
+        Me.查看日志VToolStripMenuItem1.Size = New System.Drawing.Size(140, 22)
         Me.查看日志VToolStripMenuItem1.Text = "查看日志(&V)"
         '
         '导出日志ToolStripMenuItem
@@ -243,7 +242,7 @@ Partial Class Form1
         Me.导出日志ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.导出日志ToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.导出日志ToolStripMenuItem.Name = "导出日志ToolStripMenuItem"
-        Me.导出日志ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.导出日志ToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.导出日志ToolStripMenuItem.Text = "导出日志(&E)"
         '
         '清除日志CToolStripMenuItem1
@@ -251,7 +250,7 @@ Partial Class Form1
         Me.清除日志CToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.清除日志CToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.清除日志CToolStripMenuItem1.Name = "清除日志CToolStripMenuItem1"
-        Me.清除日志CToolStripMenuItem1.Size = New System.Drawing.Size(139, 22)
+        Me.清除日志CToolStripMenuItem1.Size = New System.Drawing.Size(140, 22)
         Me.清除日志CToolStripMenuItem1.Text = "清除日志(&C)"
         '
         '帮助HToolStripMenuItem1
@@ -260,7 +259,7 @@ Partial Class Form1
         Me.帮助HToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.检测更新UToolStripMenuItem1, Me.关于CloudClassUtilityToolStripMenuItem1})
         Me.帮助HToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.帮助HToolStripMenuItem1.Name = "帮助HToolStripMenuItem1"
-        Me.帮助HToolStripMenuItem1.Size = New System.Drawing.Size(60, 20)
+        Me.帮助HToolStripMenuItem1.Size = New System.Drawing.Size(61, 23)
         Me.帮助HToolStripMenuItem1.Text = "帮助(&H)"
         '
         '检测更新UToolStripMenuItem1
@@ -268,7 +267,7 @@ Partial Class Form1
         Me.检测更新UToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.检测更新UToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.检测更新UToolStripMenuItem1.Name = "检测更新UToolStripMenuItem1"
-        Me.检测更新UToolStripMenuItem1.Size = New System.Drawing.Size(198, 22)
+        Me.检测更新UToolStripMenuItem1.Size = New System.Drawing.Size(200, 22)
         Me.检测更新UToolStripMenuItem1.Text = "检测更新(&U)"
         '
         '关于CloudClassUtilityToolStripMenuItem1
@@ -276,7 +275,7 @@ Partial Class Form1
         Me.关于CloudClassUtilityToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.关于CloudClassUtilityToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.关于CloudClassUtilityToolStripMenuItem1.Name = "关于CloudClassUtilityToolStripMenuItem1"
-        Me.关于CloudClassUtilityToolStripMenuItem1.Size = New System.Drawing.Size(198, 22)
+        Me.关于CloudClassUtilityToolStripMenuItem1.Size = New System.Drawing.Size(200, 22)
         Me.关于CloudClassUtilityToolStripMenuItem1.Text = "关于 CloudClassUtility"
         '
         'MaterialTabControl1
@@ -290,17 +289,19 @@ Partial Class Form1
         Me.MaterialTabControl1.Controls.Add(Me.TabPage4)
         Me.MaterialTabControl1.Depth = 0
         Me.MaterialTabControl1.ImageList = Me.ImageList1
-        Me.MaterialTabControl1.Location = New System.Drawing.Point(0, 35)
+        Me.MaterialTabControl1.Location = New System.Drawing.Point(0, 40)
         Me.MaterialTabControl1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.MaterialTabControl1.Multiline = True
         Me.MaterialTabControl1.Name = "MaterialTabControl1"
         Me.MaterialTabControl1.SelectedIndex = 0
-        Me.MaterialTabControl1.Size = New System.Drawing.Size(902, 511)
+        Me.MaterialTabControl1.Size = New System.Drawing.Size(902, 579)
         Me.MaterialTabControl1.TabIndex = 5
         Me.MaterialTabControl1.TabStop = False
         '
         'TabPage1
         '
+        Me.TabPage1.BackgroundImage = CType(resources.GetObject("TabPage1.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.TabPage1.Controls.Add(Me.CardNotice)
         Me.TabPage1.Controls.Add(Me.MaterialCard1)
         Me.TabPage1.Controls.Add(Me.CardCho)
@@ -313,7 +314,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 31)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(894, 476)
+        Me.TabPage1.Size = New System.Drawing.Size(894, 544)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "主页"
         '
@@ -324,12 +325,12 @@ Partial Class Form1
         Me.CardNotice.Controls.Add(Me.SmallLabel1)
         Me.CardNotice.Depth = 0
         Me.CardNotice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CardNotice.Location = New System.Drawing.Point(17, 183)
-        Me.CardNotice.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardNotice.Location = New System.Drawing.Point(17, 207)
+        Me.CardNotice.Margin = New System.Windows.Forms.Padding(14, 16, 14, 16)
         Me.CardNotice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.CardNotice.Name = "CardNotice"
-        Me.CardNotice.Padding = New System.Windows.Forms.Padding(14)
-        Me.CardNotice.Size = New System.Drawing.Size(861, 92)
+        Me.CardNotice.Padding = New System.Windows.Forms.Padding(14, 16, 14, 16)
+        Me.CardNotice.Size = New System.Drawing.Size(861, 104)
         Me.CardNotice.TabIndex = 17
         '
         'TcNotice
@@ -344,13 +345,13 @@ Partial Class Form1
         Me.TcNotice.ControlsVisible = True
         Me.TcNotice.IsDerivedStyle = True
         Me.TcNotice.ItemSize = New System.Drawing.Size(100, 8)
-        Me.TcNotice.Location = New System.Drawing.Point(17, 20)
+        Me.TcNotice.Location = New System.Drawing.Point(17, 23)
         Me.TcNotice.MCursor = System.Windows.Forms.Cursors.Hand
         Me.TcNotice.Multiline = True
         Me.TcNotice.Name = "TcNotice"
         Me.TcNotice.SelectedIndex = 0
         Me.TcNotice.SelectedTextColor = System.Drawing.Color.White
-        Me.TcNotice.Size = New System.Drawing.Size(838, 69)
+        Me.TcNotice.Size = New System.Drawing.Size(838, 78)
         Me.TcNotice.SizeMode = System.Windows.Forms.TabSizeMode.Fixed
         Me.TcNotice.Speed = 100
         Me.TcNotice.Style = ReaLTaiizor.[Enum].Metro.Style.Light
@@ -365,36 +366,11 @@ Partial Class Form1
         'TpNotice1
         '
         Me.TpNotice1.Controls.Add(Me.LabNotice1_2)
-        Me.TpNotice1.Controls.Add(Me.LabNotice1_1)
         Me.TpNotice1.Location = New System.Drawing.Point(4, 12)
         Me.TpNotice1.Name = "TpNotice1"
         Me.TpNotice1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TpNotice1.Size = New System.Drawing.Size(830, 53)
+        Me.TpNotice1.Size = New System.Drawing.Size(830, 62)
         Me.TpNotice1.TabIndex = 0
-        '
-        'LabNotice1_2
-        '
-        Me.LabNotice1_2.AutoSize = True
-        Me.LabNotice1_2.Depth = 0
-        Me.LabNotice1_2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.LabNotice1_2.Location = New System.Drawing.Point(350, 27)
-        Me.LabNotice1_2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
-        Me.LabNotice1_2.Name = "LabNotice1_2"
-        Me.LabNotice1_2.Size = New System.Drawing.Size(130, 19)
-        Me.LabNotice1_2.TabIndex = 1
-        Me.LabNotice1_2.Text = "预计在 5 月底修复"
-        '
-        'LabNotice1_1
-        '
-        Me.LabNotice1_1.AutoSize = True
-        Me.LabNotice1_1.Depth = 0
-        Me.LabNotice1_1.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.LabNotice1_1.Location = New System.Drawing.Point(74, 8)
-        Me.LabNotice1_1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
-        Me.LabNotice1_1.Name = "LabNotice1_1"
-        Me.LabNotice1_1.Size = New System.Drawing.Size(683, 19)
-        Me.LabNotice1_1.TabIndex = 0
-        Me.LabNotice1_1.Text = "由于 Vercel  升级到了 Build Output v3 版本, 而 vercel-php 没有及时跟进, 导致检测更新服务不可用"
         '
         'TpNotice2
         '
@@ -403,7 +379,7 @@ Partial Class Form1
         Me.TpNotice2.Location = New System.Drawing.Point(4, 12)
         Me.TpNotice2.Name = "TpNotice2"
         Me.TpNotice2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TpNotice2.Size = New System.Drawing.Size(830, 53)
+        Me.TpNotice2.Size = New System.Drawing.Size(830, 62)
         Me.TpNotice2.TabIndex = 1
         '
         'LabNotice2
@@ -411,7 +387,7 @@ Partial Class Form1
         Me.LabNotice2.AutoSize = True
         Me.LabNotice2.Depth = 0
         Me.LabNotice2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.LabNotice2.Location = New System.Drawing.Point(331, 26)
+        Me.LabNotice2.Location = New System.Drawing.Point(331, 29)
         Me.LabNotice2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.LabNotice2.Name = "LabNotice2"
         Me.LabNotice2.Size = New System.Drawing.Size(169, 19)
@@ -423,7 +399,7 @@ Partial Class Form1
         Me.LabNotice.AutoSize = True
         Me.LabNotice.Depth = 0
         Me.LabNotice.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.LabNotice.Location = New System.Drawing.Point(312, 7)
+        Me.LabNotice.Location = New System.Drawing.Point(312, 8)
         Me.LabNotice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.LabNotice.Name = "LabNotice"
         Me.LabNotice.Size = New System.Drawing.Size(207, 19)
@@ -435,7 +411,7 @@ Partial Class Form1
         Me.TpNotice3.Controls.Add(Me.MaterialLabel1)
         Me.TpNotice3.Location = New System.Drawing.Point(4, 12)
         Me.TpNotice3.Name = "TpNotice3"
-        Me.TpNotice3.Size = New System.Drawing.Size(830, 53)
+        Me.TpNotice3.Size = New System.Drawing.Size(830, 62)
         Me.TpNotice3.TabIndex = 2
         '
         'MaterialLabel1
@@ -443,7 +419,7 @@ Partial Class Form1
         Me.MaterialLabel1.AutoSize = True
         Me.MaterialLabel1.Depth = 0
         Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel1.Location = New System.Drawing.Point(281, 18)
+        Me.MaterialLabel1.Location = New System.Drawing.Point(281, 20)
         Me.MaterialLabel1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.MaterialLabel1.Name = "MaterialLabel1"
         Me.MaterialLabel1.Size = New System.Drawing.Size(268, 19)
@@ -455,7 +431,7 @@ Partial Class Form1
         Me.TpPreview.Controls.Add(Me.MaterialLabel2)
         Me.TpPreview.Location = New System.Drawing.Point(4, 12)
         Me.TpPreview.Name = "TpPreview"
-        Me.TpPreview.Size = New System.Drawing.Size(830, 53)
+        Me.TpPreview.Size = New System.Drawing.Size(830, 62)
         Me.TpPreview.TabIndex = 3
         '
         'MaterialLabel2
@@ -463,12 +439,12 @@ Partial Class Form1
         Me.MaterialLabel2.AutoSize = True
         Me.MaterialLabel2.Depth = 0
         Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel2.Location = New System.Drawing.Point(347, 18)
+        Me.MaterialLabel2.Location = New System.Drawing.Point(347, 20)
         Me.MaterialLabel2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.MaterialLabel2.Name = "MaterialLabel2"
         Me.MaterialLabel2.Size = New System.Drawing.Size(137, 19)
         Me.MaterialLabel2.TabIndex = 0
-        Me.MaterialLabel2.Text = "您正在使用预览版 !"
+        Me.MaterialLabel2.Text = "您正在使用正式版 !"
         '
         'SmallLabel1
         '
@@ -476,7 +452,7 @@ Partial Class Form1
         Me.SmallLabel1.BackColor = System.Drawing.Color.Transparent
         Me.SmallLabel1.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.SmallLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.SmallLabel1.Location = New System.Drawing.Point(2, 4)
+        Me.SmallLabel1.Location = New System.Drawing.Point(2, 5)
         Me.SmallLabel1.Name = "SmallLabel1"
         Me.SmallLabel1.Size = New System.Drawing.Size(33, 13)
         Me.SmallLabel1.TabIndex = 15
@@ -489,12 +465,12 @@ Partial Class Form1
         Me.MaterialCard1.Controls.Add(Me.SmallLabel2)
         Me.MaterialCard1.Depth = 0
         Me.MaterialCard1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialCard1.Location = New System.Drawing.Point(17, 88)
-        Me.MaterialCard1.Margin = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard1.Location = New System.Drawing.Point(17, 100)
+        Me.MaterialCard1.Margin = New System.Windows.Forms.Padding(14, 16, 14, 16)
         Me.MaterialCard1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.MaterialCard1.Name = "MaterialCard1"
-        Me.MaterialCard1.Padding = New System.Windows.Forms.Padding(14)
-        Me.MaterialCard1.Size = New System.Drawing.Size(288, 68)
+        Me.MaterialCard1.Padding = New System.Windows.Forms.Padding(14, 16, 14, 16)
+        Me.MaterialCard1.Size = New System.Drawing.Size(288, 77)
         Me.MaterialCard1.TabIndex = 15
         '
         'SliDelay
@@ -505,7 +481,7 @@ Partial Class Form1
         Me.SliDelay.Depth = 0
         Me.SliDelay.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.SliDelay.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.SliDelay.Location = New System.Drawing.Point(11, 17)
+        Me.SliDelay.Location = New System.Drawing.Point(11, 19)
         Me.SliDelay.MouseState = MaterialSkin.MouseState.HOVER
         Me.SliDelay.Name = "SliDelay"
         Me.SliDelay.RangeMax = 2000
@@ -522,7 +498,7 @@ Partial Class Form1
         Me.SmallLabel2.BackColor = System.Drawing.Color.Transparent
         Me.SmallLabel2.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.SmallLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.SmallLabel2.Location = New System.Drawing.Point(2, 4)
+        Me.SmallLabel2.Location = New System.Drawing.Point(2, 5)
         Me.SmallLabel2.Name = "SmallLabel2"
         Me.SmallLabel2.Size = New System.Drawing.Size(33, 13)
         Me.SmallLabel2.TabIndex = 16
@@ -539,12 +515,12 @@ Partial Class Form1
         Me.CardCho.Controls.Add(Me.CbxRedSpider)
         Me.CardCho.Depth = 0
         Me.CardCho.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CardCho.Location = New System.Drawing.Point(317, 88)
-        Me.CardCho.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardCho.Location = New System.Drawing.Point(317, 100)
+        Me.CardCho.Margin = New System.Windows.Forms.Padding(14, 16, 14, 16)
         Me.CardCho.MouseState = MaterialSkin.MouseState.HOVER
         Me.CardCho.Name = "CardCho"
-        Me.CardCho.Padding = New System.Windows.Forms.Padding(14)
-        Me.CardCho.Size = New System.Drawing.Size(561, 68)
+        Me.CardCho.Padding = New System.Windows.Forms.Padding(14, 16, 14, 16)
+        Me.CardCho.Size = New System.Drawing.Size(561, 77)
         Me.CardCho.TabIndex = 14
         '
         'LabChooseWay
@@ -553,7 +529,7 @@ Partial Class Form1
         Me.LabChooseWay.BackColor = System.Drawing.Color.Transparent
         Me.LabChooseWay.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LabChooseWay.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.LabChooseWay.Location = New System.Drawing.Point(2, 4)
+        Me.LabChooseWay.Location = New System.Drawing.Point(2, 5)
         Me.LabChooseWay.Name = "LabChooseWay"
         Me.LabChooseWay.Size = New System.Drawing.Size(33, 13)
         Me.LabChooseWay.TabIndex = 14
@@ -563,7 +539,7 @@ Partial Class Form1
         '
         Me.CbxCustom.AutoSize = True
         Me.CbxCustom.Depth = 0
-        Me.CbxCustom.Location = New System.Drawing.Point(283, 19)
+        Me.CbxCustom.Location = New System.Drawing.Point(283, 22)
         Me.CbxCustom.Margin = New System.Windows.Forms.Padding(0)
         Me.CbxCustom.MouseLocation = New System.Drawing.Point(-1, -1)
         Me.CbxCustom.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
@@ -577,7 +553,7 @@ Partial Class Form1
         'TbxCustom
         '
         Me.TbxCustom.Depth = 0
-        Me.TbxCustom.Location = New System.Drawing.Point(377, 28)
+        Me.TbxCustom.Location = New System.Drawing.Point(377, 32)
         Me.TbxCustom.MaxLength = 32767
         Me.TbxCustom.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.TbxCustom.Name = "TbxCustom"
@@ -595,7 +571,7 @@ Partial Class Form1
         '
         Me.CbxRcc.AutoSize = True
         Me.CbxRcc.Depth = 0
-        Me.CbxRcc.Location = New System.Drawing.Point(183, 19)
+        Me.CbxRcc.Location = New System.Drawing.Point(183, 22)
         Me.CbxRcc.Margin = New System.Windows.Forms.Padding(0)
         Me.CbxRcc.MouseLocation = New System.Drawing.Point(-1, -1)
         Me.CbxRcc.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
@@ -610,7 +586,7 @@ Partial Class Form1
         '
         Me.CbxJiyu.AutoSize = True
         Me.CbxJiyu.Depth = 0
-        Me.CbxJiyu.Location = New System.Drawing.Point(12, 19)
+        Me.CbxJiyu.Location = New System.Drawing.Point(12, 22)
         Me.CbxJiyu.Margin = New System.Windows.Forms.Padding(0)
         Me.CbxJiyu.MouseLocation = New System.Drawing.Point(-1, -1)
         Me.CbxJiyu.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
@@ -625,7 +601,7 @@ Partial Class Form1
         '
         Me.CbxRedSpider.AutoSize = True
         Me.CbxRedSpider.Depth = 0
-        Me.CbxRedSpider.Location = New System.Drawing.Point(90, 19)
+        Me.CbxRedSpider.Location = New System.Drawing.Point(90, 22)
         Me.CbxRedSpider.Margin = New System.Windows.Forms.Padding(0)
         Me.CbxRedSpider.MouseLocation = New System.Drawing.Point(-1, -1)
         Me.CbxRedSpider.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
@@ -644,8 +620,8 @@ Partial Class Form1
         Me.BtnStop.Enabled = False
         Me.BtnStop.HighEmphasis = True
         Me.BtnStop.Icon = Nothing
-        Me.BtnStop.Location = New System.Drawing.Point(793, 18)
-        Me.BtnStop.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnStop.Location = New System.Drawing.Point(793, 20)
+        Me.BtnStop.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnStop.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnStop.Name = "BtnStop"
         Me.BtnStop.Size = New System.Drawing.Size(85, 36)
@@ -663,8 +639,8 @@ Partial Class Form1
         Me.BtnStart.DrawShadows = True
         Me.BtnStart.HighEmphasis = True
         Me.BtnStart.Icon = Nothing
-        Me.BtnStart.Location = New System.Drawing.Point(690, 18)
-        Me.BtnStart.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnStart.Location = New System.Drawing.Point(690, 20)
+        Me.BtnStart.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnStart.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnStart.Name = "BtnStart"
         Me.BtnStart.Size = New System.Drawing.Size(85, 36)
@@ -679,7 +655,7 @@ Partial Class Form1
         '
         Me.SwitchStat.AutoSize = True
         Me.SwitchStat.Depth = 0
-        Me.SwitchStat.Location = New System.Drawing.Point(330, 19)
+        Me.SwitchStat.Location = New System.Drawing.Point(330, 22)
         Me.SwitchStat.Margin = New System.Windows.Forms.Padding(0)
         Me.SwitchStat.MouseLocation = New System.Drawing.Point(-1, -1)
         Me.SwitchStat.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
@@ -698,10 +674,10 @@ Partial Class Form1
         Me.StatCard.Color1 = System.Drawing.Color.DodgerBlue
         Me.StatCard.Color2 = System.Drawing.Color.LimeGreen
         Me.StatCard.ForeColor = System.Drawing.Color.White
-        Me.StatCard.Location = New System.Drawing.Point(17, 333)
+        Me.StatCard.Location = New System.Drawing.Point(17, 377)
         Me.StatCard.Name = "StatCard"
         Me.StatCard.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality
-        Me.StatCard.Size = New System.Drawing.Size(861, 110)
+        Me.StatCard.Size = New System.Drawing.Size(861, 125)
         Me.StatCard.TabIndex = 12
         Me.StatCard.Text = "ParrotCard1"
         Me.StatCard.Text1 = "当前状态"
@@ -715,12 +691,12 @@ Partial Class Form1
         Me.CardWelcome.Controls.Add(Me.LabWelcome)
         Me.CardWelcome.Depth = 0
         Me.CardWelcome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CardWelcome.Location = New System.Drawing.Point(17, 14)
-        Me.CardWelcome.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardWelcome.Location = New System.Drawing.Point(17, 16)
+        Me.CardWelcome.Margin = New System.Windows.Forms.Padding(14, 16, 14, 16)
         Me.CardWelcome.MouseState = MaterialSkin.MouseState.HOVER
         Me.CardWelcome.Name = "CardWelcome"
-        Me.CardWelcome.Padding = New System.Windows.Forms.Padding(14)
-        Me.CardWelcome.Size = New System.Drawing.Size(288, 46)
+        Me.CardWelcome.Padding = New System.Windows.Forms.Padding(14, 16, 14, 16)
+        Me.CardWelcome.Size = New System.Drawing.Size(288, 52)
         Me.CardWelcome.TabIndex = 0
         '
         'LabWelcome
@@ -728,7 +704,7 @@ Partial Class Form1
         Me.LabWelcome.AutoSize = True
         Me.LabWelcome.Depth = 0
         Me.LabWelcome.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.LabWelcome.Location = New System.Drawing.Point(17, 14)
+        Me.LabWelcome.Location = New System.Drawing.Point(17, 16)
         Me.LabWelcome.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.LabWelcome.Name = "LabWelcome"
         Me.LabWelcome.Size = New System.Drawing.Size(249, 19)
@@ -745,7 +721,7 @@ Partial Class Form1
         Me.TabPage2.Location = New System.Drawing.Point(4, 31)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(894, 476)
+        Me.TabPage2.Size = New System.Drawing.Size(894, 544)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "高级"
         '
@@ -756,12 +732,12 @@ Partial Class Form1
         Me.CardOutput.Controls.Add(Me.LabOutput)
         Me.CardOutput.Depth = 0
         Me.CardOutput.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CardOutput.Location = New System.Drawing.Point(361, 17)
-        Me.CardOutput.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardOutput.Location = New System.Drawing.Point(361, 19)
+        Me.CardOutput.Margin = New System.Windows.Forms.Padding(14, 16, 14, 16)
         Me.CardOutput.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.CardOutput.Name = "CardOutput"
-        Me.CardOutput.Padding = New System.Windows.Forms.Padding(14)
-        Me.CardOutput.Size = New System.Drawing.Size(514, 324)
+        Me.CardOutput.Padding = New System.Windows.Forms.Padding(14, 16, 14, 16)
+        Me.CardOutput.Size = New System.Drawing.Size(514, 367)
         Me.CardOutput.TabIndex = 3
         '
         'TbxOutput
@@ -770,13 +746,13 @@ Partial Class Form1
         Me.TbxOutput.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TbxOutput.Location = New System.Drawing.Point(17, 20)
+        Me.TbxOutput.Location = New System.Drawing.Point(17, 23)
         Me.TbxOutput.MaxLength = 0
         Me.TbxOutput.Multiline = True
         Me.TbxOutput.Name = "TbxOutput"
         Me.TbxOutput.ReadOnly = True
         Me.TbxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TbxOutput.Size = New System.Drawing.Size(480, 287)
+        Me.TbxOutput.Size = New System.Drawing.Size(480, 325)
         Me.TbxOutput.TabIndex = 8
         '
         'LabOutput
@@ -785,7 +761,7 @@ Partial Class Form1
         Me.LabOutput.BackColor = System.Drawing.Color.Transparent
         Me.LabOutput.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LabOutput.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.LabOutput.Location = New System.Drawing.Point(2, 4)
+        Me.LabOutput.Location = New System.Drawing.Point(2, 5)
         Me.LabOutput.Name = "LabOutput"
         Me.LabOutput.Size = New System.Drawing.Size(33, 13)
         Me.LabOutput.TabIndex = 0
@@ -797,12 +773,12 @@ Partial Class Form1
         Me.MaterialCard2.Controls.Add(Me.LabRedSpider)
         Me.MaterialCard2.Depth = 0
         Me.MaterialCard2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialCard2.Location = New System.Drawing.Point(361, 369)
-        Me.MaterialCard2.Margin = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard2.Location = New System.Drawing.Point(361, 418)
+        Me.MaterialCard2.Margin = New System.Windows.Forms.Padding(14, 16, 14, 16)
         Me.MaterialCard2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.MaterialCard2.Name = "MaterialCard2"
-        Me.MaterialCard2.Padding = New System.Windows.Forms.Padding(14)
-        Me.MaterialCard2.Size = New System.Drawing.Size(514, 63)
+        Me.MaterialCard2.Padding = New System.Windows.Forms.Padding(14, 16, 14, 16)
+        Me.MaterialCard2.Size = New System.Drawing.Size(514, 71)
         Me.MaterialCard2.TabIndex = 2
         '
         'LabRedSpider
@@ -811,7 +787,7 @@ Partial Class Form1
         Me.LabRedSpider.BackColor = System.Drawing.Color.Transparent
         Me.LabRedSpider.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LabRedSpider.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.LabRedSpider.Location = New System.Drawing.Point(2, 4)
+        Me.LabRedSpider.Location = New System.Drawing.Point(2, 5)
         Me.LabRedSpider.Name = "LabRedSpider"
         Me.LabRedSpider.Size = New System.Drawing.Size(59, 13)
         Me.LabRedSpider.TabIndex = 17
@@ -825,12 +801,12 @@ Partial Class Form1
         Me.CardJiyu.Controls.Add(Me.LabJiyu)
         Me.CardJiyu.Depth = 0
         Me.CardJiyu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CardJiyu.Location = New System.Drawing.Point(19, 369)
-        Me.CardJiyu.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardJiyu.Location = New System.Drawing.Point(19, 418)
+        Me.CardJiyu.Margin = New System.Windows.Forms.Padding(14, 16, 14, 16)
         Me.CardJiyu.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.CardJiyu.Name = "CardJiyu"
-        Me.CardJiyu.Padding = New System.Windows.Forms.Padding(14)
-        Me.CardJiyu.Size = New System.Drawing.Size(312, 63)
+        Me.CardJiyu.Padding = New System.Windows.Forms.Padding(14, 16, 14, 16)
+        Me.CardJiyu.Size = New System.Drawing.Size(312, 71)
         Me.CardJiyu.TabIndex = 1
         '
         'BtnUniJiyuUsbDriver
@@ -840,8 +816,8 @@ Partial Class Form1
         Me.BtnUniJiyuUsbDriver.DrawShadows = True
         Me.BtnUniJiyuUsbDriver.HighEmphasis = True
         Me.BtnUniJiyuUsbDriver.Icon = Nothing
-        Me.BtnUniJiyuUsbDriver.Location = New System.Drawing.Point(143, 20)
-        Me.BtnUniJiyuUsbDriver.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnUniJiyuUsbDriver.Location = New System.Drawing.Point(143, 23)
+        Me.BtnUniJiyuUsbDriver.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnUniJiyuUsbDriver.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnUniJiyuUsbDriver.Name = "BtnUniJiyuUsbDriver"
         Me.BtnUniJiyuUsbDriver.Size = New System.Drawing.Size(151, 36)
@@ -857,11 +833,11 @@ Partial Class Form1
         Me.GetJiyuPasswd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.GetJiyuPasswd.Depth = 0
         Me.GetJiyuPasswd.DrawShadows = True
-        Me.GetJiyuPasswd.Font = New System.Drawing.Font("更纱黑体 UI SC", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.GetJiyuPasswd.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.GetJiyuPasswd.HighEmphasis = True
         Me.GetJiyuPasswd.Icon = Nothing
-        Me.GetJiyuPasswd.Location = New System.Drawing.Point(18, 20)
-        Me.GetJiyuPasswd.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.GetJiyuPasswd.Location = New System.Drawing.Point(18, 23)
+        Me.GetJiyuPasswd.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.GetJiyuPasswd.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.GetJiyuPasswd.Name = "GetJiyuPasswd"
         Me.GetJiyuPasswd.Size = New System.Drawing.Size(117, 36)
@@ -878,7 +854,7 @@ Partial Class Form1
         Me.LabJiyu.BackColor = System.Drawing.Color.Transparent
         Me.LabJiyu.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LabJiyu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.LabJiyu.Location = New System.Drawing.Point(2, 4)
+        Me.LabJiyu.Location = New System.Drawing.Point(2, 5)
         Me.LabJiyu.Name = "LabJiyu"
         Me.LabJiyu.Size = New System.Drawing.Size(46, 13)
         Me.LabJiyu.TabIndex = 17
@@ -907,12 +883,12 @@ Partial Class Form1
         Me.CardUDPAttack.Controls.Add(Me.LabUDP)
         Me.CardUDPAttack.Depth = 0
         Me.CardUDPAttack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CardUDPAttack.Location = New System.Drawing.Point(19, 17)
-        Me.CardUDPAttack.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardUDPAttack.Location = New System.Drawing.Point(19, 19)
+        Me.CardUDPAttack.Margin = New System.Windows.Forms.Padding(14, 16, 14, 16)
         Me.CardUDPAttack.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.CardUDPAttack.Name = "CardUDPAttack"
-        Me.CardUDPAttack.Padding = New System.Windows.Forms.Padding(14)
-        Me.CardUDPAttack.Size = New System.Drawing.Size(312, 324)
+        Me.CardUDPAttack.Padding = New System.Windows.Forms.Padding(14, 16, 14, 16)
+        Me.CardUDPAttack.Size = New System.Drawing.Size(312, 367)
         Me.CardUDPAttack.TabIndex = 0
         '
         'BtnReboot
@@ -922,8 +898,8 @@ Partial Class Form1
         Me.BtnReboot.DrawShadows = True
         Me.BtnReboot.HighEmphasis = True
         Me.BtnReboot.Icon = Nothing
-        Me.BtnReboot.Location = New System.Drawing.Point(167, 249)
-        Me.BtnReboot.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnReboot.Location = New System.Drawing.Point(167, 282)
+        Me.BtnReboot.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnReboot.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnReboot.Name = "BtnReboot"
         Me.BtnReboot.Size = New System.Drawing.Size(117, 36)
@@ -941,8 +917,8 @@ Partial Class Form1
         Me.BtnHalt.DrawShadows = True
         Me.BtnHalt.HighEmphasis = True
         Me.BtnHalt.Icon = Nothing
-        Me.BtnHalt.Location = New System.Drawing.Point(28, 249)
-        Me.BtnHalt.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnHalt.Location = New System.Drawing.Point(28, 282)
+        Me.BtnHalt.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnHalt.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnHalt.Name = "BtnHalt"
         Me.BtnHalt.Size = New System.Drawing.Size(117, 36)
@@ -956,7 +932,7 @@ Partial Class Form1
         'TbxCommand
         '
         Me.TbxCommand.Depth = 0
-        Me.TbxCommand.Location = New System.Drawing.Point(86, 167)
+        Me.TbxCommand.Location = New System.Drawing.Point(86, 189)
         Me.TbxCommand.MaxLength = 100
         Me.TbxCommand.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.TbxCommand.Name = "TbxCommand"
@@ -973,7 +949,7 @@ Partial Class Form1
         'TbxSendText
         '
         Me.TbxSendText.Depth = 0
-        Me.TbxSendText.Location = New System.Drawing.Point(85, 88)
+        Me.TbxSendText.Location = New System.Drawing.Point(85, 100)
         Me.TbxSendText.MaxLength = 100
         Me.TbxSendText.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.TbxSendText.Name = "TbxSendText"
@@ -990,7 +966,7 @@ Partial Class Form1
         'TbxPort
         '
         Me.TbxPort.Depth = 0
-        Me.TbxPort.Location = New System.Drawing.Point(85, 57)
+        Me.TbxPort.Location = New System.Drawing.Point(85, 65)
         Me.TbxPort.MaxLength = 32767
         Me.TbxPort.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.TbxPort.Name = "TbxPort"
@@ -1008,7 +984,7 @@ Partial Class Form1
         'TbxIPAddress
         '
         Me.TbxIPAddress.Depth = 0
-        Me.TbxIPAddress.Location = New System.Drawing.Point(86, 26)
+        Me.TbxIPAddress.Location = New System.Drawing.Point(86, 29)
         Me.TbxIPAddress.MaxLength = 32767
         Me.TbxIPAddress.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.TbxIPAddress.Name = "TbxIPAddress"
@@ -1029,8 +1005,8 @@ Partial Class Form1
         Me.BtnSendCommand.DrawShadows = True
         Me.BtnSendCommand.HighEmphasis = True
         Me.BtnSendCommand.Icon = Nothing
-        Me.BtnSendCommand.Location = New System.Drawing.Point(236, 201)
-        Me.BtnSendCommand.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnSendCommand.Location = New System.Drawing.Point(236, 228)
+        Me.BtnSendCommand.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnSendCommand.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnSendCommand.Name = "BtnSendCommand"
         Me.BtnSendCommand.Size = New System.Drawing.Size(53, 36)
@@ -1048,8 +1024,8 @@ Partial Class Form1
         Me.BtnSendText.DrawShadows = True
         Me.BtnSendText.HighEmphasis = True
         Me.BtnSendText.Icon = Nothing
-        Me.BtnSendText.Location = New System.Drawing.Point(236, 122)
-        Me.BtnSendText.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnSendText.Location = New System.Drawing.Point(236, 138)
+        Me.BtnSendText.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnSendText.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnSendText.Name = "BtnSendText"
         Me.BtnSendText.Size = New System.Drawing.Size(53, 36)
@@ -1063,44 +1039,44 @@ Partial Class Form1
         'LabUDPTips2
         '
         Me.LabUDPTips2.AutoSize = True
-        Me.LabUDPTips2.Location = New System.Drawing.Point(86, 195)
+        Me.LabUDPTips2.Location = New System.Drawing.Point(86, 221)
         Me.LabUDPTips2.Name = "LabUDPTips2"
-        Me.LabUDPTips2.Size = New System.Drawing.Size(106, 15)
+        Me.LabUDPTips2.Size = New System.Drawing.Size(106, 17)
         Me.LabUDPTips2.TabIndex = 36
         Me.LabUDPTips2.Text = "* 最多 100 个字符"
         '
         'LabUDPTips1
         '
         Me.LabUDPTips1.AutoSize = True
-        Me.LabUDPTips1.Location = New System.Drawing.Point(85, 116)
+        Me.LabUDPTips1.Location = New System.Drawing.Point(85, 131)
         Me.LabUDPTips1.Name = "LabUDPTips1"
-        Me.LabUDPTips1.Size = New System.Drawing.Size(106, 15)
+        Me.LabUDPTips1.Size = New System.Drawing.Size(106, 17)
         Me.LabUDPTips1.TabIndex = 35
         Me.LabUDPTips1.Text = "* 最多 100 个字符"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(86, 203)
+        Me.Label8.Location = New System.Drawing.Point(86, 230)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(0, 15)
+        Me.Label8.Size = New System.Drawing.Size(0, 17)
         Me.Label8.TabIndex = 34
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(23, 167)
+        Me.Label7.Location = New System.Drawing.Point(23, 189)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(61, 15)
+        Me.Label7.Size = New System.Drawing.Size(63, 17)
         Me.Label7.TabIndex = 33
         Me.Label7.Text = "发送命令: "
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(23, 88)
+        Me.Label6.Location = New System.Drawing.Point(23, 100)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 15)
+        Me.Label6.Size = New System.Drawing.Size(63, 17)
         Me.Label6.TabIndex = 32
         Me.Label6.Text = "发送文字: "
         '
@@ -1110,27 +1086,27 @@ Partial Class Form1
         Me.LabUDPAuthor.AutoSize = True
         Me.LabUDPAuthor.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LabUDPAuthor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.LabUDPAuthor.Location = New System.Drawing.Point(66, 306)
+        Me.LabUDPAuthor.Location = New System.Drawing.Point(66, 347)
         Me.LabUDPAuthor.Name = "LabUDPAuthor"
-        Me.LabUDPAuthor.Size = New System.Drawing.Size(180, 15)
+        Me.LabUDPAuthor.Size = New System.Drawing.Size(182, 17)
         Me.LabUDPAuthor.TabIndex = 31
         Me.LabUDPAuthor.Text = "本功能原理由 ht0Ruial 大佬提供"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(47, 57)
+        Me.Label4.Location = New System.Drawing.Point(47, 65)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(37, 15)
+        Me.Label4.Size = New System.Drawing.Size(39, 17)
         Me.Label4.TabIndex = 26
         Me.Label4.Text = "端口: "
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(33, 26)
+        Me.Label3.Location = New System.Drawing.Point(33, 29)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 15)
+        Me.Label3.Size = New System.Drawing.Size(54, 17)
         Me.Label3.TabIndex = 24
         Me.Label3.Text = "IP 地址: "
         '
@@ -1139,9 +1115,9 @@ Partial Class Form1
         Me.LabUDPWarn.AutoSize = True
         Me.LabUDPWarn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LabUDPWarn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.LabUDPWarn.Location = New System.Drawing.Point(19, 291)
+        Me.LabUDPWarn.Location = New System.Drawing.Point(19, 330)
         Me.LabUDPWarn.Name = "LabUDPWarn"
-        Me.LabUDPWarn.Size = New System.Drawing.Size(274, 15)
+        Me.LabUDPWarn.Size = New System.Drawing.Size(278, 17)
         Me.LabUDPWarn.TabIndex = 21
         Me.LabUDPWarn.Text = "警告: 因使用此功能而造成的任何后果, 与作者无关!"
         '
@@ -1151,7 +1127,7 @@ Partial Class Form1
         Me.LabUDP.BackColor = System.Drawing.Color.Transparent
         Me.LabUDP.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LabUDP.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.LabUDP.Location = New System.Drawing.Point(2, 4)
+        Me.LabUDP.Location = New System.Drawing.Point(2, 5)
         Me.LabUDP.Name = "LabUDP"
         Me.LabUDP.Size = New System.Drawing.Size(87, 13)
         Me.LabUDP.TabIndex = 16
@@ -1165,7 +1141,7 @@ Partial Class Form1
         Me.TabPage3.ImageIndex = 2
         Me.TabPage3.Location = New System.Drawing.Point(4, 31)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(894, 476)
+        Me.TabPage3.Size = New System.Drawing.Size(894, 544)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "设置"
         '
@@ -1178,12 +1154,12 @@ Partial Class Form1
         Me.CardLog.Controls.Add(Me.LabLog)
         Me.CardLog.Depth = 0
         Me.CardLog.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CardLog.Location = New System.Drawing.Point(16, 335)
-        Me.CardLog.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardLog.Location = New System.Drawing.Point(16, 380)
+        Me.CardLog.Margin = New System.Windows.Forms.Padding(14, 16, 14, 16)
         Me.CardLog.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.CardLog.Name = "CardLog"
-        Me.CardLog.Padding = New System.Windows.Forms.Padding(14)
-        Me.CardLog.Size = New System.Drawing.Size(864, 127)
+        Me.CardLog.Padding = New System.Windows.Forms.Padding(14, 16, 14, 16)
+        Me.CardLog.Size = New System.Drawing.Size(864, 144)
         Me.CardLog.TabIndex = 3
         '
         'BtnCleanLog
@@ -1193,8 +1169,8 @@ Partial Class Form1
         Me.BtnCleanLog.DrawShadows = True
         Me.BtnCleanLog.HighEmphasis = True
         Me.BtnCleanLog.Icon = Nothing
-        Me.BtnCleanLog.Location = New System.Drawing.Point(761, 74)
-        Me.BtnCleanLog.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnCleanLog.Location = New System.Drawing.Point(761, 84)
+        Me.BtnCleanLog.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnCleanLog.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnCleanLog.Name = "BtnCleanLog"
         Me.BtnCleanLog.Size = New System.Drawing.Size(85, 36)
@@ -1212,8 +1188,8 @@ Partial Class Form1
         Me.BtnExportLog.DrawShadows = True
         Me.BtnExportLog.HighEmphasis = True
         Me.BtnExportLog.Icon = Nothing
-        Me.BtnExportLog.Location = New System.Drawing.Point(761, 20)
-        Me.BtnExportLog.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnExportLog.Location = New System.Drawing.Point(761, 23)
+        Me.BtnExportLog.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnExportLog.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnExportLog.Name = "BtnExportLog"
         Me.BtnExportLog.Size = New System.Drawing.Size(85, 36)
@@ -1226,12 +1202,12 @@ Partial Class Form1
         '
         'TbxLog
         '
-        Me.TbxLog.Location = New System.Drawing.Point(19, 20)
+        Me.TbxLog.Location = New System.Drawing.Point(19, 23)
         Me.TbxLog.MaxLength = 0
         Me.TbxLog.Multiline = True
         Me.TbxLog.Name = "TbxLog"
         Me.TbxLog.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TbxLog.Size = New System.Drawing.Size(731, 90)
+        Me.TbxLog.Size = New System.Drawing.Size(731, 101)
         Me.TbxLog.TabIndex = 4
         '
         'LabLog
@@ -1240,7 +1216,7 @@ Partial Class Form1
         Me.LabLog.BackColor = System.Drawing.Color.Transparent
         Me.LabLog.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LabLog.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.LabLog.Location = New System.Drawing.Point(2, 4)
+        Me.LabLog.Location = New System.Drawing.Point(2, 5)
         Me.LabLog.Name = "LabLog"
         Me.LabLog.Size = New System.Drawing.Size(33, 13)
         Me.LabLog.TabIndex = 0
@@ -1255,12 +1231,12 @@ Partial Class Form1
         Me.CardUpdate.Controls.Add(Me.LabUpdate)
         Me.CardUpdate.Depth = 0
         Me.CardUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CardUpdate.Location = New System.Drawing.Point(14, 107)
-        Me.CardUpdate.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardUpdate.Location = New System.Drawing.Point(14, 121)
+        Me.CardUpdate.Margin = New System.Windows.Forms.Padding(14, 16, 14, 16)
         Me.CardUpdate.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.CardUpdate.Name = "CardUpdate"
-        Me.CardUpdate.Padding = New System.Windows.Forms.Padding(14)
-        Me.CardUpdate.Size = New System.Drawing.Size(866, 200)
+        Me.CardUpdate.Padding = New System.Windows.Forms.Padding(14, 16, 14, 16)
+        Me.CardUpdate.Size = New System.Drawing.Size(866, 227)
         Me.CardUpdate.TabIndex = 2
         '
         'BtnReCheckUpdate
@@ -1270,8 +1246,8 @@ Partial Class Form1
         Me.BtnReCheckUpdate.DrawShadows = True
         Me.BtnReCheckUpdate.HighEmphasis = True
         Me.BtnReCheckUpdate.Icon = Nothing
-        Me.BtnReCheckUpdate.Location = New System.Drawing.Point(21, 151)
-        Me.BtnReCheckUpdate.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.BtnReCheckUpdate.Location = New System.Drawing.Point(21, 171)
+        Me.BtnReCheckUpdate.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnReCheckUpdate.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnReCheckUpdate.Name = "BtnReCheckUpdate"
         Me.BtnReCheckUpdate.Size = New System.Drawing.Size(85, 36)
@@ -1285,9 +1261,9 @@ Partial Class Form1
         'GbxLog
         '
         Me.GbxLog.Controls.Add(Me.RtbUpdate)
-        Me.GbxLog.Location = New System.Drawing.Point(427, 20)
+        Me.GbxLog.Location = New System.Drawing.Point(427, 23)
         Me.GbxLog.Name = "GbxLog"
-        Me.GbxLog.Size = New System.Drawing.Size(419, 167)
+        Me.GbxLog.Size = New System.Drawing.Size(419, 189)
         Me.GbxLog.TabIndex = 4
         Me.GbxLog.TabStop = False
         Me.GbxLog.Text = "更新日志"
@@ -1296,31 +1272,31 @@ Partial Class Form1
         '
         Me.RtbUpdate.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.RtbUpdate.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RtbUpdate.Location = New System.Drawing.Point(6, 21)
+        Me.RtbUpdate.Location = New System.Drawing.Point(6, 24)
         Me.RtbUpdate.Name = "RtbUpdate"
         Me.RtbUpdate.ReadOnly = True
-        Me.RtbUpdate.Size = New System.Drawing.Size(407, 137)
+        Me.RtbUpdate.Size = New System.Drawing.Size(407, 155)
         Me.RtbUpdate.TabIndex = 3
         Me.RtbUpdate.Text = ""
         '
         'GbxVersion
         '
         Me.GbxVersion.Controls.Add(Me.TbxVersion)
-        Me.GbxVersion.Location = New System.Drawing.Point(21, 20)
+        Me.GbxVersion.Location = New System.Drawing.Point(21, 23)
         Me.GbxVersion.Name = "GbxVersion"
-        Me.GbxVersion.Size = New System.Drawing.Size(379, 122)
+        Me.GbxVersion.Size = New System.Drawing.Size(379, 138)
         Me.GbxVersion.TabIndex = 3
         Me.GbxVersion.TabStop = False
         Me.GbxVersion.Text = "版本"
         '
         'TbxVersion
         '
-        Me.TbxVersion.Location = New System.Drawing.Point(6, 21)
+        Me.TbxVersion.Location = New System.Drawing.Point(6, 24)
         Me.TbxVersion.Multiline = True
         Me.TbxVersion.Name = "TbxVersion"
         Me.TbxVersion.ReadOnly = True
         Me.TbxVersion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TbxVersion.Size = New System.Drawing.Size(367, 95)
+        Me.TbxVersion.Size = New System.Drawing.Size(367, 107)
         Me.TbxVersion.TabIndex = 1
         '
         'LabUpdate
@@ -1329,7 +1305,7 @@ Partial Class Form1
         Me.LabUpdate.BackColor = System.Drawing.Color.Transparent
         Me.LabUpdate.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LabUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.LabUpdate.Location = New System.Drawing.Point(2, 4)
+        Me.LabUpdate.Location = New System.Drawing.Point(2, 5)
         Me.LabUpdate.Name = "LabUpdate"
         Me.LabUpdate.Size = New System.Drawing.Size(33, 13)
         Me.LabUpdate.TabIndex = 0
@@ -1343,12 +1319,12 @@ Partial Class Form1
         Me.CardSettingGeneral.Controls.Add(Me.SwitchNotice)
         Me.CardSettingGeneral.Depth = 0
         Me.CardSettingGeneral.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CardSettingGeneral.Location = New System.Drawing.Point(14, 14)
-        Me.CardSettingGeneral.Margin = New System.Windows.Forms.Padding(14)
+        Me.CardSettingGeneral.Location = New System.Drawing.Point(14, 16)
+        Me.CardSettingGeneral.Margin = New System.Windows.Forms.Padding(14, 16, 14, 16)
         Me.CardSettingGeneral.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.CardSettingGeneral.Name = "CardSettingGeneral"
-        Me.CardSettingGeneral.Padding = New System.Windows.Forms.Padding(14)
-        Me.CardSettingGeneral.Size = New System.Drawing.Size(866, 65)
+        Me.CardSettingGeneral.Padding = New System.Windows.Forms.Padding(14, 16, 14, 16)
+        Me.CardSettingGeneral.Size = New System.Drawing.Size(866, 74)
         Me.CardSettingGeneral.TabIndex = 1
         '
         'SwitchLog
@@ -1357,7 +1333,7 @@ Partial Class Form1
         Me.SwitchLog.Checked = True
         Me.SwitchLog.CheckState = System.Windows.Forms.CheckState.Checked
         Me.SwitchLog.Depth = 0
-        Me.SwitchLog.Location = New System.Drawing.Point(205, 13)
+        Me.SwitchLog.Location = New System.Drawing.Point(205, 15)
         Me.SwitchLog.Margin = New System.Windows.Forms.Padding(0)
         Me.SwitchLog.MouseLocation = New System.Drawing.Point(-1, -1)
         Me.SwitchLog.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
@@ -1375,7 +1351,7 @@ Partial Class Form1
         Me.LabSettingGeneral.BackColor = System.Drawing.Color.Transparent
         Me.LabSettingGeneral.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LabSettingGeneral.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.LabSettingGeneral.Location = New System.Drawing.Point(2, 4)
+        Me.LabSettingGeneral.Location = New System.Drawing.Point(2, 5)
         Me.LabSettingGeneral.Name = "LabSettingGeneral"
         Me.LabSettingGeneral.Size = New System.Drawing.Size(33, 13)
         Me.LabSettingGeneral.TabIndex = 2
@@ -1387,7 +1363,7 @@ Partial Class Form1
         Me.SwitchNotice.Checked = True
         Me.SwitchNotice.CheckState = System.Windows.Forms.CheckState.Checked
         Me.SwitchNotice.Depth = 0
-        Me.SwitchNotice.Location = New System.Drawing.Point(14, 13)
+        Me.SwitchNotice.Location = New System.Drawing.Point(14, 15)
         Me.SwitchNotice.Margin = New System.Windows.Forms.Padding(0)
         Me.SwitchNotice.MouseLocation = New System.Drawing.Point(-1, -1)
         Me.SwitchNotice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
@@ -1405,7 +1381,7 @@ Partial Class Form1
         Me.TabPage4.ImageIndex = 3
         Me.TabPage4.Location = New System.Drawing.Point(4, 31)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(894, 476)
+        Me.TabPage4.Size = New System.Drawing.Size(894, 544)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "关于"
         '
@@ -1418,7 +1394,7 @@ Partial Class Form1
         Me.CardAbout.Location = New System.Drawing.Point(-6, 0)
         Me.CardAbout.Name = "CardAbout"
         Me.CardAbout.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality
-        Me.CardAbout.Size = New System.Drawing.Size(912, 522)
+        Me.CardAbout.Size = New System.Drawing.Size(912, 592)
         Me.CardAbout.TabIndex = 0
         Me.CardAbout.Text = "ParrotCard1"
         Me.CardAbout.Text1 = ""
@@ -1445,7 +1421,7 @@ Partial Class Form1
         Me.MaterialDivider1.Location = New System.Drawing.Point(0, 0)
         Me.MaterialDivider1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.MaterialDivider1.Name = "MaterialDivider1"
-        Me.MaterialDivider1.Size = New System.Drawing.Size(902, 38)
+        Me.MaterialDivider1.Size = New System.Drawing.Size(902, 43)
         Me.MaterialDivider1.TabIndex = 8
         Me.MaterialDivider1.Text = "MaterialDivider1"
         '
@@ -1453,9 +1429,9 @@ Partial Class Form1
         '
         Me.PbtnMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(181, Byte), Integer))
         Me.PbtnMenu.Image = Global.CloudClassUtility.My.Resources.Resources.baseline_menu_white_18dp
-        Me.PbtnMenu.Location = New System.Drawing.Point(9, 8)
+        Me.PbtnMenu.Location = New System.Drawing.Point(9, 9)
         Me.PbtnMenu.Name = "PbtnMenu"
-        Me.PbtnMenu.Size = New System.Drawing.Size(24, 24)
+        Me.PbtnMenu.Size = New System.Drawing.Size(24, 27)
         Me.PbtnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PbtnMenu.TabIndex = 2
         Me.PbtnMenu.TabStop = False
@@ -1465,9 +1441,9 @@ Partial Class Form1
         Me.Title.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(181, Byte), Integer))
         Me.Title.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Title.ForeColor = System.Drawing.Color.White
-        Me.Title.Location = New System.Drawing.Point(34, 8)
+        Me.Title.Location = New System.Drawing.Point(34, 9)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(796, 24)
+        Me.Title.Size = New System.Drawing.Size(796, 27)
         Me.Title.TabIndex = 9
         Me.Title.Text = "CloudClassUtility"
         '
@@ -1476,9 +1452,9 @@ Partial Class Form1
         Me.PbtnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PbtnClose.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(181, Byte), Integer))
         Me.PbtnClose.Image = Global.CloudClassUtility.My.Resources.Resources.baseline_close_white_18dp
-        Me.PbtnClose.Location = New System.Drawing.Point(866, 8)
+        Me.PbtnClose.Location = New System.Drawing.Point(866, 9)
         Me.PbtnClose.Name = "PbtnClose"
-        Me.PbtnClose.Size = New System.Drawing.Size(24, 24)
+        Me.PbtnClose.Size = New System.Drawing.Size(24, 27)
         Me.PbtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PbtnClose.TabIndex = 2
         Me.PbtnClose.TabStop = False
@@ -1488,9 +1464,9 @@ Partial Class Form1
         Me.PbtnMinimize.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PbtnMinimize.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(181, Byte), Integer))
         Me.PbtnMinimize.Image = Global.CloudClassUtility.My.Resources.Resources.baseline_minimize_white_18dp
-        Me.PbtnMinimize.Location = New System.Drawing.Point(836, 8)
+        Me.PbtnMinimize.Location = New System.Drawing.Point(836, 9)
         Me.PbtnMinimize.Name = "PbtnMinimize"
-        Me.PbtnMinimize.Size = New System.Drawing.Size(24, 24)
+        Me.PbtnMinimize.Size = New System.Drawing.Size(24, 27)
         Me.PbtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PbtnMinimize.TabIndex = 10
         Me.PbtnMinimize.TabStop = False
@@ -1521,12 +1497,12 @@ Partial Class Form1
         Me.MaterialDrawer1.HighlightWithAccent = True
         Me.MaterialDrawer1.IndicatorWidth = 0
         Me.MaterialDrawer1.IsOpen = False
-        Me.MaterialDrawer1.Location = New System.Drawing.Point(-254, 35)
+        Me.MaterialDrawer1.Location = New System.Drawing.Point(-254, 40)
         Me.MaterialDrawer1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.MaterialDrawer1.Name = "MaterialDrawer1"
         Me.MaterialDrawer1.ShowIconsWhenHidden = False
         Me.MaterialDrawer1.ShowTabControl = Me.MaterialTabControl1
-        Me.MaterialDrawer1.Size = New System.Drawing.Size(254, 507)
+        Me.MaterialDrawer1.Size = New System.Drawing.Size(254, 575)
         Me.MaterialDrawer1.TabIndex = 11
         Me.MaterialDrawer1.Text = "MaterialDrawer1"
         Me.MaterialDrawer1.UseColors = True
@@ -1535,13 +1511,25 @@ Partial Class Form1
         '
         Me.TimLog.Enabled = True
         '
+        'LabNotice1_2
+        '
+        Me.LabNotice1_2.AutoSize = True
+        Me.LabNotice1_2.Depth = 0
+        Me.LabNotice1_2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.LabNotice1_2.Location = New System.Drawing.Point(347, 20)
+        Me.LabNotice1_2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.LabNotice1_2.Name = "LabNotice1_2"
+        Me.LabNotice1_2.Size = New System.Drawing.Size(117, 19)
+        Me.LabNotice1_2.TabIndex = 1
+        Me.LabNotice1_2.Text = "正式版已经发布!"
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(902, 545)
+        Me.ClientSize = New System.Drawing.Size(902, 618)
         Me.ControlBox = False
         Me.Controls.Add(Me.MaterialDrawer1)
         Me.Controls.Add(Me.PbtnMinimize)
@@ -1554,7 +1542,7 @@ Partial Class Form1
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(126, 50)
+        Me.MinimumSize = New System.Drawing.Size(126, 51)
         Me.Name = "Form1"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.Text = "CloudClassUtility"
@@ -1654,8 +1642,6 @@ Partial Class Form1
     Friend WithEvents CardNotice As ReaLTaiizor.Controls.MaterialCard
     Friend WithEvents TcNotice As ReaLTaiizor.Controls.MetroTabControl
     Friend WithEvents TpNotice1 As TabPage
-    Friend WithEvents LabNotice1_2 As ReaLTaiizor.Controls.MaterialLabel
-    Friend WithEvents LabNotice1_1 As ReaLTaiizor.Controls.MaterialLabel
     Friend WithEvents TpNotice2 As TabPage
     Friend WithEvents LabNotice2 As ReaLTaiizor.Controls.MaterialLabel
     Friend WithEvents LabNotice As ReaLTaiizor.Controls.MaterialLabel
@@ -1712,4 +1698,5 @@ Partial Class Form1
     Friend WithEvents TimLog As Timer
     Friend WithEvents CardAbout As ReaLTaiizor.Controls.ParrotCard
     Friend WithEvents SwitchLog As ReaLTaiizor.Controls.MaterialSwitch
+    Friend WithEvents LabNotice1_2 As ReaLTaiizor.Controls.MaterialLabel
 End Class
