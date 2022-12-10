@@ -17,20 +17,4 @@
 [![Alt](https://repobeats.axiom.co/api/embed/bd418cb285929486c83bfa7e797eff5ac913da33.svg "Repobeats analytics image")](https://github.com/Cookie987/CloudClassUtility)
 </div>
 
-CloudClassUtility ÊÇÒ»¸ö¶à¹¦ÄÜµÄÎ¢»ú¿Î¸¨Öú³ÌĞò, ¿ÉÒÔÈÃÄú½â³ıÀÏÊ¦µÄ¿ØÖÆ. Í¨¹ı´Ë³ÌĞò, Äú¿ÉÒÔÍê³ÉĞí¶à¸ß¼¶²Ù×÷, ÀıÈçÍ¨¹ı "UDP ÖØ·Å¹¥»÷" ÅäºÏ `Base64` ¾ÍÄÜÊµÏÖºÜ¶àĞ§¹û, ÀıÈç
-
-ÒÀ´Î·¢ËÍÒÔÏÂÃüÁî (Ò»ĞĞÒ»Ìõ)
-
-```bash
-echo bXNnYm94ICLE47XEtefE1NLRvq2xuyA/Pz8gutrByyI= > .\---.txt
-```
-±íÊ¾
-
-```vbnet
-msgbox "ÄãµÄµçÄÔÒÑ¾­±» ??? ºÚÁË"
-dim s
-do until s=50
-s=s+1
-msgbox "¸øÎÒ°´50´Î»Ø³µ°É",64
-loop
-```
+CloudClassUtility æ˜¯ä¸€ä¸ªå¤šåŠŸèƒ½çš„å¾®æœºè¯¾è¾…åŠ©ç¨‹åº, å¯ä»¥è®©æ‚¨è§£é™¤è€å¸ˆçš„æ§åˆ¶. é€šè¿‡æ­¤ç¨‹åº, æ‚¨å¯ä»¥å®Œæˆè®¸å¤šé«˜çº§æ“ä½œ, ä¾‹å¦‚é€šè¿‡ "UDP é‡æ”¾æ”»å‡»" é…åˆ `Base64` å°±èƒ½å®ç°å¾ˆå¤šæ•ˆæœ.
