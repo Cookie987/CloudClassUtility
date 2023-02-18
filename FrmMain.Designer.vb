@@ -65,7 +65,6 @@ Partial Class FrmMain
         Me.CbxRedSpider = New ReaLTaiizor.Controls.MaterialCheckBox()
         Me.BtnStop = New ReaLTaiizor.Controls.MaterialButton()
         Me.BtnStart = New ReaLTaiizor.Controls.MaterialButton()
-        Me.SwitchStat = New ReaLTaiizor.Controls.MaterialSwitch()
         Me.StatCard = New ReaLTaiizor.Controls.ParrotCard()
         Me.CardWelcome = New MaterialSkin.Controls.MaterialCard()
         Me.LabWelcome = New ReaLTaiizor.Controls.MaterialLabel()
@@ -128,6 +127,7 @@ Partial Class FrmMain
         Me.TimNotice = New System.Windows.Forms.Timer(Me.components)
         Me.MaterialDrawer1 = New ReaLTaiizor.Controls.MaterialDrawer()
         Me.TimLog = New System.Windows.Forms.Timer(Me.components)
+        Me.SwitchStat = New ReaLTaiizor.Controls.MaterialSwitch()
         Me.CrownMenuStrip1.SuspendLayout()
         Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -307,7 +307,6 @@ Partial Class FrmMain
         Me.TabPage1.Controls.Add(Me.CardCho)
         Me.TabPage1.Controls.Add(Me.BtnStop)
         Me.TabPage1.Controls.Add(Me.BtnStart)
-        Me.TabPage1.Controls.Add(Me.SwitchStat)
         Me.TabPage1.Controls.Add(Me.StatCard)
         Me.TabPage1.Controls.Add(Me.CardWelcome)
         Me.TabPage1.ImageIndex = 0
@@ -662,22 +661,6 @@ Partial Class FrmMain
         Me.BtnStart.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
         Me.BtnStart.UseAccentColor = False
         Me.BtnStart.UseVisualStyleBackColor = True
-        '
-        'SwitchStat
-        '
-        Me.SwitchStat.AutoSize = True
-        Me.SwitchStat.Depth = 0
-        Me.SwitchStat.Location = New System.Drawing.Point(330, 22)
-        Me.SwitchStat.Margin = New System.Windows.Forms.Padding(0)
-        Me.SwitchStat.MouseLocation = New System.Drawing.Point(-1, -1)
-        Me.SwitchStat.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
-        Me.SwitchStat.Name = "SwitchStat"
-        Me.SwitchStat.Ripple = True
-        Me.SwitchStat.Size = New System.Drawing.Size(186, 37)
-        Me.SwitchStat.TabIndex = 1
-        Me.SwitchStat.Text = "实时刷新运行状态"
-        Me.SwitchStat.UseAccentColor = False
-        Me.SwitchStat.UseVisualStyleBackColor = True
         '
         'StatCard
         '
@@ -1326,6 +1309,7 @@ Partial Class FrmMain
         'CardSettingGeneral
         '
         Me.CardSettingGeneral.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CardSettingGeneral.Controls.Add(Me.SwitchStat)
         Me.CardSettingGeneral.Controls.Add(Me.SwitchLog)
         Me.CardSettingGeneral.Controls.Add(Me.LabSettingGeneral)
         Me.CardSettingGeneral.Controls.Add(Me.SwitchNotice)
@@ -1345,7 +1329,7 @@ Partial Class FrmMain
         Me.SwitchLog.Checked = True
         Me.SwitchLog.CheckState = System.Windows.Forms.CheckState.Checked
         Me.SwitchLog.Depth = 0
-        Me.SwitchLog.Location = New System.Drawing.Point(205, 15)
+        Me.SwitchLog.Location = New System.Drawing.Point(168, 21)
         Me.SwitchLog.Margin = New System.Windows.Forms.Padding(0)
         Me.SwitchLog.MouseLocation = New System.Drawing.Point(-1, -1)
         Me.SwitchLog.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
@@ -1375,7 +1359,7 @@ Partial Class FrmMain
         Me.SwitchNotice.Checked = True
         Me.SwitchNotice.CheckState = System.Windows.Forms.CheckState.Checked
         Me.SwitchNotice.Depth = 0
-        Me.SwitchNotice.Location = New System.Drawing.Point(14, 15)
+        Me.SwitchNotice.Location = New System.Drawing.Point(14, 21)
         Me.SwitchNotice.Margin = New System.Windows.Forms.Padding(0)
         Me.SwitchNotice.MouseLocation = New System.Drawing.Point(-1, -1)
         Me.SwitchNotice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
@@ -1485,6 +1469,7 @@ Partial Class FrmMain
         '
         'TimStat
         '
+        Me.TimStat.Enabled = True
         Me.TimStat.Interval = 2000
         '
         'TimMain
@@ -1522,6 +1507,25 @@ Partial Class FrmMain
         'TimLog
         '
         Me.TimLog.Enabled = True
+        Me.TimLog.Interval = 500
+        '
+        'SwitchStat
+        '
+        Me.SwitchStat.AutoSize = True
+        Me.SwitchStat.Checked = True
+        Me.SwitchStat.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.SwitchStat.Depth = 0
+        Me.SwitchStat.Location = New System.Drawing.Point(322, 21)
+        Me.SwitchStat.Margin = New System.Windows.Forms.Padding(0)
+        Me.SwitchStat.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.SwitchStat.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.SwitchStat.Name = "SwitchStat"
+        Me.SwitchStat.Ripple = True
+        Me.SwitchStat.Size = New System.Drawing.Size(186, 37)
+        Me.SwitchStat.TabIndex = 3
+        Me.SwitchStat.Text = "实时刷新运行状态"
+        Me.SwitchStat.UseAccentColor = False
+        Me.SwitchStat.UseVisualStyleBackColor = True
         '
         'FrmMain
         '
@@ -1625,7 +1629,6 @@ Partial Class FrmMain
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents StatCard As ReaLTaiizor.Controls.ParrotCard
     Friend WithEvents TimStat As Timer
-    Friend WithEvents SwitchStat As ReaLTaiizor.Controls.MaterialSwitch
     Friend WithEvents BtnStop As ReaLTaiizor.Controls.MaterialButton
     Friend WithEvents BtnStart As ReaLTaiizor.Controls.MaterialButton
     Friend WithEvents TimMain As Timer
@@ -1699,4 +1702,5 @@ Partial Class FrmMain
     Friend WithEvents CardAbout As ReaLTaiizor.Controls.ParrotCard
     Friend WithEvents SwitchLog As ReaLTaiizor.Controls.MaterialSwitch
     Friend WithEvents LabNotice1_2 As ReaLTaiizor.Controls.MaterialLabel
+    Friend WithEvents SwitchStat As ReaLTaiizor.Controls.MaterialSwitch
 End Class

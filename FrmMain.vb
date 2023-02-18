@@ -72,33 +72,37 @@ Public Class FrmMain
     End Sub
 
     Private Sub TimStat_Tick(sender As Object, e As EventArgs) Handles TimStat.Tick
-        If CheckApplicationIsRun("StudentMain.exe") Then
+        If Process.GetProcessesByName("StudentMain").Length > 0 Then
             JiyuStat = True
         Else
             JiyuStat = False
         End If
-        If CheckApplicationIsRun("REDAGENT.exe") Then
+        If Process.GetProcessesByName("REDAGENT").Length > 0 Then
             RedSpiderStat = True
         Else
             RedSpiderStat = False
         End If
-        If CheckApplicationIsRun("ClassManagerApp.exe") Then
+        If Process.GetProcessesByName("ClassManagerApp").Length > 0 Then
             RccStat = True
         Else
             RccStat = False
         End If
-        If RccStat Then
-            StatCard.Text2 = "运行中: " + "极域"
-        ElseIf RedSpiderStat Then
+        StatCard.Text2 = "运行中:"
+        If JiyuStat Then
+            StatCard.Text2 = StatCard.Text2 + " 极域"
+        End If
+        If RedSpiderStat Then
             StatCard.Text2 = StatCard.Text2 + " 红蜘蛛"
-        ElseIf RccStat Then
+        End If
+        If RccStat Then
             StatCard.Text2 = StatCard.Text2 + " 云课堂"
-        ElseIf Not RccStat And Not JiyuStat And Not RedSpiderStat Then
+        End If
+        If Not RccStat And Not JiyuStat And Not RedSpiderStat Then
             StatCard.Text2 = "红蜘蛛 极域 云课堂均未运行"
         End If
     End Sub
 
-    Private Sub SwitchStat_CheckedChanged(sender As Object, e As EventArgs) Handles SwitchStat.CheckedChanged
+    Private Sub SwitchStat_CheckedChanged(sender As Object, e As EventArgs)
         Log += Date.Now + " SwitchStat.CheckedChanged" + vbCrLf
         TimStat.Enabled = SwitchStat.Checked
         StatCard.Text2 = "实时刷新运行状态已关闭"
