@@ -11,9 +11,5 @@
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <None Update=".github\workflows\securitycodescan.yml">
-      <SubType>Form</SubType>
-    </None>
-  </ItemGroup>
+  <ItemGroup />
 </Project>
