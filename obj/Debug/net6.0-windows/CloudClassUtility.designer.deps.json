@@ -6,110 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Avalonia/0.10.17": {
-        "dependencies": {
-          "Avalonia.Remote.Protocol": "0.10.17",
-          "JetBrains.Annotations": "10.3.0",
-          "System.ComponentModel.Annotations": "4.5.0",
-          "System.Memory": "4.5.3",
-          "System.Reactive": "5.0.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
-          "System.ValueTuple": "4.5.0"
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/Avalonia.Animation.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Base.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Controls.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.DesignerSupport.dll": {
-            "assemblyVersion": "0.7.0.0",
-            "fileVersion": "0.7.0.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.DesktopRuntime.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Dialogs.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Input.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Interactivity.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Layout.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Markup.Xaml.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Markup.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.MicroCom.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.OpenGL.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Styling.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Themes.Default.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Themes.Fluent.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.Visuals.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          },
-          "lib/netcoreapp2.0/Avalonia.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          }
-        }
-      },
-      "Avalonia.Remote.Protocol/0.10.17": {
-        "runtime": {
-          "lib/netstandard2.0/Avalonia.Remote.Protocol.dll": {
-            "assemblyVersion": "0.10.17.0",
-            "fileVersion": "0.10.17.0"
-          }
-        }
-      },
-      "JetBrains.Annotations/10.3.0": {
-        "dependencies": {
-          "System.Runtime": "4.1.0"
-        },
-        "runtime": {
-          "lib/netstandard1.0/JetBrains.Annotations.dll": {
-            "assemblyVersion": "10.3.0.0",
-            "fileVersion": "10.3.0.0"
-          }
-        }
-      },
       "MaterialSkin.2/2.3.1": {
         "runtime": {
           "lib/net5.0-windows7.0/MaterialSkin.dll": {
@@ -118,8 +14,6 @@
           }
         }
       },
-      "Microsoft.NETCore.Platforms/1.0.1": {},
-      "Microsoft.NETCore.Targets/1.0.1": {},
       "ReaLTaiizor/3.7.8.6": {
         "runtime": {
           "lib/net6.0-windows7.0/ReaLTaiizor.dll": {
@@ -127,56 +21,10 @@
             "fileVersion": "3.7.8.6"
           }
         }
-      },
-      "System.ComponentModel.Annotations/4.5.0": {},
-      "System.Memory/4.5.3": {},
-      "System.Reactive/5.0.0": {
-        "runtime": {
-          "lib/net5.0/System.Reactive.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.1"
-          }
-        }
-      },
-      "System.Runtime/4.1.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.NETCore.Targets": "1.0.1"
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/4.6.0": {
-        "runtime": {
-          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "assemblyVersion": "4.0.5.0",
-            "fileVersion": "4.700.19.46214"
-          }
-        }
-      },
-      "System.ValueTuple/4.5.0": {}
+      }
     }
   },
   "libraries": {
-    "Avalonia/0.10.17": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yEmORUaMg9m4O2oGEYwHoCrejQByHDwrBVhTnq3b02qc3vx6CFPouKxNK2ef+luzvpegFVyvJ3qszJe11Bplig==",
-      "path": "avalonia/0.10.17",
-      "hashPath": "avalonia.0.10.17.nupkg.sha512"
-    },
-    "Avalonia.Remote.Protocol/0.10.17": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Tkj8QIvQbxBs9tJ56gsDy7ee1gfH90Gm6rPfutew+RhkaQrEZqEOsI0sOZlFJNxrASj0EeVWPIbtPL1O1xK8vQ==",
-      "path": "avalonia.remote.protocol/0.10.17",
-      "hashPath": "avalonia.remote.protocol.0.10.17.nupkg.sha512"
-    },
-    "JetBrains.Annotations/10.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0GLU9lwGVXjUNlr9ZIdAgjqLI2Zm/XFGJFaqJ1T1sU+kwfeMLhm68+rblUrNUP9psRl4i8yM7Ghb4ia4oI2E5g==",
-      "path": "jetbrains.annotations/10.3.0",
-      "hashPath": "jetbrains.annotations.10.3.0.nupkg.sha512"
-    },
     "MaterialSkin.2/2.3.1": {
       "type": "package",
       "serviceable": true,
@@ -184,68 +32,12 @@
       "path": "materialskin.2/2.3.1",
       "hashPath": "materialskin.2.2.3.1.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/1.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2G6OjjJzwBfNOO8myRV/nFrbTw5iA+DEm0N+qUqhrOmaVtn4pC77h38I1jsXGw5VH55+dPfQsqHD0We9sCl9FQ==",
-      "path": "microsoft.netcore.platforms/1.0.1",
-      "hashPath": "microsoft.netcore.platforms.1.0.1.nupkg.sha512"
-    },
-    "Microsoft.NETCore.Targets/1.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rkn+fKobF/cbWfnnfBOQHKVKIOpxMZBvlSHkqDWgBpwGDcLRduvs3D9OLGeV6GWGvVwNlVi2CBbTjuPmtHvyNw==",
-      "path": "microsoft.netcore.targets/1.0.1",
-      "hashPath": "microsoft.netcore.targets.1.0.1.nupkg.sha512"
-    },
     "ReaLTaiizor/3.7.8.6": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-b7vfciDcXqoIWjYrr760TyyEZSadlAgkaglLFPrRbzHNla7WqaojmC8VzLt/soaD2yGd/56LN0spedW7JcxMFw==",
       "path": "realtaiizor/3.7.8.6",
       "hashPath": "realtaiizor.3.7.8.6.nupkg.sha512"
-    },
-    "System.ComponentModel.Annotations/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
-      "path": "system.componentmodel.annotations/4.5.0",
-      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
-    },
-    "System.Memory/4.5.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
-      "path": "system.memory/4.5.3",
-      "hashPath": "system.memory.4.5.3.nupkg.sha512"
-    },
-    "System.Reactive/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
-      "path": "system.reactive/5.0.0",
-      "hashPath": "system.reactive.5.0.0.nupkg.sha512"
-    },
-    "System.Runtime/4.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-v6c/4Yaa9uWsq+JMhnOFewrYkgdNHNG2eMKuNqRn8P733rNXeRCGvV5FkkjBXn2dbVkPXOsO0xjsEeM1q2zC0g==",
-      "path": "system.runtime/4.1.0",
-      "hashPath": "system.runtime.4.1.0.nupkg.sha512"
-    },
-    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
-      "path": "system.runtime.compilerservices.unsafe/4.6.0",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
-    },
-    "System.ValueTuple/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
-      "path": "system.valuetuple/4.5.0",
-      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     }
   }
 }

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class FrmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMain))
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.CrownMenuStrip1 = New ReaLTaiizor.Controls.CrownMenuStrip()
         Me.窗口WToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -44,6 +44,7 @@ Partial Class Form1
         Me.CardNotice = New ReaLTaiizor.Controls.MaterialCard()
         Me.TcNotice = New ReaLTaiizor.Controls.MetroTabControl()
         Me.TpNotice1 = New System.Windows.Forms.TabPage()
+        Me.LabNotice1_2 = New ReaLTaiizor.Controls.MaterialLabel()
         Me.TpNotice2 = New System.Windows.Forms.TabPage()
         Me.LabNotice2 = New ReaLTaiizor.Controls.MaterialLabel()
         Me.LabNotice = New ReaLTaiizor.Controls.MaterialLabel()
@@ -127,7 +128,6 @@ Partial Class Form1
         Me.TimNotice = New System.Windows.Forms.Timer(Me.components)
         Me.MaterialDrawer1 = New ReaLTaiizor.Controls.MaterialDrawer()
         Me.TimLog = New System.Windows.Forms.Timer(Me.components)
-        Me.LabNotice1_2 = New ReaLTaiizor.Controls.MaterialLabel()
         Me.CrownMenuStrip1.SuspendLayout()
         Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -371,6 +371,18 @@ Partial Class Form1
         Me.TpNotice1.Padding = New System.Windows.Forms.Padding(3)
         Me.TpNotice1.Size = New System.Drawing.Size(830, 62)
         Me.TpNotice1.TabIndex = 0
+        '
+        'LabNotice1_2
+        '
+        Me.LabNotice1_2.AutoSize = True
+        Me.LabNotice1_2.Depth = 0
+        Me.LabNotice1_2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.LabNotice1_2.Location = New System.Drawing.Point(347, 20)
+        Me.LabNotice1_2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.LabNotice1_2.Name = "LabNotice1_2"
+        Me.LabNotice1_2.Size = New System.Drawing.Size(117, 19)
+        Me.LabNotice1_2.TabIndex = 1
+        Me.LabNotice1_2.Text = "正式版已经发布!"
         '
         'TpNotice2
         '
@@ -1511,19 +1523,7 @@ Partial Class Form1
         '
         Me.TimLog.Enabled = True
         '
-        'LabNotice1_2
-        '
-        Me.LabNotice1_2.AutoSize = True
-        Me.LabNotice1_2.Depth = 0
-        Me.LabNotice1_2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.LabNotice1_2.Location = New System.Drawing.Point(347, 20)
-        Me.LabNotice1_2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
-        Me.LabNotice1_2.Name = "LabNotice1_2"
-        Me.LabNotice1_2.Size = New System.Drawing.Size(117, 19)
-        Me.LabNotice1_2.TabIndex = 1
-        Me.LabNotice1_2.Text = "正式版已经发布!"
-        '
-        'Form1
+        'FrmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -1543,7 +1543,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimumSize = New System.Drawing.Size(126, 51)
-        Me.Name = "Form1"
+        Me.Name = "FrmMain"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.Text = "CloudClassUtility"
         Me.CrownMenuStrip1.ResumeLayout(False)

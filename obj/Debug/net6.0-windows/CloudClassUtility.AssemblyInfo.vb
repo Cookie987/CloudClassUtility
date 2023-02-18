@@ -15,7 +15,7 @@ Imports System
 Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("CloudClassUtility"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
- Assembly: System.Reflection.AssemblyCopyrightAttribute("[C] 2022 RedCookieStudios"),  _
+ Assembly: System.Reflection.AssemblyCopyrightAttribute("[C] 2023 RedCookieStudios"),  _
  Assembly: System.Reflection.AssemblyDescriptionAttribute("CloudClassUtility"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("3.410.0.0"),  _
  Assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.410"),  _

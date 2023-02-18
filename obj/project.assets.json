@@ -2,83 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "Avalonia/0.10.17": {
-        "type": "package",
-        "dependencies": {
-          "Avalonia.Remote.Protocol": "0.10.17",
-          "JetBrains.Annotations": "10.3.0",
-          "System.ComponentModel.Annotations": "4.5.0",
-          "System.Memory": "4.5.3",
-          "System.Reactive": "5.0.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
-          "System.ValueTuple": "4.5.0"
-        },
-        "compile": {
-          "lib/netcoreapp2.0/Avalonia.Animation.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Base.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Controls.dll": {},
-          "lib/netcoreapp2.0/Avalonia.DesignerSupport.dll": {},
-          "lib/netcoreapp2.0/Avalonia.DesktopRuntime.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Dialogs.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Input.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Interactivity.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Layout.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Markup.Xaml.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Markup.dll": {},
-          "lib/netcoreapp2.0/Avalonia.MicroCom.dll": {},
-          "lib/netcoreapp2.0/Avalonia.OpenGL.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Styling.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Themes.Default.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Themes.Fluent.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Visuals.dll": {},
-          "lib/netcoreapp2.0/Avalonia.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/Avalonia.Animation.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Base.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Controls.dll": {},
-          "lib/netcoreapp2.0/Avalonia.DesignerSupport.dll": {},
-          "lib/netcoreapp2.0/Avalonia.DesktopRuntime.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Dialogs.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Input.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Interactivity.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Layout.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Markup.Xaml.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Markup.dll": {},
-          "lib/netcoreapp2.0/Avalonia.MicroCom.dll": {},
-          "lib/netcoreapp2.0/Avalonia.OpenGL.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Styling.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Themes.Default.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Themes.Fluent.dll": {},
-          "lib/netcoreapp2.0/Avalonia.Visuals.dll": {},
-          "lib/netcoreapp2.0/Avalonia.dll": {}
-        },
-        "build": {
-          "buildTransitive/Avalonia.props": {},
-          "buildTransitive/Avalonia.targets": {}
-        }
-      },
-      "Avalonia.Remote.Protocol/0.10.17": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Avalonia.Remote.Protocol.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Avalonia.Remote.Protocol.dll": {}
-        }
-      },
-      "JetBrains.Annotations/10.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.1.0"
-        },
-        "compile": {
-          "lib/netstandard1.0/JetBrains.Annotations.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/JetBrains.Annotations.dll": {}
-        }
-      },
       "MaterialSkin.2/2.3.1": {
         "type": "package",
         "compile": {
@@ -91,262 +14,25 @@
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
       },
-      "Microsoft.NETCore.Platforms/1.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "Microsoft.NETCore.Targets/1.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
       "ReaLTaiizor/3.7.8.6": {
         "type": "package",
         "compile": {
-          "lib/net6.0-windows7.0/ReaLTaiizor.dll": {}
+          "lib/net6.0-windows7.0/ReaLTaiizor.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0-windows7.0/ReaLTaiizor.dll": {}
+          "lib/net6.0-windows7.0/ReaLTaiizor.dll": {
+            "related": ".xml"
+          }
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
-      },
-      "System.ComponentModel.Annotations/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
-        }
-      },
-      "System.Memory/4.5.3": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
-        }
-      },
-      "System.Reactive/5.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net5.0/System.Reactive.dll": {}
-        },
-        "runtime": {
-          "lib/net5.0/System.Reactive.dll": {}
-        },
-        "build": {
-          "buildTransitive/net5.0/_._": {}
-        }
-      },
-      "System.Runtime/4.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.NETCore.Targets": "1.0.1"
-        },
-        "compile": {
-          "ref/netstandard1.5/System.Runtime.dll": {}
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/4.6.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
-        }
       }
     }
   },
   "libraries": {
-    "Avalonia/0.10.17": {
-      "sha512": "yEmORUaMg9m4O2oGEYwHoCrejQByHDwrBVhTnq3b02qc3vx6CFPouKxNK2ef+luzvpegFVyvJ3qszJe11Bplig==",
-      "type": "package",
-      "path": "avalonia/0.10.17",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "avalonia.0.10.17.nupkg.sha512",
-        "avalonia.nuspec",
-        "build/Avalonia.props",
-        "build/Avalonia.targets",
-        "build/AvaloniaBuildTasks.props",
-        "build/AvaloniaBuildTasks.targets",
-        "build/AvaloniaItemSchema.xaml",
-        "buildTransitive/Avalonia.props",
-        "buildTransitive/Avalonia.targets",
-        "buildTransitive/AvaloniaBuildTasks.props",
-        "buildTransitive/AvaloniaBuildTasks.targets",
-        "buildTransitive/AvaloniaItemSchema.xaml",
-        "lib/net461/Avalonia.Animation.dll",
-        "lib/net461/Avalonia.Animation.xml",
-        "lib/net461/Avalonia.Base.dll",
-        "lib/net461/Avalonia.Base.xml",
-        "lib/net461/Avalonia.Controls.dll",
-        "lib/net461/Avalonia.Controls.xml",
-        "lib/net461/Avalonia.DesignerSupport.dll",
-        "lib/net461/Avalonia.DesignerSupport.xml",
-        "lib/net461/Avalonia.DesktopRuntime.dll",
-        "lib/net461/Avalonia.DesktopRuntime.xml",
-        "lib/net461/Avalonia.Dialogs.dll",
-        "lib/net461/Avalonia.Dialogs.xml",
-        "lib/net461/Avalonia.Input.dll",
-        "lib/net461/Avalonia.Input.xml",
-        "lib/net461/Avalonia.Interactivity.dll",
-        "lib/net461/Avalonia.Interactivity.xml",
-        "lib/net461/Avalonia.Layout.dll",
-        "lib/net461/Avalonia.Layout.xml",
-        "lib/net461/Avalonia.Markup.Xaml.dll",
-        "lib/net461/Avalonia.Markup.Xaml.xml",
-        "lib/net461/Avalonia.Markup.dll",
-        "lib/net461/Avalonia.Markup.xml",
-        "lib/net461/Avalonia.MicroCom.dll",
-        "lib/net461/Avalonia.MicroCom.xml",
-        "lib/net461/Avalonia.OpenGL.dll",
-        "lib/net461/Avalonia.OpenGL.xml",
-        "lib/net461/Avalonia.Styling.dll",
-        "lib/net461/Avalonia.Styling.xml",
-        "lib/net461/Avalonia.Themes.Default.dll",
-        "lib/net461/Avalonia.Themes.Default.xml",
-        "lib/net461/Avalonia.Themes.Fluent.dll",
-        "lib/net461/Avalonia.Themes.Fluent.xml",
-        "lib/net461/Avalonia.Visuals.dll",
-        "lib/net461/Avalonia.Visuals.xml",
-        "lib/net461/Avalonia.dll",
-        "lib/net461/Avalonia.xml",
-        "lib/netcoreapp2.0/Avalonia.Animation.dll",
-        "lib/netcoreapp2.0/Avalonia.Animation.xml",
-        "lib/netcoreapp2.0/Avalonia.Base.dll",
-        "lib/netcoreapp2.0/Avalonia.Base.xml",
-        "lib/netcoreapp2.0/Avalonia.Controls.dll",
-        "lib/netcoreapp2.0/Avalonia.Controls.xml",
-        "lib/netcoreapp2.0/Avalonia.DesignerSupport.dll",
-        "lib/netcoreapp2.0/Avalonia.DesignerSupport.xml",
-        "lib/netcoreapp2.0/Avalonia.DesktopRuntime.dll",
-        "lib/netcoreapp2.0/Avalonia.DesktopRuntime.xml",
-        "lib/netcoreapp2.0/Avalonia.Dialogs.dll",
-        "lib/netcoreapp2.0/Avalonia.Dialogs.xml",
-        "lib/netcoreapp2.0/Avalonia.Input.dll",
-        "lib/netcoreapp2.0/Avalonia.Input.xml",
-        "lib/netcoreapp2.0/Avalonia.Interactivity.dll",
-        "lib/netcoreapp2.0/Avalonia.Interactivity.xml",
-        "lib/netcoreapp2.0/Avalonia.Layout.dll",
-        "lib/netcoreapp2.0/Avalonia.Layout.xml",
-        "lib/netcoreapp2.0/Avalonia.Markup.Xaml.dll",
-        "lib/netcoreapp2.0/Avalonia.Markup.Xaml.xml",
-        "lib/netcoreapp2.0/Avalonia.Markup.dll",
-        "lib/netcoreapp2.0/Avalonia.Markup.xml",
-        "lib/netcoreapp2.0/Avalonia.MicroCom.dll",
-        "lib/netcoreapp2.0/Avalonia.MicroCom.xml",
-        "lib/netcoreapp2.0/Avalonia.OpenGL.dll",
-        "lib/netcoreapp2.0/Avalonia.OpenGL.xml",
-        "lib/netcoreapp2.0/Avalonia.Styling.dll",
-        "lib/netcoreapp2.0/Avalonia.Styling.xml",
-        "lib/netcoreapp2.0/Avalonia.Themes.Default.dll",
-        "lib/netcoreapp2.0/Avalonia.Themes.Default.xml",
-        "lib/netcoreapp2.0/Avalonia.Themes.Fluent.dll",
-        "lib/netcoreapp2.0/Avalonia.Themes.Fluent.xml",
-        "lib/netcoreapp2.0/Avalonia.Visuals.dll",
-        "lib/netcoreapp2.0/Avalonia.Visuals.xml",
-        "lib/netcoreapp2.0/Avalonia.dll",
-        "lib/netcoreapp2.0/Avalonia.xml",
-        "lib/netstandard2.0/Avalonia.Animation.dll",
-        "lib/netstandard2.0/Avalonia.Animation.xml",
-        "lib/netstandard2.0/Avalonia.Base.dll",
-        "lib/netstandard2.0/Avalonia.Base.xml",
-        "lib/netstandard2.0/Avalonia.Controls.dll",
-        "lib/netstandard2.0/Avalonia.Controls.xml",
-        "lib/netstandard2.0/Avalonia.DesignerSupport.dll",
-        "lib/netstandard2.0/Avalonia.DesignerSupport.xml",
-        "lib/netstandard2.0/Avalonia.Dialogs.dll",
-        "lib/netstandard2.0/Avalonia.Dialogs.xml",
-        "lib/netstandard2.0/Avalonia.Input.dll",
-        "lib/netstandard2.0/Avalonia.Input.xml",
-        "lib/netstandard2.0/Avalonia.Interactivity.dll",
-        "lib/netstandard2.0/Avalonia.Interactivity.xml",
-        "lib/netstandard2.0/Avalonia.Layout.dll",
-        "lib/netstandard2.0/Avalonia.Layout.xml",
-        "lib/netstandard2.0/Avalonia.Markup.Xaml.dll",
-        "lib/netstandard2.0/Avalonia.Markup.Xaml.xml",
-        "lib/netstandard2.0/Avalonia.Markup.dll",
-        "lib/netstandard2.0/Avalonia.Markup.xml",
-        "lib/netstandard2.0/Avalonia.MicroCom.dll",
-        "lib/netstandard2.0/Avalonia.MicroCom.xml",
-        "lib/netstandard2.0/Avalonia.OpenGL.dll",
-        "lib/netstandard2.0/Avalonia.OpenGL.xml",
-        "lib/netstandard2.0/Avalonia.Styling.dll",
-        "lib/netstandard2.0/Avalonia.Styling.xml",
-        "lib/netstandard2.0/Avalonia.Themes.Default.dll",
-        "lib/netstandard2.0/Avalonia.Themes.Default.xml",
-        "lib/netstandard2.0/Avalonia.Themes.Fluent.dll",
-        "lib/netstandard2.0/Avalonia.Themes.Fluent.xml",
-        "lib/netstandard2.0/Avalonia.Visuals.dll",
-        "lib/netstandard2.0/Avalonia.Visuals.xml",
-        "lib/netstandard2.0/Avalonia.dll",
-        "lib/netstandard2.0/Avalonia.xml",
-        "tools/net461/designer/Avalonia.Designer.HostApp.exe",
-        "tools/netcoreapp2.0/designer/Avalonia.Designer.HostApp.dll",
-        "tools/netstandard2.0/Avalonia.Build.Tasks.dll"
-      ]
-    },
-    "Avalonia.Remote.Protocol/0.10.17": {
-      "sha512": "Tkj8QIvQbxBs9tJ56gsDy7ee1gfH90Gm6rPfutew+RhkaQrEZqEOsI0sOZlFJNxrASj0EeVWPIbtPL1O1xK8vQ==",
-      "type": "package",
-      "path": "avalonia.remote.protocol/0.10.17",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "avalonia.remote.protocol.0.10.17.nupkg.sha512",
-        "avalonia.remote.protocol.nuspec",
-        "lib/netstandard2.0/Avalonia.Remote.Protocol.dll",
-        "lib/netstandard2.0/Avalonia.Remote.Protocol.xml"
-      ]
-    },
-    "JetBrains.Annotations/10.3.0": {
-      "sha512": "0GLU9lwGVXjUNlr9ZIdAgjqLI2Zm/XFGJFaqJ1T1sU+kwfeMLhm68+rblUrNUP9psRl4i8yM7Ghb4ia4oI2E5g==",
-      "type": "package",
-      "path": "jetbrains.annotations/10.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "jetbrains.annotations.10.3.0.nupkg.sha512",
-        "jetbrains.annotations.nuspec",
-        "lib/net/JetBrains.Annotations.dll",
-        "lib/net/JetBrains.Annotations.xml",
-        "lib/netstandard1.0/JetBrains.Annotations.dll",
-        "lib/netstandard1.0/JetBrains.Annotations.xml",
-        "lib/portable-net4+sl4+wp7+netcore45/JetBrains.Annotations.dll",
-        "lib/portable-net4+sl4+wp7+netcore45/JetBrains.Annotations.xml",
-        "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/JetBrains.Annotations.dll",
-        "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/JetBrains.Annotations.xml"
-      ]
-    },
     "MaterialSkin.2/2.3.1": {
       "sha512": "w2vFxLNk4InCDU7pXDfBqPfv55HhBtuu8HRfEqQpeS3sNTS1pUzDs/hS0b5JW2/tKvt+P1of9OINP8a9omWDBg==",
       "type": "package",
@@ -362,36 +48,6 @@
         "materialskin.2.2.3.1.nupkg.sha512",
         "materialskin.2.nuspec",
         "nugetIcon.png"
-      ]
-    },
-    "Microsoft.NETCore.Platforms/1.0.1": {
-      "sha512": "2G6OjjJzwBfNOO8myRV/nFrbTw5iA+DEm0N+qUqhrOmaVtn4pC77h38I1jsXGw5VH55+dPfQsqHD0We9sCl9FQ==",
-      "type": "package",
-      "path": "microsoft.netcore.platforms/1.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.1.0.1.nupkg.sha512",
-        "microsoft.netcore.platforms.nuspec",
-        "runtime.json"
-      ]
-    },
-    "Microsoft.NETCore.Targets/1.0.1": {
-      "sha512": "rkn+fKobF/cbWfnnfBOQHKVKIOpxMZBvlSHkqDWgBpwGDcLRduvs3D9OLGeV6GWGvVwNlVi2CBbTjuPmtHvyNw==",
-      "type": "package",
-      "path": "microsoft.netcore.targets/1.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/_._",
-        "microsoft.netcore.targets.1.0.1.nupkg.sha512",
-        "microsoft.netcore.targets.nuspec",
-        "runtime.json"
       ]
     },
     "ReaLTaiizor/3.7.8.6": {
@@ -416,333 +72,32 @@
         "realtaiizor.3.7.8.6.nupkg.sha512",
         "realtaiizor.nuspec"
       ]
-    },
-    "System.ComponentModel.Annotations/4.5.0": {
-      "sha512": "UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
-      "type": "package",
-      "path": "system.componentmodel.annotations/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net461/System.ComponentModel.Annotations.dll",
-        "lib/netcore50/System.ComponentModel.Annotations.dll",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.4/System.ComponentModel.Annotations.dll",
-        "lib/netstandard2.0/System.ComponentModel.Annotations.dll",
-        "lib/portable-net45+win8/_._",
-        "lib/uap10.0.16299/_._",
-        "lib/win8/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net461/System.ComponentModel.Annotations.dll",
-        "ref/net461/System.ComponentModel.Annotations.xml",
-        "ref/netcore50/System.ComponentModel.Annotations.dll",
-        "ref/netcore50/System.ComponentModel.Annotations.xml",
-        "ref/netcore50/de/System.ComponentModel.Annotations.xml",
-        "ref/netcore50/es/System.ComponentModel.Annotations.xml",
-        "ref/netcore50/fr/System.ComponentModel.Annotations.xml",
-        "ref/netcore50/it/System.ComponentModel.Annotations.xml",
-        "ref/netcore50/ja/System.ComponentModel.Annotations.xml",
-        "ref/netcore50/ko/System.ComponentModel.Annotations.xml",
-        "ref/netcore50/ru/System.ComponentModel.Annotations.xml",
-        "ref/netcore50/zh-hans/System.ComponentModel.Annotations.xml",
-        "ref/netcore50/zh-hant/System.ComponentModel.Annotations.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.1/System.ComponentModel.Annotations.dll",
-        "ref/netstandard1.1/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.1/de/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.1/es/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.1/fr/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.1/it/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.1/ja/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.1/ko/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.1/ru/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.1/zh-hans/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.1/zh-hant/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.3/System.ComponentModel.Annotations.dll",
-        "ref/netstandard1.3/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.3/de/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.3/es/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.3/fr/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.3/it/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.3/ja/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.3/ko/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.3/ru/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.3/zh-hans/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.3/zh-hant/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.4/System.ComponentModel.Annotations.dll",
-        "ref/netstandard1.4/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.4/de/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.4/es/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.4/fr/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.4/it/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.4/ja/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.4/ko/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.4/ru/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.4/zh-hans/System.ComponentModel.Annotations.xml",
-        "ref/netstandard1.4/zh-hant/System.ComponentModel.Annotations.xml",
-        "ref/netstandard2.0/System.ComponentModel.Annotations.dll",
-        "ref/netstandard2.0/System.ComponentModel.Annotations.xml",
-        "ref/portable-net45+win8/_._",
-        "ref/uap10.0.16299/_._",
-        "ref/win8/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.componentmodel.annotations.4.5.0.nupkg.sha512",
-        "system.componentmodel.annotations.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Memory/4.5.3": {
-      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
-      "type": "package",
-      "path": "system.memory/4.5.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.1/System.Memory.dll",
-        "lib/netstandard1.1/System.Memory.xml",
-        "lib/netstandard2.0/System.Memory.dll",
-        "lib/netstandard2.0/System.Memory.xml",
-        "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.3.nupkg.sha512",
-        "system.memory.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Reactive/5.0.0": {
-      "sha512": "erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
-      "type": "package",
-      "path": "system.reactive/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net5.0/_._",
-        "build/netcoreapp3.1/System.Reactive.dll",
-        "build/netcoreapp3.1/System.Reactive.targets",
-        "build/netcoreapp3.1/System.Reactive.xml",
-        "buildTransitive/net5.0/_._",
-        "buildTransitive/netcoreapp3.1/System.Reactive.targets",
-        "lib/net472/System.Reactive.dll",
-        "lib/net472/System.Reactive.xml",
-        "lib/net5.0-windows10.0.19041/System.Reactive.dll",
-        "lib/net5.0-windows10.0.19041/System.Reactive.xml",
-        "lib/net5.0/System.Reactive.dll",
-        "lib/net5.0/System.Reactive.xml",
-        "lib/netcoreapp3.1/_._",
-        "lib/netstandard2.0/System.Reactive.dll",
-        "lib/netstandard2.0/System.Reactive.xml",
-        "lib/uap10.0.16299/System.Reactive.dll",
-        "lib/uap10.0.16299/System.Reactive.pri",
-        "lib/uap10.0.16299/System.Reactive.xml",
-        "system.reactive.5.0.0.nupkg.sha512",
-        "system.reactive.nuspec"
-      ]
-    },
-    "System.Runtime/4.1.0": {
-      "sha512": "v6c/4Yaa9uWsq+JMhnOFewrYkgdNHNG2eMKuNqRn8P733rNXeRCGvV5FkkjBXn2dbVkPXOsO0xjsEeM1q2zC0g==",
-      "type": "package",
-      "path": "system.runtime/4.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net462/System.Runtime.dll",
-        "lib/portable-net45+win8+wp80+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net462/System.Runtime.dll",
-        "ref/netcore50/System.Runtime.dll",
-        "ref/netcore50/System.Runtime.xml",
-        "ref/netcore50/de/System.Runtime.xml",
-        "ref/netcore50/es/System.Runtime.xml",
-        "ref/netcore50/fr/System.Runtime.xml",
-        "ref/netcore50/it/System.Runtime.xml",
-        "ref/netcore50/ja/System.Runtime.xml",
-        "ref/netcore50/ko/System.Runtime.xml",
-        "ref/netcore50/ru/System.Runtime.xml",
-        "ref/netcore50/zh-hans/System.Runtime.xml",
-        "ref/netcore50/zh-hant/System.Runtime.xml",
-        "ref/netstandard1.0/System.Runtime.dll",
-        "ref/netstandard1.0/System.Runtime.xml",
-        "ref/netstandard1.0/de/System.Runtime.xml",
-        "ref/netstandard1.0/es/System.Runtime.xml",
-        "ref/netstandard1.0/fr/System.Runtime.xml",
-        "ref/netstandard1.0/it/System.Runtime.xml",
-        "ref/netstandard1.0/ja/System.Runtime.xml",
-        "ref/netstandard1.0/ko/System.Runtime.xml",
-        "ref/netstandard1.0/ru/System.Runtime.xml",
-        "ref/netstandard1.0/zh-hans/System.Runtime.xml",
-        "ref/netstandard1.0/zh-hant/System.Runtime.xml",
-        "ref/netstandard1.2/System.Runtime.dll",
-        "ref/netstandard1.2/System.Runtime.xml",
-        "ref/netstandard1.2/de/System.Runtime.xml",
-        "ref/netstandard1.2/es/System.Runtime.xml",
-        "ref/netstandard1.2/fr/System.Runtime.xml",
-        "ref/netstandard1.2/it/System.Runtime.xml",
-        "ref/netstandard1.2/ja/System.Runtime.xml",
-        "ref/netstandard1.2/ko/System.Runtime.xml",
-        "ref/netstandard1.2/ru/System.Runtime.xml",
-        "ref/netstandard1.2/zh-hans/System.Runtime.xml",
-        "ref/netstandard1.2/zh-hant/System.Runtime.xml",
-        "ref/netstandard1.3/System.Runtime.dll",
-        "ref/netstandard1.3/System.Runtime.xml",
-        "ref/netstandard1.3/de/System.Runtime.xml",
-        "ref/netstandard1.3/es/System.Runtime.xml",
-        "ref/netstandard1.3/fr/System.Runtime.xml",
-        "ref/netstandard1.3/it/System.Runtime.xml",
-        "ref/netstandard1.3/ja/System.Runtime.xml",
-        "ref/netstandard1.3/ko/System.Runtime.xml",
-        "ref/netstandard1.3/ru/System.Runtime.xml",
-        "ref/netstandard1.3/zh-hans/System.Runtime.xml",
-        "ref/netstandard1.3/zh-hant/System.Runtime.xml",
-        "ref/netstandard1.5/System.Runtime.dll",
-        "ref/netstandard1.5/System.Runtime.xml",
-        "ref/netstandard1.5/de/System.Runtime.xml",
-        "ref/netstandard1.5/es/System.Runtime.xml",
-        "ref/netstandard1.5/fr/System.Runtime.xml",
-        "ref/netstandard1.5/it/System.Runtime.xml",
-        "ref/netstandard1.5/ja/System.Runtime.xml",
-        "ref/netstandard1.5/ko/System.Runtime.xml",
-        "ref/netstandard1.5/ru/System.Runtime.xml",
-        "ref/netstandard1.5/zh-hans/System.Runtime.xml",
-        "ref/netstandard1.5/zh-hant/System.Runtime.xml",
-        "ref/portable-net45+win8+wp80+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.runtime.4.1.0.nupkg.sha512",
-        "system.runtime.nuspec"
-      ]
-    },
-    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
-      "sha512": "HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
-      "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
-        "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.ValueTuple/4.5.0": {
-      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
-      "type": "package",
-      "path": "system.valuetuple/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.ValueTuple.dll",
-        "lib/net461/System.ValueTuple.xml",
-        "lib/net47/System.ValueTuple.dll",
-        "lib/net47/System.ValueTuple.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.ValueTuple.dll",
-        "lib/netstandard1.0/System.ValueTuple.xml",
-        "lib/netstandard2.0/_._",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.ValueTuple.dll",
-        "ref/net47/System.ValueTuple.dll",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard2.0/_._",
-        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.valuetuple.4.5.0.nupkg.sha512",
-        "system.valuetuple.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Avalonia >= 0.10.17",
       "MaterialSkin.2 >= 2.3.1",
       "ReaLTaiizor >= 3.7.8.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cookie987\\.nuget\\packages\\": {}
+    "C:\\Users\\bilic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "3.410.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
+      "projectUniqueName": "E:\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
       "projectName": "CloudClassUtility",
-      "projectPath": "D:\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
-      "packagesPath": "C:\\Users\\Cookie987\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\obj\\",
+      "projectPath": "E:\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\CloudClassUtility.vbproj",
+      "packagesPath": "C:\\Users\\bilic\\.nuget\\packages\\",
+      "outputPath": "E:\\OneDrive - cookie987\\Code\\VB.net\\CloudClassUtility\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Cookie987\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bilic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows7.0"
+        "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -764,10 +119,6 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
-          "Avalonia": {
-            "target": "Package",
-            "version": "[0.10.17, )"
-          },
           "MaterialSkin.2": {
             "target": "Package",
             "version": "[2.3.1, )"
@@ -783,7 +134,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -795,7 +147,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

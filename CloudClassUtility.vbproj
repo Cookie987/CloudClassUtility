@@ -3,12 +3,12 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <StartupObject>Sub Main</StartupObject>
+    <StartupObject>CloudClassUtility.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <Version>3.410</Version>
     <Description>CloudClassUtility</Description>
-    <Copyright>[C] 2022 RedCookieStudios</Copyright>
+    <Copyright>[C] 2023 RedCookieStudios</Copyright>
     <PackageProjectUrl>ccu.cookie987.tk</PackageProjectUrl>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>Cert_1647487800.pfx</AssemblyOriginatorKeyFile>
@@ -42,12 +42,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="My Project\Settings.Designer.vb">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <None Update="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include=".github\workflows\securitycodescan.yml" />
     <None Include="favicon.png">

@@ -1,14 +1,14 @@
 ﻿Imports MaterialSkin.Controls
 Imports MaterialSkin
 
-Public Class Form1
+Public Class FrmMain
     Dim JiyuStat As Boolean
     Dim RccStat As Boolean
     Dim RedSpiderStat As Boolean
     Dim Tab As Integer = 1
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LocalVersion = "22w31a"
+        LocalVersion = "3.410"
         Delay = 500
         Log = Date.Now + " Program Started" + vbCrLf + Date.Now + " Version: " + LocalVersion + vbCrLf + Date.Now + " Start init" + vbCrLf
         Log += Date.Now + " Start unzip UdpAttack.exe" + vbCrLf
@@ -274,11 +274,11 @@ Public Class Form1
         Log += Date.Now + " BtnReCheckUpdate.Click" + vbCrLf
         Using getUrl As New Net.WebClient()
             Try
-                Dim data As Byte() = getUrl.DownloadData("https://drive.cookie987.tk/public/CloudClassUtility/notice.rtf")
+                Dim data As Byte() = getUrl.DownloadData("https://ccu.cookie987.tk/notice.rtf")
                 Dim content As String = System.Text.Encoding.Default.GetString(data)
                 Log += Date.Now + " Start check update" + vbCrLf
                 RtbUpdate.Rtf = content
-                data = getUrl.DownloadData("https://drive.cookie987.tk/public/CloudClassUtility/version.txt")
+                data = getUrl.DownloadData("https://ccu.cookie987.tk/version.txt")
                 content = System.Text.Encoding.Default.GetString(data)
                 TbxVersion.Text = "云端版本: " + content + vbCrLf + "本地版本: " + LocalVersion
             Catch ex As Exception
