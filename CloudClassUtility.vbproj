@@ -6,7 +6,7 @@
     <StartupObject>CloudClassUtility.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
-    <Version>3.410</Version>
+    <Version>3.41.1</Version>
     <Description>CloudClassUtility</Description>
     <Copyright>[C] 2023 RedCookieStudios</Copyright>
     <PackageProjectUrl>ccu.cookie987.tk</PackageProjectUrl>

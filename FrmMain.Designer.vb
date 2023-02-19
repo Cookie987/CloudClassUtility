@@ -719,9 +719,9 @@ Partial Class FrmMain
         Me.LabWelcome.Location = New System.Drawing.Point(17, 16)
         Me.LabWelcome.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.LabWelcome.Name = "LabWelcome"
-        Me.LabWelcome.Size = New System.Drawing.Size(249, 19)
+        Me.LabWelcome.Size = New System.Drawing.Size(197, 19)
         Me.LabWelcome.TabIndex = 0
-        Me.LabWelcome.Text = "欢迎使用 CloudClassUtility v3.410 !"
+        Me.LabWelcome.Text = "欢迎使用 CloudClassUtility !"
         '
         'TabPage2
         '

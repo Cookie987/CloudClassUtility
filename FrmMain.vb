@@ -42,15 +42,13 @@ Public Class FrmMain
     End Sub
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LocalVersion = "3.411"
+        LocalVersion = "3.41.1"
         Delay = 500
         Log = Date.Now + " Program Started" + vbCrLf + Date.Now + " Version: " + LocalVersion + vbCrLf + Date.Now + " Start init" + vbCrLf
-
         Log += Date.Now + " Start register hot key F4" + vbCrLf
         ' 窗口载入 注册热键
         RegisterHotKey(Handle, 0, 0, Keys.F4)
         '第3个参数: 0=nothing 1 -alt 2-ctrl 3-ctrl+alt 4-shift 5-alt+shift 6-ctrl+shift 7-ctrl+shift+alt
-
         Log += Date.Now + " Start unzip UdpAttack.exe" + vbCrLf
         My.Computer.FileSystem.CreateDirectory("\ProgramData\CloudClassUtility\")
         Try
