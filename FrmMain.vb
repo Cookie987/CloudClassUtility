@@ -388,10 +388,10 @@ Public Class FrmMain
     Private Sub CbxFormTop_CheckedChanged(sender As Object, e As EventArgs) Handles CbxFormTop.CheckedChanged
         If CbxFormTop.Checked Then
             '设置窗口置顶
-            SetWindowPos(Handle.ToInt64, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE Or SWP_NOSIZE)
+            TopMost = True
         Else
             '取消窗口置顶
-            SetWindowPos(Handle.ToInt64, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NOMOVE Or SWP_NOSIZE)
+            TopMost = False
         End If
     End Sub
 End Class
