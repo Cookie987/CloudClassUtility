@@ -1,0 +1,31 @@
+<svg width="680" height="265" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <g>
+
+   <g transform="translate(520.564 0.999962) scale(1.6 1.6)" id="svg_2" class="logo-entity">
+    <g class="logo-entity-inner">
+     <g transform="translate(0 103.334) scale(1.20947 1.20947)" data-noun-id="39539" class="[object Object]">
+      <g>
+       <g>
+        <path transform="translate(-7.872 -3.50675)" d="m-97.33583,-43.78991c1.632,0.946 4.301,0.946 5.933,-0.001l29.815,-17.302c1.632,-0.947 1.63,-2.493 -0.004,-3.437l-29.807,-17.21c-1.633,-0.943 -4.306,-0.943 -5.94,0l-29.816,17.215c-1.634,0.943 -1.635,2.489 -0.003,3.436l29.822,17.299z" fill="#000000"/>
+       </g>
+       <g>
+        <path transform="translate(-7.872 -3.50675)" d="m-95.65483,-36.41191c0,-1.887 -1.335,-4.204 -2.967,-5.151l-29.908,-17.35c-1.632,-0.947 -2.967,-0.178 -2.967,1.708l0,34.628c0,1.887 1.336,4.201 2.97,5.145l29.901,17.263c1.634,0.943 2.97,0.172 2.97,-1.715l0,-34.528l0.001,0z" fill="#000000"/>
+       </g>
+       <g>
+        <path transform="translate(-7.872 -3.50675)" d="m-90.11583,-41.56291c-1.632,0.947 -2.967,3.265 -2.967,5.151l0,34.528c0,1.887 1.337,2.658 2.971,1.715l29.899,-17.263c1.634,-0.943 2.971,-3.258 2.971,-5.145l0,-34.635c0,-1.886 -1.335,-2.655 -2.967,-1.708l-29.907,17.357z" fill="#000000"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g transform="translate(269.7 171) scale(1 1)" id="svg_1" class="logo-entity">
+    <g class="logo-entity-inner">
+     <text x="-269.70007" y="-0.99995" font-family="Montserrat" fill="#000000" alignment-baseline="text-before-edge" dominant-baseline="text-before-edge" font-size="80px" class="[object Object]">CloudClassUtility</text>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

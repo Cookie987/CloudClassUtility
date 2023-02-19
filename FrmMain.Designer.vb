@@ -111,6 +111,7 @@ Partial Class FrmMain
         Me.TbxVersion = New System.Windows.Forms.TextBox()
         Me.LabUpdate = New ReaLTaiizor.Controls.SmallLabel()
         Me.CardSettingGeneral = New ReaLTaiizor.Controls.MaterialCard()
+        Me.SwitchStat = New ReaLTaiizor.Controls.MaterialSwitch()
         Me.SwitchLog = New ReaLTaiizor.Controls.MaterialSwitch()
         Me.LabSettingGeneral = New ReaLTaiizor.Controls.SmallLabel()
         Me.SwitchNotice = New ReaLTaiizor.Controls.MaterialSwitch()
@@ -127,7 +128,6 @@ Partial Class FrmMain
         Me.TimNotice = New System.Windows.Forms.Timer(Me.components)
         Me.MaterialDrawer1 = New ReaLTaiizor.Controls.MaterialDrawer()
         Me.TimLog = New System.Windows.Forms.Timer(Me.components)
-        Me.SwitchStat = New ReaLTaiizor.Controls.MaterialSwitch()
         Me.CrownMenuStrip1.SuspendLayout()
         Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -376,12 +376,12 @@ Partial Class FrmMain
         Me.LabNotice1_2.AutoSize = True
         Me.LabNotice1_2.Depth = 0
         Me.LabNotice1_2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.LabNotice1_2.Location = New System.Drawing.Point(347, 20)
+        Me.LabNotice1_2.Location = New System.Drawing.Point(249, 22)
         Me.LabNotice1_2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.LabNotice1_2.Name = "LabNotice1_2"
-        Me.LabNotice1_2.Size = New System.Drawing.Size(117, 19)
+        Me.LabNotice1_2.Size = New System.Drawing.Size(338, 19)
         Me.LabNotice1_2.TabIndex = 1
-        Me.LabNotice1_2.Text = "正式版已经发布!"
+        Me.LabNotice1_2.Text = "Tips: 按下 F4 即可在脱离和恢复控制之间切换！"
         '
         'TpNotice2
         '
@@ -631,13 +631,13 @@ Partial Class FrmMain
         Me.BtnStop.Enabled = False
         Me.BtnStop.HighEmphasis = True
         Me.BtnStop.Icon = Nothing
-        Me.BtnStop.Location = New System.Drawing.Point(793, 20)
+        Me.BtnStop.Location = New System.Drawing.Point(763, 20)
         Me.BtnStop.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnStop.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnStop.Name = "BtnStop"
-        Me.BtnStop.Size = New System.Drawing.Size(85, 36)
+        Me.BtnStop.Size = New System.Drawing.Size(115, 36)
         Me.BtnStop.TabIndex = 3
-        Me.BtnStop.Text = "恢复控制"
+        Me.BtnStop.Text = "恢复控制 (F4)"
         Me.BtnStop.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
         Me.BtnStop.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
         Me.BtnStop.UseAccentColor = False
@@ -650,13 +650,13 @@ Partial Class FrmMain
         Me.BtnStart.DrawShadows = True
         Me.BtnStart.HighEmphasis = True
         Me.BtnStart.Icon = Nothing
-        Me.BtnStart.Location = New System.Drawing.Point(690, 20)
+        Me.BtnStart.Location = New System.Drawing.Point(634, 20)
         Me.BtnStart.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.BtnStart.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
         Me.BtnStart.Name = "BtnStart"
-        Me.BtnStart.Size = New System.Drawing.Size(85, 36)
+        Me.BtnStart.Size = New System.Drawing.Size(115, 36)
         Me.BtnStart.TabIndex = 2
-        Me.BtnStart.Text = "脱离控制"
+        Me.BtnStart.Text = "脱离控制 (F4)"
         Me.BtnStart.TextState = ReaLTaiizor.Controls.MaterialButton.TextStateType.Normal
         Me.BtnStart.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained
         Me.BtnStart.UseAccentColor = False
@@ -1323,6 +1323,24 @@ Partial Class FrmMain
         Me.CardSettingGeneral.Size = New System.Drawing.Size(866, 74)
         Me.CardSettingGeneral.TabIndex = 1
         '
+        'SwitchStat
+        '
+        Me.SwitchStat.AutoSize = True
+        Me.SwitchStat.Checked = True
+        Me.SwitchStat.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.SwitchStat.Depth = 0
+        Me.SwitchStat.Location = New System.Drawing.Point(322, 21)
+        Me.SwitchStat.Margin = New System.Windows.Forms.Padding(0)
+        Me.SwitchStat.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.SwitchStat.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.SwitchStat.Name = "SwitchStat"
+        Me.SwitchStat.Ripple = True
+        Me.SwitchStat.Size = New System.Drawing.Size(186, 37)
+        Me.SwitchStat.TabIndex = 3
+        Me.SwitchStat.Text = "实时刷新运行状态"
+        Me.SwitchStat.UseAccentColor = False
+        Me.SwitchStat.UseVisualStyleBackColor = True
+        '
         'SwitchLog
         '
         Me.SwitchLog.AutoSize = True
@@ -1508,24 +1526,6 @@ Partial Class FrmMain
         '
         Me.TimLog.Enabled = True
         Me.TimLog.Interval = 500
-        '
-        'SwitchStat
-        '
-        Me.SwitchStat.AutoSize = True
-        Me.SwitchStat.Checked = True
-        Me.SwitchStat.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.SwitchStat.Depth = 0
-        Me.SwitchStat.Location = New System.Drawing.Point(322, 21)
-        Me.SwitchStat.Margin = New System.Windows.Forms.Padding(0)
-        Me.SwitchStat.MouseLocation = New System.Drawing.Point(-1, -1)
-        Me.SwitchStat.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
-        Me.SwitchStat.Name = "SwitchStat"
-        Me.SwitchStat.Ripple = True
-        Me.SwitchStat.Size = New System.Drawing.Size(186, 37)
-        Me.SwitchStat.TabIndex = 3
-        Me.SwitchStat.Text = "实时刷新运行状态"
-        Me.SwitchStat.UseAccentColor = False
-        Me.SwitchStat.UseVisualStyleBackColor = True
         '
         'FrmMain
         '
