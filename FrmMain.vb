@@ -1,16 +1,50 @@
 ﻿Imports MaterialSkin.Controls
-Imports MaterialSkin
 
 Public Class FrmMain
+    '注册热键函数
+    Public Declare Auto Function RegisterHotKey Lib "user32.dll" Alias "RegisterHotKey" (ByVal hwnd As IntPtr, ByVal id As Integer, ByVal fsModifiers As Integer, ByVal vk As Integer) As Boolean
+    '注销热键函数
+    Public Declare Auto Function UnRegisterHotKey Lib "user32.dll" Alias "UnregisterHotKey" (ByVal hwnd As IntPtr, ByVal id As Integer) As Boolean
+
     Dim JiyuStat As Boolean
     Dim RccStat As Boolean
     Dim RedSpiderStat As Boolean
-    Dim Tab As Integer = 1
+    Dim Tab As Integer = 1  '标签页编号
+
+    Private Sub OnOffManager()
+        If BtnStart.Enabled Then
+            Log += Date.Now + " BtnStart.Click" + vbCrLf
+            TimMain.Interval = Delay
+            TimMain.Enabled = True
+            BtnStop.Enabled = True
+            BtnStart.Enabled = False
+        ElseIf BtnStop.Enabled Then
+            Log += Date.Now + " BtnStop.Click" + vbCrLf
+            TimMain.Enabled = False
+            BtnStart.Enabled = True
+            BtnStop.Enabled = False
+        End If
+    End Sub
+
+    Protected Overrides Sub WndProc(ByRef m As Message)
+        If m.Msg = 786 Then
+            Activate()
+            '热键激活处理
+            OnOffManager()
+        End If
+        MyBase.WndProc(m)
+    End Sub
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LocalVersion = "3.410"
+        LocalVersion = "22w46a"
         Delay = 500
         Log = Date.Now + " Program Started" + vbCrLf + Date.Now + " Version: " + LocalVersion + vbCrLf + Date.Now + " Start init" + vbCrLf
+
+        Log += Date.Now + " Start register hot key F4" + vbCrLf
+        ' 窗口载入 注册热键
+        RegisterHotKey(Handle, 0, 0, Keys.F4)
+        '第3个参数: 0=nothing 1 -alt 2-ctrl 3-ctrl+alt 4-shift 5-alt+shift 6-ctrl+shift 7-ctrl+shift+alt
+
         Log += Date.Now + " Start unzip UdpAttack.exe" + vbCrLf
         My.Computer.FileSystem.CreateDirectory("\ProgramData\CloudClassUtility\")
         Try
@@ -109,18 +143,11 @@ Public Class FrmMain
     End Sub
 
     Private Sub BtnStart_Click(sender As Object, e As EventArgs) Handles BtnStart.Click
-        Log += Date.Now + " BtnStart.Click" + vbCrLf
-        TimMain.Interval = Delay
-        TimMain.Enabled = True
-        BtnStop.Enabled = True
-        BtnStart.Enabled = False
+        OnOffManager()
     End Sub
 
     Private Sub BtnStop_Click(sender As Object, e As EventArgs) Handles BtnStop.Click
-        Log += Date.Now + " BtnStop.Click" + vbCrLf
-        TimMain.Enabled = False
-        BtnStart.Enabled = True
-        BtnStop.Enabled = False
+        OnOffManager()
     End Sub
 
     Private Sub TimMain_Tick(sender As Object, e As EventArgs) Handles TimMain.Tick
@@ -347,5 +374,10 @@ Public Class FrmMain
     Private Sub TbxCustom_Leave(sender As Object, e As EventArgs) Handles TbxCustom.Leave
         TimNotice.Enabled = SwitchNotice.Checked
         TimLog.Enabled = SwitchLog.Checked
+    End Sub
+
+    Private Sub FrmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        '注销热键
+        UnRegisterHotKey(Handle, 0)
     End Sub
 End Class

@@ -1,6 +1,7 @@
 <div align="center">
 
-# CloudClassUtility
+# ![CloudClassUtility](./res/logo-light.svg#gh-light-mode-only)
+# ![CloudClassUtility](./res/logo-dark.svg#gh-dark-mode-only)
 
 持续集成版本下载: [![Build status](https://ci.appveyor.com/api/projects/status/5utm8n3uw2ej8nbt?svg=true)](https://ci.appveyor.com/project/Cookie987/cloudclassutility)
 
