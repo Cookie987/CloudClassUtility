@@ -1,4 +1,4 @@
-version: Preview 22w{build}a
+version: Preview {build}
 branches:
   only:
   - main
