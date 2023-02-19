@@ -6,13 +6,6 @@ Public Class FrmMain
     '注销热键函数
     Private Declare Auto Function UnRegisterHotKey Lib "user32.dll" Alias "UnregisterHotKey" (ByVal hwnd As IntPtr, ByVal id As Integer) As Boolean
 
-    '置顶API
-    Public Const SWP_NOSIZE = &H1
-    Public Const SWP_NOMOVE = &H2
-    Public Const HWND_TOPMOST = -1
-    Public Const HWND_NOTOPMOST = -2
-    Private Declare Function SetWindowPos Lib "user32" (ByVal hWnd As Long, ByVal hWndInsertAfter As Long, ByVal X As Long, ByVal Y As Long, ByVal cx As Long, ByVal cy As Long, ByVal wFlags As Long) As Long
-
     Dim JiyuStat As Boolean
     Dim RccStat As Boolean
     Dim RedSpiderStat As Boolean
