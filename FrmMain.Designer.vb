@@ -41,6 +41,7 @@ Partial Class FrmMain
         Me.关于CloudClassUtilityToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MaterialTabControl1 = New ReaLTaiizor.Controls.MaterialTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.CbxFormTop = New ReaLTaiizor.Controls.MaterialCheckBox()
         Me.CardNotice = New ReaLTaiizor.Controls.MaterialCard()
         Me.TcNotice = New ReaLTaiizor.Controls.MetroTabControl()
         Me.TpNotice1 = New System.Windows.Forms.TabPage()
@@ -300,8 +301,9 @@ Partial Class FrmMain
         '
         'TabPage1
         '
-        Me.TabPage1.BackgroundImage = CType(resources.GetObject("TabPage1.BackgroundImage"), System.Drawing.Image)
-        Me.TabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.TabPage1.BackColor = System.Drawing.Color.White
+        Me.TabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.TabPage1.Controls.Add(Me.CbxFormTop)
         Me.TabPage1.Controls.Add(Me.CardNotice)
         Me.TabPage1.Controls.Add(Me.MaterialCard1)
         Me.TabPage1.Controls.Add(Me.CardCho)
@@ -316,6 +318,21 @@ Partial Class FrmMain
         Me.TabPage1.Size = New System.Drawing.Size(894, 544)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "主页"
+        '
+        'CbxFormTop
+        '
+        Me.CbxFormTop.AutoSize = True
+        Me.CbxFormTop.Depth = 0
+        Me.CbxFormTop.Location = New System.Drawing.Point(510, 21)
+        Me.CbxFormTop.Margin = New System.Windows.Forms.Padding(0)
+        Me.CbxFormTop.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.CbxFormTop.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER
+        Me.CbxFormTop.Name = "CbxFormTop"
+        Me.CbxFormTop.Ripple = True
+        Me.CbxFormTop.Size = New System.Drawing.Size(99, 37)
+        Me.CbxFormTop.TabIndex = 18
+        Me.CbxFormTop.Text = "窗口置顶"
+        Me.CbxFormTop.UseVisualStyleBackColor = True
         '
         'CardNotice
         '
@@ -676,8 +693,8 @@ Partial Class FrmMain
         Me.StatCard.TabIndex = 12
         Me.StatCard.Text = "ParrotCard1"
         Me.StatCard.Text1 = "当前状态"
-        Me.StatCard.Text2 = "实时刷新运行状态已关闭"
-        Me.StatCard.Text3 = "CloudClassUtility 3.410"
+        Me.StatCard.Text2 = "请稍候"
+        Me.StatCard.Text3 = "CloudClassUtility 版本未知"
         Me.StatCard.TextRenderingType = System.Drawing.Text.TextRenderingHint.SystemDefault
         '
         'CardWelcome
@@ -1703,4 +1720,5 @@ Partial Class FrmMain
     Friend WithEvents SwitchLog As ReaLTaiizor.Controls.MaterialSwitch
     Friend WithEvents LabNotice1_2 As ReaLTaiizor.Controls.MaterialLabel
     Friend WithEvents SwitchStat As ReaLTaiizor.Controls.MaterialSwitch
+    Friend WithEvents CbxFormTop As ReaLTaiizor.Controls.MaterialCheckBox
 End Class

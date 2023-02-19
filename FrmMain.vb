@@ -2,9 +2,16 @@
 
 Public Class FrmMain
     '注册热键函数
-    Public Declare Auto Function RegisterHotKey Lib "user32.dll" Alias "RegisterHotKey" (ByVal hwnd As IntPtr, ByVal id As Integer, ByVal fsModifiers As Integer, ByVal vk As Integer) As Boolean
+    Private Declare Auto Function RegisterHotKey Lib "user32.dll" Alias "RegisterHotKey" (ByVal hwnd As IntPtr, ByVal id As Integer, ByVal fsModifiers As Integer, ByVal vk As Integer) As Boolean
     '注销热键函数
-    Public Declare Auto Function UnRegisterHotKey Lib "user32.dll" Alias "UnregisterHotKey" (ByVal hwnd As IntPtr, ByVal id As Integer) As Boolean
+    Private Declare Auto Function UnRegisterHotKey Lib "user32.dll" Alias "UnregisterHotKey" (ByVal hwnd As IntPtr, ByVal id As Integer) As Boolean
+
+    '置顶API
+    Public Const SWP_NOSIZE = &H1
+    Public Const SWP_NOMOVE = &H2
+    Public Const HWND_TOPMOST = -1
+    Public Const HWND_NOTOPMOST = -2
+    Private Declare Function SetWindowPos Lib "user32" (ByVal hWnd As Long, ByVal hWndInsertAfter As Long, ByVal X As Long, ByVal Y As Long, ByVal cx As Long, ByVal cy As Long, ByVal wFlags As Long) As Long
 
     Dim JiyuStat As Boolean
     Dim RccStat As Boolean
@@ -28,7 +35,6 @@ Public Class FrmMain
 
     Protected Overrides Sub WndProc(ByRef m As Message)
         If m.Msg = 786 Then
-            Activate()
             '热键激活处理
             OnOffManager()
         End If
@@ -36,7 +42,7 @@ Public Class FrmMain
     End Sub
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LocalVersion = "22w46a"
+        LocalVersion = "3.411"
         Delay = 500
         Log = Date.Now + " Program Started" + vbCrLf + Date.Now + " Version: " + LocalVersion + vbCrLf + Date.Now + " Start init" + vbCrLf
 
@@ -379,5 +385,15 @@ Public Class FrmMain
     Private Sub FrmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         '注销热键
         UnRegisterHotKey(Handle, 0)
+    End Sub
+
+    Private Sub CbxFormTop_CheckedChanged(sender As Object, e As EventArgs) Handles CbxFormTop.CheckedChanged
+        If CbxFormTop.Checked Then
+            '设置窗口置顶
+            SetWindowPos(Handle.ToInt64, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE Or SWP_NOSIZE)
+        Else
+            '取消窗口置顶
+            SetWindowPos(Handle.ToInt64, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NOMOVE Or SWP_NOSIZE)
+        End If
     End Sub
 End Class
