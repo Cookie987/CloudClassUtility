@@ -38,7 +38,7 @@ steps:
   inputs:
     SourceFolder: 'bin/Release/net6.0-windows/publish/win-x86'
     Contents: 'CloudClassUtility.exe'
-    TargetFolder: '$(build.artifactstagingdirectory'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
   inputs:
