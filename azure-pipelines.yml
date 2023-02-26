@@ -24,7 +24,8 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
-    publishWebProjects: true
+    publishWebProjects: false
+    projects: '**/*.vbproj'
     arguments: '-p:PublishProfile=FolderProfile'
     zipAfterPublish: false
 
