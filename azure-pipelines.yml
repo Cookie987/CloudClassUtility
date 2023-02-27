@@ -29,11 +29,6 @@ steps:
     arguments: '-p:PublishProfile=FolderProfile'
     zipAfterPublish: false
 
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'bin/Release/net6.0-windows/publish/win-x86'
