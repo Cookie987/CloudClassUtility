@@ -309,11 +309,18 @@ Public Class FrmMain
                 data = getUrl.DownloadData("https://ccu.cookie987.tk/version.txt")
                 content = System.Text.Encoding.Default.GetString(data)
                 TbxVersion.Text = "云端版本: " + content + vbCrLf + "本地版本: " + LocalVersion
+                If LocalVersion IsNot content Then
+                    Dim Update = MsgBox("检测到新版本，是否更新？", 1, "CloudClassUtility")
+                    If Update = 1 Then
+
+                    End If
+                End If
             Catch ex As Exception
                 Log += Date.Now + " Error 0x01 Network Problem" + vbCrLf
                 TbxVersion.Text = "本地版本: " + LocalVersion
                 MaterialMessageBox.Show("查询更新信息失败, 请检查您的网络连接或云端服务器出现故障.", "CloudClassUtility")
             End Try
+
         End Using
     End Sub
 
