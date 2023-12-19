@@ -3,7 +3,7 @@
 # ![CloudClassUtility](./res/logo-light.svg#gh-light-mode-only)
 # ![CloudClassUtility](./res/logo-dark.svg#gh-dark-mode-only)
 
-持续集成版本下载: [![Azure DevOps builds](https://img.shields.io/azure-devops/build/cookie-987/8e2a19a2-adfb-4a74-84fb-61b961282536/4?logo=azure-devops)](https://dev.azure.com/cookie-987/CloudClassUtility/_build?view=runs)
+持续集成版本下载: [![Build status](https://ci.appveyor.com/api/projects/status/5utm8n3uw2ej8nbt?svg=true)](https://ci.appveyor.com/project/Cookie987/cloudclassutility)
 
 稳定版下载: [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Cookie987/CloudClassUtility?logo=github)](https://github.com/Cookie987/CloudClassUtility/releases)
 [![GitHub Release Date](https://img.shields.io/github/release-date/Cookie987/CloudClassUtility)](https://github.com/Cookie987/CloudClassUtility/releases/latest)
